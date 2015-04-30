@@ -27,14 +27,17 @@
 
 
 #pragma hls_design top
-void diff_detect(ac_int<PIXEL_WL*KERNEL_WIDTH,false> vin[NUM_PIXELS], ac_int<PIXEL_WL,false> vout[NUM_PIXELS])
+ac_int<16, false> abs(ac_int<16, false> a,  ac_int<16, false> b) {
+    if((a-b)>0) 
+        return (a-b);
+    else 
+        return (b-a);
+}
+
+void diff_detect(ac_int<PIXEL_WL,false> vin[NUM_PIXELS], ac_int<PIXEL_WL,false> vout[NUM_PIXELS])
 {
     ac_int<16, false> red, green, blue, red_out, green_out, blue_out;
     
-
-// #if 1: use filter
-// #if 0: copy input to output bypassing filter
-#if 1
 
     // shifts pixels from KERNEL_WIDTH rows and keeps KERNEL_WIDTH columns (KERNEL_WIDTHxKERNEL_WIDTH pixels stored)
     static shift_class<ac_int<PIXEL_WL*KERNEL_WIDTH,false>, KERNEL_WIDTH> regs;
@@ -45,11 +48,6 @@ void diff_detect(ac_int<PIXEL_WL*KERNEL_WIDTH,false> vin[NUM_PIXELS], ac_int<PIX
 		red = 1023; 
 		green = 0; 
 		blue = 0;
-		RESET: for(i = 0; i < KERNEL_WIDTH; i++) {
-			r[i] = 0;
-			g[i] = 0;
-			b[i] = 0;
-		}
 	    
 		// shift input data in the filter fifo
 		regs << vin[p]; // advance the pointer address by the pixel number (testbench/simulation only)
@@ -62,5 +60,7 @@ void diff_detect(ac_int<PIXEL_WL*KERNEL_WIDTH,false> vin[NUM_PIXELS], ac_int<PIX
 				vout[p] = vin[p];
 			}
 		}
+    }
+
 }
      
