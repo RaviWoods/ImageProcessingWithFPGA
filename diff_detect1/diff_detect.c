@@ -27,7 +27,7 @@
 
 
 #pragma hls_design top
-ac_int<16, false> abs(ac_int<16, false> a,  ac_int<16, false> b) {
+ac_int<16, true> abs(ac_int<16, false> a,  ac_int<16, false> b) {
     if((a-b)>0) 
         return (a-b);
     else 
@@ -53,7 +53,7 @@ void diff_detect(ac_int<PIXEL_WL,false> vin[NUM_PIXELS], ac_int<PIXEL_WL,false> 
 		regs << vin[p]; // advance the pointer address by the pixel number (testbench/simulation only)
 		// accumulate
 		ACC1: for(i = 0; i < KERNEL_WIDTH; i++) {
-			if(abs(regs[i].slc<COLOUR_WL>(2*COLOUR_WL),red) < 20 && abs(regs[i].slc<COLOUR_WL>(COLOUR_WL),green) < 20 && abs(regs[i].slc<COLOUR_WL>(0),blue) < 20) {
+			if(abs(regs[i].slc<COLOUR_WL>(2*COLOUR_WL),red) < 100 && abs(regs[i].slc<COLOUR_WL>(COLOUR_WL),green) < 100 && abs(regs[i].slc<COLOUR_WL>(0),blue) < 100) {
 				vout[p] = ((((ac_int<PIXEL_WL, false>)red) << (2*COLOUR_WL)) | (((ac_int<PIXEL_WL, false>)green) << COLOUR_WL) | (ac_int<PIXEL_WL, false>)blue);
 			}
 			else {

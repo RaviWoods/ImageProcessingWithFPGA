@@ -1,0 +1,215 @@
+//  Catapult University Version 2011a.126 (Production Release) Wed Aug  8 00:52:07 PDT 2012
+//  
+//  Copyright (c) Calypto Design Systems, Inc., 1996-2012, All Rights Reserved.
+//                       UNPUBLISHED, LICENSED SOFTWARE.
+//            CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+//          PROPERTY OF CALYPTO DESIGN SYSTEMS OR ITS LICENSORS
+//  
+//  Running on Windows 7 rbw14@EEWS104A-005 Service Pack 1 6.01.7601 i686
+//  
+//  Package information: SIFLIBS v17.0_1.1, HLS_PKGS v17.0_1.1, 
+//                       DesignPad v2.78_0.0
+//  
+//  This version may only be used for academic purposes.  Some optimizations 
+//  are disabled, so results obtained from this version may be sub-optimal.
+//  
+//  Start time Fri May 01 14:26:22 2015
+# -------------------------------------------------
+# Logging session transcript to file "C:\Users\rbw14\AppData\Local\Temp\log1152aa0a78.0"
+# Loading options from registry.
+set_working_dir C:/fpga-catapult-c-spring/student_files_2015_CHANGED
+solution file add ../diff_detect1/diff_detect.h
+# /INPUTFILES/1
+solution file add ../diff_detect1/diff_detect.c
+# /INPUTFILES/2
+go analyze
+# Creating project directory 'C:\fpga-catapult-c-spring\student_files_2015_CHANGED\Catapult'. (PRJ-1)
+# Moving session transcript to file "C:\fpga-catapult-c-spring\student_files_2015_CHANGED\catapult.log"
+# Info: Starting transformation 'analyze' on solution 'solution.v1' (SOL-8)
+# Front End called with arguments: -- {C:\fpga-catapult-c-spring\diff_detect1\diff_detect.c} {C:\fpga-catapult-c-spring\diff_detect1\diff_detect.h} (CIN-69)
+# Edison Design Group C++/C Front End - Version 3.10.1 (CIN-1)
+# $PROJECT_HOME/../diff_detect1/diff_detect.c(29): Pragma 'hls_design<top>' detected on routine 'abs' (CIN-6)
+# Source file analysis completed (CIN-68)
+# Info: Completed transformation 'analyze' on solution 'solution.v1': elapsed time 1.98 seconds, memory usage 123472kB, peak memory usage 185412kB (SOL-9)
+directive set -CLOCKS {clk {-CLOCK_PERIOD 0.0 -CLOCK_EDGE rising -CLOCK_HIGH_TIME 0.000000 -CLOCK_OFFSET 0.000000 -CLOCK_UNCERTAINTY 0.0 -RESET_KIND async -RESET_SYNC_NAME rst -RESET_SYNC_ACTIVE high -RESET_ASYNC_NAME arst_n -RESET_ASYNC_ACTIVE low -ENABLE_NAME en -ENABLE_ACTIVE high}}
+# /CLOCKS {clk {-CLOCK_PERIOD 0.0 -CLOCK_EDGE rising -CLOCK_UNCERTAINTY 0.0 -RESET_SYNC_NAME rst -RESET_ASYNC_NAME arst_n -RESET_KIND async -RESET_SYNC_ACTIVE high -RESET_ASYNC_ACTIVE low -ENABLE_NAME en -ENABLE_ACTIVE high}}
+directive set -DESIGN_HIERARCHY diff_detect
+# /DESIGN_HIERARCHY diff_detect
+directive set -TECHLIBS {{Altera_accel_CycloneIII.lib Altera_accel_CycloneIII} {mgc_Altera-Cyclone-III-6_beh_psr.lib {{mgc_Altera-Cyclone-III-6_beh_psr part EP3C16F484C}}}}
+# /TECHLIBS {{Altera_accel_CycloneIII.lib Altera_accel_CycloneIII} {mgc_Altera-Cyclone-III-6_beh_psr.lib {{mgc_Altera-Cyclone-III-6_beh_psr part EP3C16F484C}}}}
+directive set -CLOCKS {clk {-CLOCK_PERIOD 20.0 -CLOCK_EDGE rising -CLOCK_HIGH_TIME 10.00 -CLOCK_OFFSET 0.000000 -CLOCK_UNCERTAINTY 0.0 -RESET_KIND async -RESET_SYNC_NAME rst -RESET_SYNC_ACTIVE high -RESET_ASYNC_NAME arst_n -RESET_ASYNC_ACTIVE low -ENABLE_NAME en -ENABLE_ACTIVE high}}
+# /CLOCKS {clk {-CLOCK_PERIOD 20.0 -CLOCK_EDGE rising -CLOCK_UNCERTAINTY 0.0 -CLOCK_HIGH_TIME 10.0 -RESET_SYNC_NAME rst -RESET_ASYNC_NAME arst_n -RESET_KIND async -RESET_SYNC_ACTIVE high -RESET_ASYNC_ACTIVE low -ENABLE_NAME en -ENABLE_ACTIVE high}}
+go compile
+# Info: Starting transformation 'compile' on solution 'solution.v1' (SOL-8)
+# Reading component library '$MGC_HOME\pkgs\siflibs\mgc_busdefs.lib' [mgc_busdefs]... (LIB-49)
+# Reading component library '$MGC_HOME\pkgs\siflibs\stdops.lib' [STDOPS]... (LIB-49)
+# Reading component library '$MGC_HOME\pkgs\siflibs\mgc_ioport.lib' [mgc_ioport]... (LIB-49)
+# Reading component library '$MGC_HOME\pkgs\ccs_altera\Altera_accel_CycloneIII.lib' [Altera_accel_CycloneIII]... (LIB-49)
+# Reading component library '$MGC_HOME\pkgs\siflibs\psr2010a_up2\mgc_Altera-Cyclone-III-6_beh_psr.lib' [mgc_Altera-Cyclone-III-6_beh_psr]... (LIB-49)
+# Generating synthesis internal form... (CIN-3)
+# $PROJECT_HOME/../diff_detect1/diff_detect.c(37): Found top design routine 'diff_detect' specified by directive (CIN-52)
+# $PROJECT_HOME/../diff_detect1/diff_detect.c(37): Synthesizing routine 'diff_detect' (CIN-13)
+# $PROJECT_HOME/../diff_detect1/diff_detect.c(37): Inlining routine 'diff_detect' (CIN-14)
+# $PROJECT_HOME/../diff_detect1/shift_class.h(13): Inlining member function 'shift_class<ac_int<30, false>, 1>::shift_class' on object 'regs' (CIN-64)
+# $PROJECT_HOME/../diff_detect1/shift_class.h(32): Inlining member function 'shift_class<ac_int<30, false>, 1>::operator<<' on object 'regs' (CIN-64)
+# $PROJECT_HOME/../diff_detect1/shift_class.h(48): Inlining member function 'shift_class<ac_int<30, false>, 1>::operator[]' on object 'regs' (CIN-64)
+# $PROJECT_HOME/../diff_detect1/diff_detect.c(30): Inlining routine 'abs' (CIN-14)
+# $PROJECT_HOME/../diff_detect1/shift_class.h(48): Inlining member function 'shift_class<ac_int<30, false>, 1>::operator[]' on object 'regs' (CIN-64)
+# $PROJECT_HOME/../diff_detect1/diff_detect.c(30): Inlining routine 'abs' (CIN-14)
+# $PROJECT_HOME/../diff_detect1/shift_class.h(48): Inlining member function 'shift_class<ac_int<30, false>, 1>::operator[]' on object 'regs' (CIN-64)
+# $PROJECT_HOME/../diff_detect1/diff_detect.c(30): Inlining routine 'abs' (CIN-14)
+# $PROJECT_HOME/../diff_detect1/diff_detect.c(37): Optimizing block '/diff_detect' ... (CIN-4)
+# $PROJECT_HOME/../diff_detect1/diff_detect.c(37): Inout port 'vin' is only used as an input. (OPT-10)
+# $PROJECT_HOME/../diff_detect1/diff_detect.c(37): Inout port 'vout' is only used as an output. (OPT-11)
+# Info: Optimizing partition '/diff_detect': (Total ops = 163, Real ops = 45, Vars = 64) (SOL-10)
+# Info: Optimizing partition '/diff_detect/core': (Total ops = 163, Real ops = 45, Vars = 62) (SOL-10)
+# Info: Optimizing partition '/diff_detect/core': (Total ops = 163, Real ops = 44, Vars = 62) (SOL-10)
+# Info: Optimizing partition '/diff_detect': (Total ops = 163, Real ops = 44, Vars = 64) (SOL-10)
+# Info: Optimizing partition '/diff_detect': (Total ops = 163, Real ops = 44, Vars = 64) (SOL-10)
+# Info: Optimizing partition '/diff_detect/core': (Total ops = 163, Real ops = 44, Vars = 62) (SOL-10)
+# Info: Optimizing partition '/diff_detect/core': (Total ops = 145, Real ops = 40, Vars = 38) (SOL-10)
+# Info: Optimizing partition '/diff_detect/core': (Total ops = 136, Real ops = 40, Vars = 37) (SOL-10)
+# Info: Optimizing partition '/diff_detect/core': (Total ops = 136, Real ops = 40, Vars = 37) (SOL-10)
+# Info: Optimizing partition '/diff_detect': (Total ops = 136, Real ops = 40, Vars = 39) (SOL-10)
+# Info: Optimizing partition '/diff_detect': (Total ops = 136, Real ops = 40, Vars = 39) (SOL-10)
+# Info: Optimizing partition '/diff_detect/core': (Total ops = 115, Real ops = 40, Vars = 49) (SOL-10)
+# Info: Optimizing partition '/diff_detect/core': (Total ops = 95, Real ops = 21, Vars = 10) (SOL-10)
+# Info: Optimizing partition '/diff_detect': (Total ops = 95, Real ops = 21, Vars = 12) (SOL-10)
+# Info: Optimizing partition '/diff_detect/core': (Total ops = 98, Real ops = 24, Vars = 13) (SOL-10)
+# Info: Optimizing partition '/diff_detect/core': (Total ops = 92, Real ops = 22, Vars = 9) (SOL-10)
+# Info: Optimizing partition '/diff_detect': (Total ops = 92, Real ops = 22, Vars = 11) (SOL-10)
+# Info: Optimizing partition '/diff_detect/core': (Total ops = 95, Real ops = 22, Vars = 13) (SOL-10)
+# Info: Optimizing partition '/diff_detect/core': (Total ops = 95, Real ops = 22, Vars = 11) (SOL-10)
+# Info: Optimizing partition '/diff_detect': (Total ops = 95, Real ops = 22, Vars = 13) (SOL-10)
+# Info: Optimizing partition '/diff_detect/core': (Total ops = 95, Real ops = 22, Vars = 11) (SOL-10)
+# Info: Optimizing partition '/diff_detect': (Total ops = 95, Real ops = 22, Vars = 13) (SOL-10)
+# Info: Optimizing partition '/diff_detect': (Total ops = 95, Real ops = 22, Vars = 13) (SOL-10)
+# Info: Optimizing partition '/diff_detect/core': (Total ops = 95, Real ops = 22, Vars = 11) (SOL-10)
+# $PROJECT_HOME/../diff_detect1/shift_class.h(34): Loop '/diff_detect/core/SHIFT' iterated at most 1 times. (LOOP-2)
+# $PROJECT_HOME/../diff_detect1/diff_detect.c(55): Loop '/diff_detect/core/ACC1' iterated at most 1 times. (LOOP-2)
+# $PROJECT_HOME/../diff_detect1/diff_detect.c(46): Loop '/diff_detect/core/FRAME' iterated at most 1 times. (LOOP-2)
+# Info: Optimizing partition '/diff_detect/core': (Total ops = 49, Real ops = 14, Vars = 10) (SOL-10)
+# Info: Optimizing partition '/diff_detect/core': (Total ops = 33, Real ops = 8, Vars = 7) (SOL-10)
+# Info: Optimizing partition '/diff_detect/core': (Total ops = 31, Real ops = 8, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/diff_detect': (Total ops = 31, Real ops = 8, Vars = 7) (SOL-10)
+# Info: Optimizing partition '/diff_detect/core': (Total ops = 29, Real ops = 8, Vars = 7) (SOL-10)
+# Info: Optimizing partition '/diff_detect/core': (Total ops = 29, Real ops = 8, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/diff_detect': (Total ops = 29, Real ops = 8, Vars = 7) (SOL-10)
+# Info: Optimizing partition '/diff_detect/core': (Total ops = 29, Real ops = 8, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/diff_detect': (Total ops = 29, Real ops = 8, Vars = 7) (SOL-10)
+# Design 'diff_detect' was read (SOL-1)
+# Info: Completed transformation 'compile' on solution 'diff_detect.v1': elapsed time 0.80 seconds, memory usage 134104kB, peak memory usage 185412kB (SOL-9)
+directive set /diff_detect/core/main -PIPELINE_INIT_INTERVAL 1
+# /diff_detect/core/main/PIPELINE_INIT_INTERVAL 1
+directive set /diff_detect/core/main -DISTRIBUTED_PIPELINE true
+# /diff_detect/core/main/DISTRIBUTED_PIPELINE true
+options save
+# Saving options to registry.
+options set Output OutputVHDL false
+# false
+options set Output OutputVerilog true
+# true
+go allocate
+# Info: Starting transformation 'architect' on solution 'diff_detect.v1' (SOL-8)
+# $PROJECT_HOME/../diff_detect1/diff_detect.c(37): Loop '/diff_detect/core/main' is left rolled. (LOOP-4)
+# $PROJECT_HOME/../diff_detect1/diff_detect.c(37): I/O-Port inferred - resource 'vin:rsc' (from var: vin) mapped to 'mgc_ioport.mgc_in_wire' (size: 30). (MEM-2)
+# $PROJECT_HOME/../diff_detect1/diff_detect.c(37): I/O-Port inferred - resource 'vout:rsc' (from var: vout) mapped to 'mgc_ioport.mgc_out_stdreg' (size: 30). (MEM-2)
+# Info: Optimizing partition '/diff_detect': (Total ops = 35, Real ops = 9, Vars = 10) (SOL-10)
+# Info: Optimizing partition '/diff_detect/core': (Total ops = 35, Real ops = 9, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/diff_detect/core': (Total ops = 31, Real ops = 9, Vars = 6) (SOL-10)
+# Info: Optimizing partition '/diff_detect/core': (Total ops = 31, Real ops = 9, Vars = 6) (SOL-10)
+# Info: Optimizing partition '/diff_detect': (Total ops = 31, Real ops = 9, Vars = 11) (SOL-10)
+# Info: Optimizing partition '/diff_detect/core': (Total ops = 31, Real ops = 9, Vars = 6) (SOL-10)
+# Info: Optimizing partition '/diff_detect': (Total ops = 31, Real ops = 9, Vars = 11) (SOL-10)
+# Info: Optimizing partition '/diff_detect': (Total ops = 31, Real ops = 9, Vars = 11) (SOL-10)
+# Info: Optimizing partition '/diff_detect/core': (Total ops = 31, Real ops = 9, Vars = 6) (SOL-10)
+# Info: Optimizing partition '/diff_detect/core': (Total ops = 92, Real ops = 21, Vars = 46) (SOL-10)
+# Info: Optimizing partition '/diff_detect/core': (Total ops = 32, Real ops = 14, Vars = 8) (SOL-10)
+# Info: Optimizing partition '/diff_detect/core': (Total ops = 32, Real ops = 14, Vars = 5) (SOL-10)
+# Design 'diff_detect' contains '14' real operations. (SOL-11)
+# Info: Completed transformation 'architect' on solution 'diff_detect.v1': elapsed time 0.62 seconds, memory usage 138392kB, peak memory usage 185412kB (SOL-9)
+# Info: Starting transformation 'allocate' on solution 'diff_detect.v1' (SOL-8)
+# Performing concurrent resource allocation and scheduling on '/diff_detect/core' (CRAAS-1)
+# Info: Select qualified components for data operations ... (CRAAS-3)
+# Info: Apply resource constraints on data operations ... (CRAAS-4)
+# $PROJECT_HOME/../diff_detect1/diff_detect.c(37): Prescheduled LOOP 'main' (2 c-steps) (SCHD-7)
+# $PROJECT_HOME/../diff_detect1/diff_detect.c(37): Prescheduled SEQUENTIAL 'core' (total length 2 c-steps) (SCHD-8)
+# Info: Initial schedule of SEQUENTIAL 'core': Latency = 1, Area (Datapath, Register, Total) = 90.26, 0.00, 90.26 (CRAAS-11)
+# At least one feasible schedule exists. (CRAAS-9)
+# Info: Final schedule of SEQUENTIAL 'core': Latency = 1, Area (Datapath, Register, Total) = 90.26, 0.00, 90.26 (CRAAS-12)
+# Resource allocation and scheduling done. (CRAAS-2)
+# Netlist written to file 'schedule.gnt' (NET-4)
+# Info: Completed transformation 'allocate' on solution 'diff_detect.v1': elapsed time 0.06 seconds, memory usage 138516kB, peak memory usage 185412kB (SOL-9)
+go extract
+# Info: Starting transformation 'schedule' on solution 'diff_detect.v1' (SOL-8)
+# Performing concurrent resource allocation and scheduling on '/diff_detect/core' (CRAAS-1)
+# Warning: Cannot build distributed pipeline in process 'core' because of missing handshake for resource 'vout:rsc' (SCHD-15)
+# Global signal 'vin:rsc.z' added to design 'diff_detect' for component 'vin:rsc:mgc_in_wire' (LIB-3)
+# Global signal 'vout:rsc.z' added to design 'diff_detect' for component 'vout:rsc:mgc_out_stdreg' (LIB-3)
+# Info: Optimizing partition '/diff_detect': (Total ops = 52, Real ops = 15, Vars = 22) (SOL-10)
+# Info: Optimizing partition '/diff_detect/diff_detect:core': (Total ops = 42, Real ops = 14, Vars = 14) (SOL-10)
+# Info: Optimizing partition '/diff_detect/diff_detect:core/core': (Total ops = 37, Real ops = 14, Vars = 9) (SOL-10)
+# Info: Optimizing partition '/diff_detect/diff_detect:core/core': (Total ops = 31, Real ops = 14, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/diff_detect': (Total ops = 45, Real ops = 14, Vars = 17) (SOL-10)
+# Info: Optimizing partition '/diff_detect/diff_detect:core': (Total ops = 36, Real ops = 14, Vars = 10) (SOL-10)
+# Info: Optimizing partition '/diff_detect/diff_detect:core/core': (Total ops = 31, Real ops = 14, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/diff_detect': (Total ops = 45, Real ops = 14, Vars = 17) (SOL-10)
+# Info: Optimizing partition '/diff_detect/diff_detect:core': (Total ops = 36, Real ops = 14, Vars = 10) (SOL-10)
+# Report written to file 'cycle.rpt'
+# Netlist written to file 'cycle.v' (NET-4)
+# Info: Completed transformation 'schedule' on solution 'diff_detect.v1': elapsed time 0.76 seconds, memory usage 142780kB, peak memory usage 185412kB (SOL-9)
+# Info: Starting transformation 'dpfsm' on solution 'diff_detect.v1' (SOL-8)
+# Performing FSM extraction... (FSM-1)
+# Info: Optimizing partition '/diff_detect': (Total ops = 57, Real ops = 17, Vars = 33) (SOL-10)
+# Info: Optimizing partition '/diff_detect/diff_detect:core': (Total ops = 48, Real ops = 17, Vars = 26) (SOL-10)
+# Info: Optimizing partition '/diff_detect': (Total ops = 42, Real ops = 13, Vars = 12) (SOL-10)
+# Info: Optimizing partition '/diff_detect/diff_detect:core': (Total ops = 33, Real ops = 13, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/diff_detect': (Total ops = 41, Real ops = 13, Vars = 12) (SOL-10)
+# Info: Optimizing partition '/diff_detect/diff_detect:core': (Total ops = 32, Real ops = 13, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/diff_detect/diff_detect:core': (Total ops = 32, Real ops = 13, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/diff_detect': (Total ops = 41, Real ops = 13, Vars = 12) (SOL-10)
+# Info: Optimizing partition '/diff_detect': (Total ops = 41, Real ops = 13, Vars = 12) (SOL-10)
+# Info: Optimizing partition '/diff_detect/diff_detect:core': (Total ops = 32, Real ops = 13, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/diff_detect': (Total ops = 41, Real ops = 13, Vars = 12) (SOL-10)
+# Info: Optimizing partition '/diff_detect/diff_detect:core': (Total ops = 32, Real ops = 13, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/diff_detect': (Total ops = 41, Real ops = 13, Vars = 12) (SOL-10)
+# Info: Optimizing partition '/diff_detect/diff_detect:core': (Total ops = 32, Real ops = 13, Vars = 5) (SOL-10)
+# Info: Completed transformation 'dpfsm' on solution 'diff_detect.v1': elapsed time 0.14 seconds, memory usage 142780kB, peak memory usage 185412kB (SOL-9)
+# Info: Starting transformation 'extract' on solution 'diff_detect.v1' (SOL-8)
+# Info: Optimizing partition '/diff_detect': (Total ops = 41, Real ops = 13, Vars = 38) (SOL-10)
+# Info: Optimizing partition '/diff_detect/diff_detect:core': (Total ops = 32, Real ops = 13, Vars = 31) (SOL-10)
+# Info: Optimizing partition '/diff_detect': (Total ops = 41, Real ops = 13, Vars = 12) (SOL-10)
+# Info: Optimizing partition '/diff_detect/diff_detect:core': (Total ops = 32, Real ops = 13, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/diff_detect': (Total ops = 41, Real ops = 13, Vars = 12) (SOL-10)
+# Info: Optimizing partition '/diff_detect/diff_detect:core': (Total ops = 32, Real ops = 13, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/diff_detect/diff_detect:core': (Total ops = 32, Real ops = 13, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/diff_detect/diff_detect:core': (Total ops = 32, Real ops = 13, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/diff_detect': (Total ops = 41, Real ops = 13, Vars = 12) (SOL-10)
+# Info: Optimizing partition '/diff_detect': (Total ops = 41, Real ops = 13, Vars = 12) (SOL-10)
+# Info: Optimizing partition '/diff_detect/diff_detect:core': (Total ops = 32, Real ops = 13, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/diff_detect': (Total ops = 41, Real ops = 13, Vars = 12) (SOL-10)
+# Info: Optimizing partition '/diff_detect/diff_detect:core': (Total ops = 32, Real ops = 13, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/diff_detect': (Total ops = 41, Real ops = 13, Vars = 38) (SOL-10)
+# Info: Optimizing partition '/diff_detect/diff_detect:core': (Total ops = 32, Real ops = 13, Vars = 31) (SOL-10)
+# Netlist written to file 'schematic.nlv' (NET-4)
+# Info: Optimizing partition '/diff_detect': (Total ops = 41, Real ops = 13, Vars = 38) (SOL-10)
+# Info: Optimizing partition '/diff_detect/diff_detect:core': (Total ops = 32, Real ops = 13, Vars = 31) (SOL-10)
+# Info: Optimizing partition '/diff_detect': (Total ops = 41, Real ops = 13, Vars = 12) (SOL-10)
+# Info: Optimizing partition '/diff_detect/diff_detect:core': (Total ops = 32, Real ops = 13, Vars = 5) (SOL-10)
+# Info: Optimizing partition '/diff_detect': (Total ops = 41, Real ops = 13, Vars = 12) (SOL-10)
+# Info: Optimizing partition '/diff_detect/diff_detect:core': (Total ops = 32, Real ops = 13, Vars = 5) (SOL-10)
+# Report written to file 'rtl.rpt'
+# Netlist written to file 'rtl.v' (NET-4)
+# generate concat
+# order file name is: rtl.v_order.txt
+# Add dependent file: ./rtl_mgc_ioport.v
+# Add dependent file: ./rtl_mgc_ioport_v2001.v
+# Add dependent file: ./rtl.v
+# Finished writing concatenated file: C:/fpga-catapult-c-spring/student_files_2015_CHANGED/Catapult/diff_detect.v1/concat_rtl.v
+# Synthesis timing script written to file './rtl.v.psr_timing'
+# IO timing constraints written to synthesis script file
+# Synthesis script written to file 'rtl.v.psr'
+# Info: Completed transformation 'extract' on solution 'diff_detect.v1': elapsed time 1.23 seconds, memory usage 143612kB, peak memory usage 185412kB (SOL-9)
+project save
+# Saving project file 'C:/fpga-catapult-c-spring/student_files_2015_CHANGED/Catapult.ccs'. (PRJ-5)
+quit -f
