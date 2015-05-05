@@ -1,0 +1,13 @@
+
+# Messages from "go new"
+
+Creating project directory 'C:\fpga-catapult-c-spring\sharpen1\Catapult'. (PRJ-1)
+
+# Messages from "go analyze"
+
+Front End called with arguments: -- {C:\fpga-catapult-c-spring\sharpen1\vga_blur\shift_class.h} {C:\fpga-catapult-c-spring\sharpen1\vga_blur\sharpen.h} {C:\fpga-catapult-c-spring\sharpen1\vga_blur\sharpen.c} (CIN-69)
+Edison Design Group C++/C Front End - Version 3.10.1 (CIN-1)
+Pragma 'hls_design<top>' detected on routine 'mean_vga' (CIN-6)
+Source file analysis completed (CIN-68)
+Starting transformation 'analyze' on solution 'solution.v1' (SOL-8)
+Completed transformation 'analyze' on solution 'solution.v1': elapsed time 1.75 seconds, memory usage 140772kB, peak memory usage 216044kB (SOL-9)

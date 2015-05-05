@@ -1,0 +1,280 @@
+//  Catapult University Version 2011a.126 (Production Release) Wed Aug  8 00:52:07 PDT 2012
+//  
+//  Copyright (c) Calypto Design Systems, Inc., 1996-2012, All Rights Reserved.
+//                       UNPUBLISHED, LICENSED SOFTWARE.
+//            CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+//          PROPERTY OF CALYPTO DESIGN SYSTEMS OR ITS LICENSORS
+//  
+//  Running on Windows 7 jb914@EEWS104A-004 Service Pack 1 6.01.7601 i686
+//  
+//  Package information: SIFLIBS v17.0_1.1, HLS_PKGS v17.0_1.1, 
+//                       DesignPad v2.78_0.0
+//  
+//  This version may only be used for academic purposes.  Some optimizations 
+//  are disabled, so results obtained from this version may be sub-optimal.
+//  
+//  Start time Tue May 05 13:13:04 2015
+# -------------------------------------------------
+# Logging session transcript to file "C:\Users\jb914\AppData\Local\Temp\log52282561a94.0"
+# Loading options from registry.
+project load C:/RedTint/Catapult/Sobel/Sobel2
+# Error: project load: project not found
+project load C:/RedTint/Catapult/Sobel/Sobel2
+# Error: project load: project not found
+project new -name Catapult
+solution file add //icnas4.cc.ic.ac.uk/jb914/Working/edge3.c
+# /INPUTFILES/1
+solution file add //icnas4.cc.ic.ac.uk/jb914/Working/edge.h
+# /INPUTFILES/2
+set_working_dir H:/Working
+go analyze
+# Creating project directory 'H:\Working\Catapult'. (PRJ-1)
+# Moving session transcript to file "H:\Working\catapult.log"
+# Info: Starting transformation 'analyze' on solution 'solution.v1' (SOL-8)
+# Front End called with arguments: -- {\\icnas4.cc.ic.ac.uk\jb914\Working\edge.h} {\\icnas4.cc.ic.ac.uk\jb914\Working\edge3.c} (CIN-69)
+# Edison Design Group C++/C Front End - Version 3.10.1 (CIN-1)
+# Error: //icnas4.cc.ic.ac.uk/jb914/Working/edge3.c(44): //icnas4.cc.ic.ac.uk/jb914/Working/edge3.c(44): could not open source file "shift_class.h" (CRD-5)
+# Warning:           detected during compilation of secondary translation unit "\\icnas4.cc.ic.ac.uk\jb914\Working\edge3.c"
+# Error: Compilation aborted (CIN-5)
+# Error: go analyze: Failed analyze
+solution file add ./shift_class.h
+# /INPUTFILES/3
+go analyze
+# Info: Starting transformation 'analyze' on solution 'solution.v1' (SOL-8)
+# Front End called with arguments: -- {H:\Working\shift_class.h} {\\icnas4.cc.ic.ac.uk\jb914\Working\edge.h} {\\icnas4.cc.ic.ac.uk\jb914\Working\edge3.c} (CIN-69)
+# Edison Design Group C++/C Front End - Version 3.10.1 (CIN-1)
+# //icnas4.cc.ic.ac.uk/jb914/Working/edge3.c(49): Pragma 'hls_design<top>' detected on routine 'edge_detect' (CIN-6)
+# Source file analysis completed (CIN-68)
+# Info: Completed transformation 'analyze' on solution 'solution.v1': elapsed time 2.12 seconds, memory usage 144208kB, peak memory usage 218840kB (SOL-9)
+directive set -CLOCKS {clk {-CLOCK_PERIOD 0.0 -CLOCK_EDGE rising -CLOCK_HIGH_TIME 0.000000 -CLOCK_OFFSET 0.000000 -CLOCK_UNCERTAINTY 0.0 -RESET_KIND async -RESET_SYNC_NAME rst -RESET_SYNC_ACTIVE high -RESET_ASYNC_NAME arst_n -RESET_ASYNC_ACTIVE low -ENABLE_NAME en -ENABLE_ACTIVE high}}
+# /CLOCKS {clk {-CLOCK_PERIOD 0.0 -CLOCK_EDGE rising -CLOCK_UNCERTAINTY 0.0 -RESET_SYNC_NAME rst -RESET_ASYNC_NAME arst_n -RESET_KIND async -RESET_SYNC_ACTIVE high -RESET_ASYNC_ACTIVE low -ENABLE_NAME en -ENABLE_ACTIVE high}}
+directive set -DESIGN_HIERARCHY edge_detect
+# /DESIGN_HIERARCHY edge_detect
+directive set -TECHLIBS {{Altera_accel_CycloneIII.lib Altera_accel_CycloneIII} {mgc_Altera-Cyclone-III-6_beh_psr.lib {{mgc_Altera-Cyclone-III-6_beh_psr part EP3C16F484C}}}}
+# /TECHLIBS {{Altera_accel_CycloneIII.lib Altera_accel_CycloneIII} {mgc_Altera-Cyclone-III-6_beh_psr.lib {{mgc_Altera-Cyclone-III-6_beh_psr part EP3C16F484C}}}}
+directive set -CLOCKS {clk {-CLOCK_PERIOD 20.0 -CLOCK_EDGE rising -CLOCK_HIGH_TIME 10.00 -CLOCK_OFFSET 0.000000 -CLOCK_UNCERTAINTY 0.0 -RESET_KIND async -RESET_SYNC_NAME rst -RESET_SYNC_ACTIVE high -RESET_ASYNC_NAME arst_n -RESET_ASYNC_ACTIVE low -ENABLE_NAME en -ENABLE_ACTIVE high}}
+# /CLOCKS {clk {-CLOCK_PERIOD 20.0 -CLOCK_EDGE rising -CLOCK_UNCERTAINTY 0.0 -CLOCK_HIGH_TIME 10.0 -RESET_SYNC_NAME rst -RESET_ASYNC_NAME arst_n -RESET_KIND async -RESET_SYNC_ACTIVE high -RESET_ASYNC_ACTIVE low -ENABLE_NAME en -ENABLE_ACTIVE high}}
+go compile
+# Info: Starting transformation 'compile' on solution 'solution.v1' (SOL-8)
+# Reading component library '$MGC_HOME\pkgs\siflibs\mgc_busdefs.lib' [mgc_busdefs]... (LIB-49)
+# Reading component library '$MGC_HOME\pkgs\siflibs\stdops.lib' [STDOPS]... (LIB-49)
+# Reading component library '$MGC_HOME\pkgs\siflibs\mgc_ioport.lib' [mgc_ioport]... (LIB-49)
+# Reading component library '$MGC_HOME\pkgs\ccs_altera\Altera_accel_CycloneIII.lib' [Altera_accel_CycloneIII]... (LIB-49)
+# Reading component library '$MGC_HOME\pkgs\siflibs\psr2010a_up2\mgc_Altera-Cyclone-III-6_beh_psr.lib' [mgc_Altera-Cyclone-III-6_beh_psr]... (LIB-49)
+# Generating synthesis internal form... (CIN-3)
+# //icnas4.cc.ic.ac.uk/jb914/Working/edge3.c(50): Found top design routine 'edge_detect' specified by directive (CIN-52)
+# //icnas4.cc.ic.ac.uk/jb914/Working/edge3.c(50): Synthesizing routine 'edge_detect' (CIN-13)
+# //icnas4.cc.ic.ac.uk/jb914/Working/edge3.c(50): Inlining routine 'edge_detect' (CIN-14)
+# //icnas4.cc.ic.ac.uk/jb914/Working/shift_class.h(13): Inlining member function 'shift_class<ac_int<90, false>, 3>::shift_class' on object 'regs' (CIN-64)
+# //icnas4.cc.ic.ac.uk/jb914/Working/shift_class.h(32): Inlining member function 'shift_class<ac_int<90, false>, 3>::operator<<' on object 'regs' (CIN-64)
+# //icnas4.cc.ic.ac.uk/jb914/Working/shift_class.h(48): Inlining member function 'shift_class<ac_int<90, false>, 3>::operator[]' on object 'regs' (CIN-64)
+# //icnas4.cc.ic.ac.uk/jb914/Working/shift_class.h(48): Inlining member function 'shift_class<ac_int<90, false>, 3>::operator[]' on object 'regs' (CIN-64)
+# //icnas4.cc.ic.ac.uk/jb914/Working/shift_class.h(48): Inlining member function 'shift_class<ac_int<90, false>, 3>::operator[]' on object 'regs' (CIN-64)
+# //icnas4.cc.ic.ac.uk/jb914/Working/shift_class.h(48): Inlining member function 'shift_class<ac_int<90, false>, 3>::operator[]' on object 'regs' (CIN-64)
+# //icnas4.cc.ic.ac.uk/jb914/Working/shift_class.h(48): Inlining member function 'shift_class<ac_int<90, false>, 3>::operator[]' on object 'regs' (CIN-64)
+# //icnas4.cc.ic.ac.uk/jb914/Working/shift_class.h(48): Inlining member function 'shift_class<ac_int<90, false>, 3>::operator[]' on object 'regs' (CIN-64)
+# //icnas4.cc.ic.ac.uk/jb914/Working/edge3.c(157): Inlining routine 'AbsAndMax' (CIN-14)
+# //icnas4.cc.ic.ac.uk/jb914/Working/edge3.c(157): Inlining routine 'AbsAndMax' (CIN-14)
+# //icnas4.cc.ic.ac.uk/jb914/Working/edge3.c(157): Inlining routine 'AbsAndMax' (CIN-14)
+# //icnas4.cc.ic.ac.uk/jb914/Working/edge3.c(157): Inlining routine 'AbsAndMax' (CIN-14)
+# //icnas4.cc.ic.ac.uk/jb914/Working/edge3.c(157): Inlining routine 'AbsAndMax' (CIN-14)
+# //icnas4.cc.ic.ac.uk/jb914/Working/edge3.c(157): Inlining routine 'AbsAndMax' (CIN-14)
+# //icnas4.cc.ic.ac.uk/jb914/Working/edge3.c(157): Inlining routine 'AbsAndMax' (CIN-14)
+# //icnas4.cc.ic.ac.uk/jb914/Working/edge3.c(157): Inlining routine 'AbsAndMax' (CIN-14)
+# //icnas4.cc.ic.ac.uk/jb914/Working/edge3.c(157): Inlining routine 'AbsAndMax' (CIN-14)
+# //icnas4.cc.ic.ac.uk/jb914/Working/edge3.c(50): Optimizing block '/edge_detect' ... (CIN-4)
+# //icnas4.cc.ic.ac.uk/jb914/Working/edge3.c(50): Inout port 'vin' is only used as an input. (OPT-10)
+# //icnas4.cc.ic.ac.uk/jb914/Working/edge3.c(50): Inout port 'vout' is only used as an output. (OPT-11)
+# Info: Optimizing partition '/edge_detect': (Total ops = 492, Real ops = 126, Vars = 130) (SOL-10)
+# Info: Optimizing partition '/edge_detect/core': (Total ops = 492, Real ops = 126, Vars = 128) (SOL-10)
+# Info: Optimizing partition '/edge_detect/core': (Total ops = 470, Real ops = 116, Vars = 130) (SOL-10)
+# Info: Optimizing partition '/edge_detect': (Total ops = 470, Real ops = 116, Vars = 132) (SOL-10)
+# Info: Optimizing partition '/edge_detect': (Total ops = 470, Real ops = 116, Vars = 132) (SOL-10)
+# Info: Optimizing partition '/edge_detect/core': (Total ops = 470, Real ops = 116, Vars = 130) (SOL-10)
+# Info: Optimizing partition '/edge_detect/core': (Total ops = 384, Real ops = 113, Vars = 96) (SOL-10)
+# Info: Optimizing partition '/edge_detect/core': (Total ops = 370, Real ops = 113, Vars = 95) (SOL-10)
+# Info: Optimizing partition '/edge_detect/core': (Total ops = 370, Real ops = 113, Vars = 95) (SOL-10)
+# Info: Optimizing partition '/edge_detect': (Total ops = 370, Real ops = 113, Vars = 97) (SOL-10)
+# Info: Optimizing partition '/edge_detect': (Total ops = 370, Real ops = 113, Vars = 97) (SOL-10)
+# Info: Optimizing partition '/edge_detect/core': (Total ops = 367, Real ops = 113, Vars = 104) (SOL-10)
+# Info: Optimizing partition '/edge_detect/core': (Total ops = 325, Real ops = 102, Vars = 38) (SOL-10)
+# Info: Optimizing partition '/edge_detect': (Total ops = 325, Real ops = 102, Vars = 40) (SOL-10)
+# Info: Optimizing partition '/edge_detect/core': (Total ops = 325, Real ops = 102, Vars = 39) (SOL-10)
+# Info: Optimizing partition '/edge_detect/core': (Total ops = 325, Real ops = 102, Vars = 38) (SOL-10)
+# Info: Optimizing partition '/edge_detect': (Total ops = 325, Real ops = 102, Vars = 40) (SOL-10)
+# Info: Optimizing partition '/edge_detect/core': (Total ops = 325, Real ops = 102, Vars = 38) (SOL-10)
+# Info: Optimizing partition '/edge_detect': (Total ops = 325, Real ops = 102, Vars = 40) (SOL-10)
+# Info: Optimizing partition '/edge_detect': (Total ops = 325, Real ops = 102, Vars = 40) (SOL-10)
+# Info: Optimizing partition '/edge_detect/core': (Total ops = 325, Real ops = 102, Vars = 38) (SOL-10)
+# //icnas4.cc.ic.ac.uk/jb914/Working/edge3.c(88): Loop '/edge_detect/core/RESET' iterated at most 3 times. (LOOP-2)
+# //icnas4.cc.ic.ac.uk/jb914/Working/shift_class.h(34): Loop '/edge_detect/core/SHIFT' iterated at most 3 times. (LOOP-2)
+# //icnas4.cc.ic.ac.uk/jb914/Working/edge3.c(101): Loop '/edge_detect/core/ACC_GX:for' iterated at most 3 times. (LOOP-2)
+# //icnas4.cc.ic.ac.uk/jb914/Working/edge3.c(100): Loop '/edge_detect/core/ACC_GX' iterated at most 3 times. (LOOP-2)
+# //icnas4.cc.ic.ac.uk/jb914/Working/edge3.c(109): Loop '/edge_detect/core/ACC_GY:for' iterated at most 3 times. (LOOP-2)
+# //icnas4.cc.ic.ac.uk/jb914/Working/edge3.c(108): Loop '/edge_detect/core/ACC_GY' iterated at most 3 times. (LOOP-2)
+# //icnas4.cc.ic.ac.uk/jb914/Working/edge3.c(116): Loop '/edge_detect/core/ACC3' iterated at most 3 times. (LOOP-2)
+# //icnas4.cc.ic.ac.uk/jb914/Working/edge3.c(78): Loop '/edge_detect/core/FRAME' iterated at most 2 times. (LOOP-2)
+# //icnas4.cc.ic.ac.uk/jb914/Working/edge3.c(89): Detected constant initialization of array 'red_x', optimizing loop 'RESET' (LOOP-12)
+# //icnas4.cc.ic.ac.uk/jb914/Working/edge3.c(90): Detected constant initialization of array 'green_x', optimizing loop 'RESET' (LOOP-12)
+# //icnas4.cc.ic.ac.uk/jb914/Working/edge3.c(91): Detected constant initialization of array 'blue_x', optimizing loop 'RESET' (LOOP-12)
+# //icnas4.cc.ic.ac.uk/jb914/Working/edge3.c(92): Detected constant initialization of array 'red_y', optimizing loop 'RESET' (LOOP-12)
+# //icnas4.cc.ic.ac.uk/jb914/Working/edge3.c(93): Detected constant initialization of array 'green_y', optimizing loop 'RESET' (LOOP-12)
+# //icnas4.cc.ic.ac.uk/jb914/Working/edge3.c(94): Detected constant initialization of array 'blue_y', optimizing loop 'RESET' (LOOP-12)
+# Info: Optimizing partition '/edge_detect/core': (Total ops = 385, Real ops = 101, Vars = 41) (SOL-10)
+# Info: Optimizing partition '/edge_detect/core': (Total ops = 292, Real ops = 91, Vars = 40) (SOL-10)
+# Info: Optimizing partition '/edge_detect': (Total ops = 292, Real ops = 91, Vars = 42) (SOL-10)
+# Info: Optimizing partition '/edge_detect/core': (Total ops = 285, Real ops = 91, Vars = 47) (SOL-10)
+# Info: Optimizing partition '/edge_detect/core': (Total ops = 278, Real ops = 91, Vars = 40) (SOL-10)
+# Info: Optimizing partition '/edge_detect': (Total ops = 278, Real ops = 91, Vars = 42) (SOL-10)
+# Info: Optimizing partition '/edge_detect/core': (Total ops = 278, Real ops = 91, Vars = 40) (SOL-10)
+# Info: Optimizing partition '/edge_detect': (Total ops = 278, Real ops = 91, Vars = 42) (SOL-10)
+# Design 'edge_detect' was read (SOL-1)
+# Info: Completed transformation 'compile' on solution 'edge_detect.v1': elapsed time 1.86 seconds, memory usage 158512kB, peak memory usage 218840kB (SOL-9)
+directive set /edge_detect/core/main -PIPELINE_INIT_INTERVAL 1
+# /edge_detect/core/main/PIPELINE_INIT_INTERVAL 1
+directive set /edge_detect/core/main -DISTRIBUTED_PIPELINE true
+# /edge_detect/core/main/DISTRIBUTED_PIPELINE true
+go allocate
+# Info: Starting transformation 'architect' on solution 'edge_detect.v1' (SOL-8)
+# //icnas4.cc.ic.ac.uk/jb914/Working/shift_class.h(34): Loop '/edge_detect/core/SHIFT' is left rolled. (LOOP-4)
+# //icnas4.cc.ic.ac.uk/jb914/Working/edge3.c(101): Loop '/edge_detect/core/ACC_GX:for' is left rolled. (LOOP-4)
+# //icnas4.cc.ic.ac.uk/jb914/Working/edge3.c(100): Loop '/edge_detect/core/ACC_GX' is left rolled. (LOOP-4)
+# //icnas4.cc.ic.ac.uk/jb914/Working/edge3.c(109): Loop '/edge_detect/core/ACC_GY:for' is left rolled. (LOOP-4)
+# //icnas4.cc.ic.ac.uk/jb914/Working/edge3.c(108): Loop '/edge_detect/core/ACC_GY' is left rolled. (LOOP-4)
+# //icnas4.cc.ic.ac.uk/jb914/Working/edge3.c(116): Loop '/edge_detect/core/ACC3' is left rolled. (LOOP-4)
+# //icnas4.cc.ic.ac.uk/jb914/Working/edge3.c(78): Loop '/edge_detect/core/FRAME' is left rolled. (LOOP-4)
+# //icnas4.cc.ic.ac.uk/jb914/Working/edge3.c(50): Loop '/edge_detect/core/main' is left rolled. (LOOP-4)
+# Loop 'ACC_GY' is merged and folded into Loop 'ACC_GX' (LOOP-9)
+# Info: Optimizing partition '/edge_detect/core': (Total ops = 284, Real ops = 93, Vars = 42) (SOL-10)
+# Info: Optimizing partition '/edge_detect/core': (Total ops = 282, Real ops = 93, Vars = 42) (SOL-10)
+# Info: Optimizing partition '/edge_detect/core': (Total ops = 278, Real ops = 91, Vars = 40) (SOL-10)
+# Loop 'ACC_GY:for' is merged and folded into Loop 'ACC_GX:for' (LOOP-9)
+# Info: Optimizing partition '/edge_detect/core': (Total ops = 283, Real ops = 92, Vars = 42) (SOL-10)
+# Info: Optimizing partition '/edge_detect/core': (Total ops = 281, Real ops = 92, Vars = 42) (SOL-10)
+# Info: Optimizing partition '/edge_detect/core': (Total ops = 277, Real ops = 90, Vars = 40) (SOL-10)
+# Info: Optimizing partition '/edge_detect': (Total ops = 277, Real ops = 90, Vars = 45) (SOL-10)
+# Info: Optimizing partition '/edge_detect/core': (Total ops = 277, Real ops = 90, Vars = 40) (SOL-10)
+# Info: Optimizing partition '/edge_detect': (Total ops = 277, Real ops = 90, Vars = 45) (SOL-10)
+# //icnas4.cc.ic.ac.uk/jb914/Working/edge3.c(50): I/O-Port inferred - resource 'vin:rsc' (from var: vin) mapped to 'mgc_ioport.mgc_in_wire' (size: 90). (MEM-2)
+# //icnas4.cc.ic.ac.uk/jb914/Working/edge3.c(50): I/O-Port inferred - resource 'vout:rsc' (from var: vout) mapped to 'mgc_ioport.mgc_out_stdreg' (size: 30). (MEM-2)
+# Info: Optimizing partition '/edge_detect': (Total ops = 279, Real ops = 90, Vars = 45) (SOL-10)
+# Info: Optimizing partition '/edge_detect/core': (Total ops = 279, Real ops = 90, Vars = 40) (SOL-10)
+# Info: Optimizing partition '/edge_detect/core': (Total ops = 278, Real ops = 90, Vars = 40) (SOL-10)
+# Info: Optimizing partition '/edge_detect': (Total ops = 278, Real ops = 90, Vars = 45) (SOL-10)
+# Info: Optimizing partition '/edge_detect': (Total ops = 417, Real ops = 129, Vars = 86) (SOL-10)
+# Info: Optimizing partition '/edge_detect/core': (Total ops = 378, Real ops = 141, Vars = 119) (SOL-10)
+# Info: Optimizing partition '/edge_detect/core': (Total ops = 381, Real ops = 140, Vars = 61) (SOL-10)
+# Info: Optimizing partition '/edge_detect/core': (Total ops = 337, Real ops = 120, Vars = 67) (SOL-10)
+# Info: Optimizing partition '/edge_detect': (Total ops = 337, Real ops = 120, Vars = 72) (SOL-10)
+# Info: Optimizing partition '/edge_detect/core': (Total ops = 337, Real ops = 120, Vars = 67) (SOL-10)
+# Info: Optimizing partition '/edge_detect': (Total ops = 337, Real ops = 120, Vars = 72) (SOL-10)
+# Info: Optimizing partition '/edge_detect/core': (Total ops = 354, Real ops = 122, Vars = 74) (SOL-10)
+# Info: Optimizing partition '/edge_detect/core': (Total ops = 359, Real ops = 122, Vars = 74) (SOL-10)
+# Info: Optimizing partition '/edge_detect/core': (Total ops = 353, Real ops = 122, Vars = 74) (SOL-10)
+# Info: Optimizing partition '/edge_detect/core': (Total ops = 1453, Real ops = 376, Vars = 719) (SOL-10)
+# Info: Optimizing partition '/edge_detect/core': (Total ops = 582, Real ops = 275, Vars = 149) (SOL-10)
+# Info: Optimizing partition '/edge_detect/core': (Total ops = 581, Real ops = 275, Vars = 148) (SOL-10)
+# Design 'edge_detect' contains '297' real operations. (SOL-11)
+# Info: Completed transformation 'architect' on solution 'edge_detect.v1': elapsed time 3.98 seconds, memory usage 159160kB, peak memory usage 218840kB (SOL-9)
+# Info: Starting transformation 'allocate' on solution 'edge_detect.v1' (SOL-8)
+# Performing concurrent resource allocation and scheduling on '/edge_detect/core' (CRAAS-1)
+# Info: Select qualified components for data operations ... (CRAAS-3)
+# Info: Apply resource constraints on data operations ... (CRAAS-4)
+# //icnas4.cc.ic.ac.uk/jb914/Working/edge3.c(50): Prescheduled LOOP 'main' (2 c-steps) (SCHD-7)
+# //icnas4.cc.ic.ac.uk/jb914/Working/edge3.c(50): Prescheduled LOOP 'core:rlp' (0 c-steps) (SCHD-7)
+# //icnas4.cc.ic.ac.uk/jb914/Working/edge3.c(50): Prescheduled SEQUENTIAL 'core' (total length 2 c-steps) (SCHD-8)
+# Info: Initial schedule of SEQUENTIAL 'core': Latency = 30, Area (Datapath, Register, Total) = 4329.78, 0.00, 4329.78 (CRAAS-11)
+# At least one feasible schedule exists. (CRAAS-9)
+# Info: Optimized LOOP 'main': Latency = 30, Area (Datapath, Register, Total) = 4291.48, 0.00, 4291.48 (CRAAS-10)
+# Info: Optimized LOOP 'main': Latency = 30, Area (Datapath, Register, Total) = 4253.18, 0.00, 4253.18 (CRAAS-10)
+# Info: Optimized LOOP 'main': Latency = 30, Area (Datapath, Register, Total) = 4248.99, 0.00, 4248.99 (CRAAS-10)
+# Info: Final schedule of SEQUENTIAL 'core': Latency = 30, Area (Datapath, Register, Total) = 4248.99, 0.00, 4248.99 (CRAAS-12)
+# Resource allocation and scheduling done. (CRAAS-2)
+# Netlist written to file 'schedule.gnt' (NET-4)
+# Info: Completed transformation 'allocate' on solution 'edge_detect.v1': elapsed time 0.72 seconds, memory usage 162248kB, peak memory usage 218840kB (SOL-9)
+go extract
+# Info: Starting transformation 'schedule' on solution 'edge_detect.v1' (SOL-8)
+# Performing concurrent resource allocation and scheduling on '/edge_detect/core' (CRAAS-1)
+# Warning: Cannot build distributed pipeline in process 'core' because of missing handshake for resource 'vout:rsc' (SCHD-15)
+# Global signal 'vin:rsc.z' added to design 'edge_detect' for component 'vin:rsc:mgc_in_wire' (LIB-3)
+# Global signal 'vout:rsc.z' added to design 'edge_detect' for component 'vout:rsc:mgc_out_stdreg' (LIB-3)
+# Info: Optimizing partition '/edge_detect': (Total ops = 596, Real ops = 298, Vars = 188) (SOL-10)
+# Info: Optimizing partition '/edge_detect/edge_detect:core': (Total ops = 586, Real ops = 297, Vars = 180) (SOL-10)
+# Info: Optimizing partition '/edge_detect/edge_detect:core/core': (Total ops = 579, Real ops = 297, Vars = 179) (SOL-10)
+# Info: Optimizing partition '/edge_detect/edge_detect:core/core': (Total ops = 504, Real ops = 269, Vars = 148) (SOL-10)
+# Info: Optimizing partition '/edge_detect': (Total ops = 518, Real ops = 269, Vars = 160) (SOL-10)
+# Info: Optimizing partition '/edge_detect/edge_detect:core': (Total ops = 509, Real ops = 269, Vars = 153) (SOL-10)
+# Info: Optimizing partition '/edge_detect/edge_detect:core/core': (Total ops = 504, Real ops = 269, Vars = 148) (SOL-10)
+# Info: Optimizing partition '/edge_detect': (Total ops = 518, Real ops = 269, Vars = 160) (SOL-10)
+# Info: Optimizing partition '/edge_detect/edge_detect:core': (Total ops = 509, Real ops = 269, Vars = 153) (SOL-10)
+# Report written to file 'cycle.rpt'
+# Netlist written to file 'cycle.v' (NET-4)
+# Info: Completed transformation 'schedule' on solution 'edge_detect.v1': elapsed time 2.15 seconds, memory usage 171564kB, peak memory usage 218840kB (SOL-9)
+# Info: Starting transformation 'dpfsm' on solution 'edge_detect.v1' (SOL-8)
+# Performing FSM extraction... (FSM-1)
+# Info: Optimizing partition '/edge_detect': (Total ops = 977, Real ops = 367, Vars = 1124) (SOL-10)
+# Info: Optimizing partition '/edge_detect/edge_detect:core': (Total ops = 968, Real ops = 367, Vars = 1117) (SOL-10)
+# Info: Optimizing partition '/edge_detect': (Total ops = 586, Real ops = 337, Vars = 155) (SOL-10)
+# Info: Optimizing partition '/edge_detect/edge_detect:core': (Total ops = 577, Real ops = 337, Vars = 148) (SOL-10)
+# Info: Optimizing partition '/edge_detect': (Total ops = 467, Real ops = 315, Vars = 154) (SOL-10)
+# Info: Optimizing partition '/edge_detect/edge_detect:core': (Total ops = 458, Real ops = 315, Vars = 147) (SOL-10)
+# Info: Optimizing partition '/edge_detect': (Total ops = 467, Real ops = 315, Vars = 154) (SOL-10)
+# Info: Optimizing partition '/edge_detect/edge_detect:core': (Total ops = 458, Real ops = 315, Vars = 147) (SOL-10)
+# Info: Optimizing partition '/edge_detect/edge_detect:core': (Total ops = 458, Real ops = 315, Vars = 147) (SOL-10)
+# Info: Optimizing partition '/edge_detect': (Total ops = 467, Real ops = 315, Vars = 154) (SOL-10)
+# Info: Optimizing partition '/edge_detect': (Total ops = 467, Real ops = 315, Vars = 154) (SOL-10)
+# Info: Optimizing partition '/edge_detect/edge_detect:core': (Total ops = 458, Real ops = 315, Vars = 147) (SOL-10)
+# Info: Optimizing partition '/edge_detect': (Total ops = 614, Real ops = 441, Vars = 330) (SOL-10)
+# Info: Optimizing partition '/edge_detect/edge_detect:core': (Total ops = 605, Real ops = 441, Vars = 323) (SOL-10)
+# Info: Optimizing partition '/edge_detect': (Total ops = 492, Real ops = 340, Vars = 176) (SOL-10)
+# Info: Optimizing partition '/edge_detect/edge_detect:core': (Total ops = 483, Real ops = 340, Vars = 169) (SOL-10)
+# Info: Optimizing partition '/edge_detect': (Total ops = 483, Real ops = 333, Vars = 167) (SOL-10)
+# Info: Optimizing partition '/edge_detect/edge_detect:core': (Total ops = 474, Real ops = 333, Vars = 160) (SOL-10)
+# Info: Optimizing partition '/edge_detect': (Total ops = 475, Real ops = 326, Vars = 159) (SOL-10)
+# Info: Optimizing partition '/edge_detect/edge_detect:core': (Total ops = 466, Real ops = 326, Vars = 152) (SOL-10)
+# Info: Optimizing partition '/edge_detect': (Total ops = 474, Real ops = 325, Vars = 159) (SOL-10)
+# Info: Optimizing partition '/edge_detect/edge_detect:core': (Total ops = 465, Real ops = 325, Vars = 152) (SOL-10)
+# Info: Completed transformation 'dpfsm' on solution 'edge_detect.v1': elapsed time 1.19 seconds, memory usage 172044kB, peak memory usage 218840kB (SOL-9)
+# Info: Starting transformation 'extract' on solution 'edge_detect.v1' (SOL-8)
+# Warning: Reassigned operation ACC3:acc:mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(3,0,3,0,3) to mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(2,0,1,0,2) (ASG-1)
+# Warning: Reassigned operation ACC_GX:for:acc:mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(3,0,3,0,3) to mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(2,0,1,0,2) (ASG-1)
+# Warning: Reassigned operation ACC_GY:for:acc:mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(3,0,3,0,3) to mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(2,0,1,0,2) (ASG-1)
+# Warning: Reassigned operation ACC_GX:acc:mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(3,0,3,0,3) to mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(2,0,1,0,2) (ASG-1)
+# Warning: Reassigned operation ACC_GY:acc:mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(3,0,3,0,3) to mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(2,0,1,0,2) (ASG-1)
+# Warning: Reassigned operation FRAME:acc#6:mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(2,0,2,0,2) to mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(1,0,1,0,2) (ASG-1)
+# Info: Optimizing partition '/edge_detect': (Total ops = 675, Real ops = 364, Vars = 668) (SOL-10)
+# Info: Optimizing partition '/edge_detect/edge_detect:core': (Total ops = 666, Real ops = 364, Vars = 661) (SOL-10)
+# Info: Optimizing partition '/edge_detect': (Total ops = 455, Real ops = 314, Vars = 159) (SOL-10)
+# Info: Optimizing partition '/edge_detect/edge_detect:core': (Total ops = 446, Real ops = 314, Vars = 152) (SOL-10)
+# Info: Optimizing partition '/edge_detect': (Total ops = 455, Real ops = 314, Vars = 159) (SOL-10)
+# Info: Optimizing partition '/edge_detect/edge_detect:core': (Total ops = 446, Real ops = 314, Vars = 152) (SOL-10)
+# Info: Optimizing partition '/edge_detect/edge_detect:core': (Total ops = 446, Real ops = 314, Vars = 152) (SOL-10)
+# Info: Optimizing partition '/edge_detect': (Total ops = 455, Real ops = 314, Vars = 159) (SOL-10)
+# Info: Optimizing partition '/edge_detect': (Total ops = 455, Real ops = 314, Vars = 159) (SOL-10)
+# Info: Optimizing partition '/edge_detect/edge_detect:core': (Total ops = 446, Real ops = 314, Vars = 152) (SOL-10)
+# Info: Optimizing partition '/edge_detect': (Total ops = 455, Real ops = 314, Vars = 159) (SOL-10)
+# Info: Optimizing partition '/edge_detect/edge_detect:core': (Total ops = 446, Real ops = 314, Vars = 152) (SOL-10)
+# Info: Optimizing partition '/edge_detect': (Total ops = 672, Real ops = 356, Vars = 665) (SOL-10)
+# Info: Optimizing partition '/edge_detect/edge_detect:core': (Total ops = 663, Real ops = 356, Vars = 658) (SOL-10)
+# Info: Optimizing partition '/edge_detect': (Total ops = 676, Real ops = 356, Vars = 665) (SOL-10)
+# Info: Optimizing partition '/edge_detect/edge_detect:core': (Total ops = 667, Real ops = 356, Vars = 658) (SOL-10)
+# Netlist written to file 'schematic.nlv' (NET-4)
+# Info: Optimizing partition '/edge_detect': (Total ops = 676, Real ops = 356, Vars = 665) (SOL-10)
+# Info: Optimizing partition '/edge_detect/edge_detect:core': (Total ops = 667, Real ops = 356, Vars = 658) (SOL-10)
+# Info: Optimizing partition '/edge_detect': (Total ops = 463, Real ops = 320, Vars = 159) (SOL-10)
+# Info: Optimizing partition '/edge_detect/edge_detect:core': (Total ops = 454, Real ops = 320, Vars = 152) (SOL-10)
+# Info: Optimizing partition '/edge_detect': (Total ops = 463, Real ops = 320, Vars = 159) (SOL-10)
+# Info: Optimizing partition '/edge_detect/edge_detect:core': (Total ops = 454, Real ops = 320, Vars = 152) (SOL-10)
+# Report written to file 'rtl.rpt'
+# Netlist written to file 'rtl.v' (NET-4)
+# generate concat
+# order file name is: rtl.v_order.txt
+# Add dependent file: C:/PROGRA~1/CALYPT~1/CATAPU~1.126/Mgc_home/pkgs/hls_pkgs/mgc_comps_src/mgc_shift_r_beh_v2.v
+# Add dependent file: ./rtl_mgc_ioport.v
+# Add dependent file: ./rtl_mgc_ioport_v2001.v
+# Add dependent file: ./rtl.v
+# Finished writing concatenated file: H:/Working/Catapult/edge_detect.v1/concat_rtl.v
+# Synthesis timing script written to file './rtl.v.psr_timing'
+# IO timing constraints written to synthesis script file
+# Synthesis script written to file 'rtl.v.psr'
+# Info: Completed transformation 'extract' on solution 'edge_detect.v1': elapsed time 5.46 seconds, memory usage 172296kB, peak memory usage 218840kB (SOL-9)

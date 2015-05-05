@@ -1,0 +1,56 @@
+//  Catapult University Version 2011a.126 (Production Release) Wed Aug  8 00:52:07 PDT 2012
+//  
+//  Copyright (c) Calypto Design Systems, Inc., 1996-2012, All Rights Reserved.
+//                       UNPUBLISHED, LICENSED SOFTWARE.
+//            CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+//          PROPERTY OF CALYPTO DESIGN SYSTEMS OR ITS LICENSORS
+//  
+//  Running on Windows 7 rbw14@EEWS104A-001 Service Pack 1 6.01.7601 i686
+//  
+//  Package information: SIFLIBS v17.0_1.1, HLS_PKGS v17.0_1.1, 
+//                       DesignPad v2.78_0.0
+//  
+//  This version may only be used for academic purposes.  Some optimizations 
+//  are disabled, so results obtained from this version may be sub-optimal.
+//  
+//  Start time Tue May 05 15:47:59 2015
+# -------------------------------------------------
+# Logging session transcript to file "C:\Users\rbw14\AppData\Local\Temp\log525625e1a70.0"
+# Loading options from registry.
+project new -name Catapult
+set_working_dir C:/fpga-catapult-c-spring/sharpen1
+solution file add ./vga_blur/sharpen.c
+# /INPUTFILES/1
+solution file add ./vga_blur/sharpen.h
+# /INPUTFILES/2
+solution file add ./vga_blur/shift_class.h
+# /INPUTFILES/3
+options set Output OutputVHDL false
+# false
+options set Output OutputVerilog true
+# true
+go analyze
+# Creating project directory 'C:\fpga-catapult-c-spring\sharpen1\Catapult'. (PRJ-1)
+# Moving session transcript to file "C:\fpga-catapult-c-spring\sharpen1\catapult.log"
+# Info: Starting transformation 'analyze' on solution 'solution.v1' (SOL-8)
+# Front End called with arguments: -- {C:\fpga-catapult-c-spring\sharpen1\vga_blur\shift_class.h} {C:\fpga-catapult-c-spring\sharpen1\vga_blur\sharpen.h} {C:\fpga-catapult-c-spring\sharpen1\vga_blur\sharpen.c} (CIN-69)
+# Edison Design Group C++/C Front End - Version 3.10.1 (CIN-1)
+# $PROJECT_HOME/vga_blur/sharpen.c(49): Pragma 'hls_design<top>' detected on routine 'mean_vga' (CIN-6)
+# Source file analysis completed (CIN-68)
+# Info: Completed transformation 'analyze' on solution 'solution.v1': elapsed time 1.75 seconds, memory usage 140772kB, peak memory usage 216044kB (SOL-9)
+directive set -CLOCKS {clk {-CLOCK_PERIOD 0.0 -CLOCK_EDGE rising -CLOCK_HIGH_TIME 0.000000 -CLOCK_OFFSET 0.000000 -CLOCK_UNCERTAINTY 0.0 -RESET_KIND async -RESET_SYNC_NAME rst -RESET_SYNC_ACTIVE high -RESET_ASYNC_NAME arst_n -RESET_ASYNC_ACTIVE low -ENABLE_NAME en -ENABLE_ACTIVE high}}
+# /CLOCKS {clk {-CLOCK_PERIOD 0.0 -CLOCK_EDGE rising -CLOCK_UNCERTAINTY 0.0 -RESET_SYNC_NAME rst -RESET_ASYNC_NAME arst_n -RESET_KIND async -RESET_SYNC_ACTIVE high -RESET_ASYNC_ACTIVE low -ENABLE_NAME en -ENABLE_ACTIVE high}}
+# File '$PROJECT_HOME/vga_blur/sharpen.c' saved
+# Input file has changed
+go new
+solution file set {$PROJECT_HOME/vga_blur/sharpen.c} -updated
+# Info: Branching solution 'solution.v2' at state 'new' (PRJ-2)
+# File '$PROJECT_HOME/vga_blur/sharpen.h' saved
+go analyze
+# Info: Starting transformation 'analyze' on solution 'solution.v2' (SOL-8)
+# Front End called with arguments: -- {C:\fpga-catapult-c-spring\sharpen1\vga_blur\shift_class.h} {C:\fpga-catapult-c-spring\sharpen1\vga_blur\sharpen.h} {C:\fpga-catapult-c-spring\sharpen1\vga_blur\sharpen.c} (CIN-69)
+# Edison Design Group C++/C Front End - Version 3.10.1 (CIN-1)
+# $PROJECT_HOME/vga_blur/sharpen.c(49): Pragma 'hls_design<top>' detected on routine 'sharpen' (CIN-6)
+# Source file analysis completed (CIN-68)
+# Info: Completed transformation 'analyze' on solution 'solution.v2': elapsed time 1.82 seconds, memory usage 150492kB, peak memory usage 224360kB (SOL-9)
+quit -f
