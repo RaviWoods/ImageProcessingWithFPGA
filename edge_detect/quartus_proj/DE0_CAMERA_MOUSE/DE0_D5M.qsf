@@ -544,8 +544,10 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to UART_RXD
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to UART_RTS
 
 
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name VERILOG_FILE "H:/Working/mgc_shift_r_beh_v2.v"
+set_global_assignment -name VERILOG_FILE "H:/Working/Catapult/edge_detect.v1/rtl_mgc_ioport_v2001.v"
+set_global_assignment -name VERILOG_FILE "H:/Working/Catapult/edge_detect.v1/rtl_mgc_ioport.v"
+set_global_assignment -name VERILOG_FILE "H:/Working/Catapult/edge_detect.v1/rtl.v"
 set_global_assignment -name VERILOG_FILE catapult_ip/blur3x3/rtl.v
 set_global_assignment -name VERILOG_FILE V/ps2.v
 set_global_assignment -name SOURCE_FILE Sdram_Control_4Port/Sdram_Params.h
@@ -570,6 +572,4 @@ set_global_assignment -name VERILOG_FILE DE0_D5M.v
 set_global_assignment -name SDC_FILE DE0_D5M.sdc
 set_global_assignment -name BDF_FILE V/TOP_DE0_CAMERA_MOUSE.bdf
 set_global_assignment -name QIP_FILE vga_mux.qip
-set_global_assignment -name VERILOG_FILE catapult_ip/mouse/rtl_mgc_ioport_v2001.v
-set_global_assignment -name VERILOG_FILE catapult_ip/mouse/rtl_mgc_ioport.v
-set_global_assignment -name VERILOG_FILE catapult_ip/mouse/rtl.v
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
