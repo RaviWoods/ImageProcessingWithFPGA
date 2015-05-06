@@ -40,6 +40,7 @@
 #define  COORD_WL          10
 
 
-void mean_vga(ac_int<PIXEL_WL*KERNEL_WIDTH,false> vin[NUM_PIXELS], ac_int<PIXEL_WL,false> vout[NUM_PIXELS]);
+void sharpen1(ac_int<PIXEL_WL*KERNEL_WIDTH,false> vin[NUM_PIXELS], ac_int<PIXEL_WL,false> vout[NUM_PIXELS]);
+ac_int<16, false> AbsAndMax(ac_int<16, true> x);
 
 #endif
