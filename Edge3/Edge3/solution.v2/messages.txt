@@ -1,0 +1,24 @@
+
+# Messages from "go new"
+
+Creating project directory 'C:\fpga-catapult-c-spring\Edge3\Edge3'. (PRJ-1)
+Branching solution 'solution.v1' at state 'new' (PRJ-2)
+Branching solution 'solution.v1' at state 'new' (PRJ-2)
+Branching solution 'solution.v1' at state 'new' (PRJ-2)
+Branching solution 'solution.v1' at state 'new' (PRJ-2)
+Branching solution 'solution.v2' at state 'new' (PRJ-2)
+Branching solution 'solution.v2' at state 'new' (PRJ-2)
+Branching solution 'solution.v2' at state 'new' (PRJ-2)
+Branching solution 'solution.v2' at state 'new' (PRJ-2)
+Branching solution 'solution.v2' at state 'new' (PRJ-2)
+Branching solution 'solution.v2' at state 'new' (PRJ-2)
+
+# Messages from "go analyze"
+
+Front End called with arguments: -- {C:\fpga-catapult-c-spring\edge_detect_c\edge6.c} {C:\fpga-catapult-c-spring\edge_detect_c\shift_class.h} {C:\fpga-catapult-c-spring\edge_detect_c\edge.h} (CIN-69)
+Edison Design Group C++/C Front End - Version 3.10.1 (CIN-1)
+Pragma 'hls_design<top>' detected on routine 'edge_detect' (CIN-6)
+Source file analysis completed (CIN-68)
+Starting transformation 'analyze' on solution 'solution.v2' (SOL-8)
+Completed transformation 'analyze' on solution 'solution.v2': elapsed time 1.98 seconds, memory usage 372952kB, peak memory usage 414408kB (SOL-9)
+$PROJECT_HOME/../edge_detect_c/edge6.c(136): last line of file ends without a newline (CRD-1)
