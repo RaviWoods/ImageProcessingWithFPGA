@@ -45,34 +45,24 @@
 
 
 
+ac_int<16, false> AbsAndMax(ac_int<16, true> x);
 
 #pragma hls_design top
 void edge_detect(ac_int<PIXEL_WL*KERNEL_WIDTH,false> vin[NUM_PIXELS], ac_int<PIXEL_WL,false> vout[NUM_PIXELS])
 {
-    ac_int<16, false> redx;
-    ac_int<16, false> greenx;
-    ac_int<16, false> bluex;
-    ac_int<16, false> redy;
-    ac_int<16, false> greeny;
-    ac_int<16, false> bluey;
-    ac_int<16, false> red_x[KERNEL_WIDTH];
-    ac_int<16, false> green_x[KERNEL_WIDTH];
-    ac_int<16, false> blue_x[KERNEL_WIDTH];
-    ac_int<16, false> red_y[KERNEL_WIDTH];
-    ac_int<16, false> green_y[KERNEL_WIDTH];
-    ac_int<16, false> blue_y[KERNEL_WIDTH];
-	ac_int<16, false> redout;
-	ac_int<16, false> greenout;
-	ac_int<16, false> blueout;
 
+    INIT:
+    ac_int<16, true> redx, greenx, bluex, redy, greeny, bluey;
+    ac_int<16, true> red_x[KERNEL_WIDTH], green_x[KERNEL_WIDTH], blue_x[KERNEL_WIDTH], red_y[KERNEL_WIDTH], green_y[KERNEL_WIDTH], blue_y[KERNEL_WIDTH];
+	ac_int<16, false> redout, greenout, blueout, avg;
 // #if 1: use filter
 // #if 0: copy input to output bypassing filter
 #if 1
 
     // shifts pixels from KERNEL_WIDTH rows and keeps KERNEL_WIDTH columns (KERNEL_WIDTHxKERNEL_WIDTH pixels stored)
     static shift_class<ac_int<PIXEL_WL*KERNEL_WIDTH,false>, KERNEL_WIDTH> regs;
-	const ac_int<1,false> gx[9] = {-1,0,1,-2,0,2,-1,0,1};
-	const ac_int<1,false> gy[9] = {1,2,1,0,0,0,-1,-2,-1};
+	const ac_int<16,true> gx[9] = {-1,0,1,-2,0,2,-1,0,1};
+	const ac_int<16,true> gy[9] = {1,2,1,0,0,0,-1,-2,-1};
 	
     FRAME:
 		for(int p = 0; p < NUM_PIXELS; p++) {
@@ -125,7 +115,7 @@ void edge_detect(ac_int<PIXEL_WL*KERNEL_WIDTH,false> vin[NUM_PIXELS], ac_int<PIX
 		
 		//avg = ((redx + redy) + (bluex + bluey) + (greenx + greeny))/ 3;
 		// normalize result
-		
+		END: 
 		redx = AbsAndMax(redx);
 		redy = AbsAndMax(redy);
 		greenx = AbsAndMax(greenx);
@@ -133,11 +123,9 @@ void edge_detect(ac_int<PIXEL_WL*KERNEL_WIDTH,false> vin[NUM_PIXELS], ac_int<PIX
 		bluex = AbsAndMax(bluex);
 		bluey = AbsAndMax(bluey);
 		
-		redout = AbsAndMax(redx + redy);//AbsAndMax(redx + redy);
-		blueout = AbsAndMax(bluex + bluey);
-		greenout = AbsAndMax(greenx + greeny);
+		avg = ((AbsAndMax(redx + redy) + AbsAndMax(bluex + bluey) + AbsAndMax(greenx + greeny) )/3 );
 		// group the RGB components into a single signal
-		vout[p] = ((((ac_int<PIXEL_WL, false>)redout) << (2*COLOUR_WL)) | (((ac_int<PIXEL_WL, false>)greenout) << COLOUR_WL) | (ac_int<PIXEL_WL, false>)blueout);
+		vout[p] = ((((ac_int<PIXEL_WL, false>)avg) << (2*COLOUR_WL)) | (((ac_int<PIXEL_WL, false>)avg) << COLOUR_WL) | (ac_int<PIXEL_WL, false>)avg);
 		}
 }
 //#else    
@@ -151,7 +139,7 @@ void edge_detect(ac_int<PIXEL_WL*KERNEL_WIDTH,false> vin[NUM_PIXELS], ac_int<PIX
 //       vout[p] = ((((ac_int<PIXEL_WL, false>)red) << (2*COLOUR_WL)) | (((ac_int<PIXEL_WL, false>)green) << COLOUR_WL) | (ac_int<PIXEL_WL, false>)blue);   
 //   }
 
-//}  
+//}  sdfsdfsdf
 #endif
 
 ac_int<16, false> AbsAndMax(ac_int<16, true> x){

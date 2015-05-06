@@ -40,6 +40,5 @@
 
 
 void edge_detect(ac_int<PIXEL_WL*KERNEL_WIDTH,false> vin[NUM_PIXELS], ac_int<PIXEL_WL,false> vout[NUM_PIXELS]);
-ac_int<16, false> AbsAndMax(ac_int<16, true> x);
 
 #endif
