@@ -1,0 +1,50 @@
+
+# Messages from "go new"
+
+Creating project directory 'C:\fpga-catapult-c-spring\Edge4\Edge4'. (PRJ-1)
+Branching solution 'solution.v1' at state 'new' (PRJ-2)
+Branching solution 'solution.v1' at state 'new' (PRJ-2)
+Branching solution 'solution.v1' at state 'new' (PRJ-2)
+Branching solution 'solution.v1' at state 'new' (PRJ-2)
+Branching solution 'solution.v1' at state 'new' (PRJ-2)
+Branching solution 'solution.v1' at state 'new' (PRJ-2)
+
+# Messages from "go analyze"
+
+Front End called with arguments: -- {C:\fpga-catapult-c-spring\motionblur\motionblur2.c} {C:\fpga-catapult-c-spring\motionblur\motionblur.h} {C:\fpga-catapult-c-spring\Edge4\shift_class.h} (CIN-69)
+Edison Design Group C++/C Front End - Version 3.10.1 (CIN-1)
+Pragma 'hls_design<top>' detected on routine 'motion_blur' (CIN-6)
+Source file analysis completed (CIN-68)
+Starting transformation 'analyze' on solution 'solution.v1' (SOL-8)
+Completed transformation 'analyze' on solution 'solution.v1': elapsed time 1.78 seconds, memory usage 292940kB, peak memory usage 343016kB (SOL-9)
+$PROJECT_HOME/../motionblur/motionblur2.c(137): last line of file ends without a newline (CRD-1)
+
+# Messages from "go compile"
+
+Starting transformation 'compile' on solution 'solution.v1' (SOL-8)
+Generating synthesis internal form... (CIN-3)
+Found top design routine 'absmax' specified by directive (CIN-52)
+Synthesizing routine 'absmax' (CIN-13)
+Inlining routine 'absmax' (CIN-14)
+Optimizing block '/absmax' ... (CIN-4)
+Design 'absmax' was read (SOL-1)
+Optimizing partition '/absmax': (Total ops = 19, Real ops = 6, Vars = 7) (SOL-10)
+Optimizing partition '/absmax/core': (Total ops = 19, Real ops = 6, Vars = 5) (SOL-10)
+Optimizing partition '/absmax/core': (Total ops = 19, Real ops = 6, Vars = 5) (SOL-10)
+Optimizing partition '/absmax': (Total ops = 19, Real ops = 6, Vars = 7) (SOL-10)
+Optimizing partition '/absmax': (Total ops = 19, Real ops = 6, Vars = 7) (SOL-10)
+Optimizing partition '/absmax/core': (Total ops = 19, Real ops = 6, Vars = 5) (SOL-10)
+Optimizing partition '/absmax/core': (Total ops = 17, Real ops = 6, Vars = 4) (SOL-10)
+Optimizing partition '/absmax/core': (Total ops = 17, Real ops = 6, Vars = 4) (SOL-10)
+Optimizing partition '/absmax': (Total ops = 17, Real ops = 6, Vars = 6) (SOL-10)
+Optimizing partition '/absmax': (Total ops = 17, Real ops = 6, Vars = 6) (SOL-10)
+Optimizing partition '/absmax/core': (Total ops = 17, Real ops = 6, Vars = 4) (SOL-10)
+Optimizing partition '/absmax/core': (Total ops = 13, Real ops = 6, Vars = 2) (SOL-10)
+Optimizing partition '/absmax': (Total ops = 13, Real ops = 6, Vars = 4) (SOL-10)
+Optimizing partition '/absmax/core': (Total ops = 13, Real ops = 6, Vars = 2) (SOL-10)
+Optimizing partition '/absmax': (Total ops = 13, Real ops = 6, Vars = 4) (SOL-10)
+Optimizing partition '/absmax': (Total ops = 13, Real ops = 6, Vars = 4) (SOL-10)
+Optimizing partition '/absmax/core': (Total ops = 13, Real ops = 6, Vars = 2) (SOL-10)
+Optimizing partition '/absmax/core': (Total ops = 14, Real ops = 6, Vars = 2) (SOL-10)
+Optimizing partition '/absmax': (Total ops = 14, Real ops = 6, Vars = 4) (SOL-10)
+Completed transformation 'compile' on solution 'absmax.v8': elapsed time 2.87 seconds, memory usage 284236kB, peak memory usage 343016kB (SOL-9)
