@@ -1,0 +1,15 @@
+
+# Messages from "go new"
+
+Creating project directory 'C:\fpga-catapult-c-spring\motionblur\MBlur1'. (PRJ-1)
+Branching solution 'solution.v1' at state 'new' (PRJ-2)
+
+# Messages from "go analyze"
+
+Front End called with arguments: -- {C:\fpga-catapult-c-spring\motionblur\motionblur1.c} {C:\fpga-catapult-c-spring\motionblur\motionblur.h} {C:\fpga-catapult-c-spring\motionblur\shift_class.h} (CIN-69)
+Edison Design Group C++/C Front End - Version 3.10.1 (CIN-1)
+Pragma 'hls_design<top>' detected on routine 'absmax' (CIN-6)
+Source file analysis completed (CIN-68)
+Starting transformation 'analyze' on solution 'solution.v1' (SOL-8)
+Completed transformation 'analyze' on solution 'solution.v1': elapsed time 1.76 seconds, memory usage 200440kB, peak memory usage 265404kB (SOL-9)
+$PROJECT_HOME/motionblur1.c(280): last line of file ends without a newline (CRD-1)
