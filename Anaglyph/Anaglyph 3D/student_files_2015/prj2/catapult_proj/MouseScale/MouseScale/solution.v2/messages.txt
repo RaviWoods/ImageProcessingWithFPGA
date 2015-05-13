@@ -1,0 +1,6 @@
+
+# Messages from "go new"
+
+Creating project directory 'C:\eie\Anaglyph day\Anaglyph 3D\student_files_2015\prj2\catapult_proj\MouseScale\MouseScale'. (PRJ-1)
+Branching solution 'solution.v2' at state 'new' (PRJ-2)
+Branching solution 'solution.v2' at state 'new' (PRJ-2)

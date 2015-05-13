@@ -1,0 +1,1442 @@
+
+# Program: Catapult University Version
+# Version: 2011a.126
+#    File: Nlview netlist
+
+module new "static_anaglyph:core" "orig"
+load port {clk} input -attr xrf 1005 -attr oid 1 -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/clk}
+load port {en} input -attr xrf 1006 -attr oid 2 -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/en}
+load port {arst_n} input -attr xrf 1007 -attr oid 3 -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/arst_n}
+load portBus {vga_xy:rsc:mgc_in_wire.d(19:0)} input 20 {vga_xy:rsc:mgc_in_wire.d(19)} {vga_xy:rsc:mgc_in_wire.d(18)} {vga_xy:rsc:mgc_in_wire.d(17)} {vga_xy:rsc:mgc_in_wire.d(16)} {vga_xy:rsc:mgc_in_wire.d(15)} {vga_xy:rsc:mgc_in_wire.d(14)} {vga_xy:rsc:mgc_in_wire.d(13)} {vga_xy:rsc:mgc_in_wire.d(12)} {vga_xy:rsc:mgc_in_wire.d(11)} {vga_xy:rsc:mgc_in_wire.d(10)} {vga_xy:rsc:mgc_in_wire.d(9)} {vga_xy:rsc:mgc_in_wire.d(8)} {vga_xy:rsc:mgc_in_wire.d(7)} {vga_xy:rsc:mgc_in_wire.d(6)} {vga_xy:rsc:mgc_in_wire.d(5)} {vga_xy:rsc:mgc_in_wire.d(4)} {vga_xy:rsc:mgc_in_wire.d(3)} {vga_xy:rsc:mgc_in_wire.d(2)} {vga_xy:rsc:mgc_in_wire.d(1)} {vga_xy:rsc:mgc_in_wire.d(0)} -attr xrf 1008 -attr oid 4 -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/vga_xy:rsc:mgc_in_wire.d}
+load portBus {video_in:rsc:mgc_in_wire.d(59:0)} input 60 {video_in:rsc:mgc_in_wire.d(59)} {video_in:rsc:mgc_in_wire.d(58)} {video_in:rsc:mgc_in_wire.d(57)} {video_in:rsc:mgc_in_wire.d(56)} {video_in:rsc:mgc_in_wire.d(55)} {video_in:rsc:mgc_in_wire.d(54)} {video_in:rsc:mgc_in_wire.d(53)} {video_in:rsc:mgc_in_wire.d(52)} {video_in:rsc:mgc_in_wire.d(51)} {video_in:rsc:mgc_in_wire.d(50)} {video_in:rsc:mgc_in_wire.d(49)} {video_in:rsc:mgc_in_wire.d(48)} {video_in:rsc:mgc_in_wire.d(47)} {video_in:rsc:mgc_in_wire.d(46)} {video_in:rsc:mgc_in_wire.d(45)} {video_in:rsc:mgc_in_wire.d(44)} {video_in:rsc:mgc_in_wire.d(43)} {video_in:rsc:mgc_in_wire.d(42)} {video_in:rsc:mgc_in_wire.d(41)} {video_in:rsc:mgc_in_wire.d(40)} {video_in:rsc:mgc_in_wire.d(39)} {video_in:rsc:mgc_in_wire.d(38)} {video_in:rsc:mgc_in_wire.d(37)} {video_in:rsc:mgc_in_wire.d(36)} {video_in:rsc:mgc_in_wire.d(35)} {video_in:rsc:mgc_in_wire.d(34)} {video_in:rsc:mgc_in_wire.d(33)} {video_in:rsc:mgc_in_wire.d(32)} {video_in:rsc:mgc_in_wire.d(31)} {video_in:rsc:mgc_in_wire.d(30)} {video_in:rsc:mgc_in_wire.d(29)} {video_in:rsc:mgc_in_wire.d(28)} {video_in:rsc:mgc_in_wire.d(27)} {video_in:rsc:mgc_in_wire.d(26)} {video_in:rsc:mgc_in_wire.d(25)} {video_in:rsc:mgc_in_wire.d(24)} {video_in:rsc:mgc_in_wire.d(23)} {video_in:rsc:mgc_in_wire.d(22)} {video_in:rsc:mgc_in_wire.d(21)} {video_in:rsc:mgc_in_wire.d(20)} {video_in:rsc:mgc_in_wire.d(19)} {video_in:rsc:mgc_in_wire.d(18)} {video_in:rsc:mgc_in_wire.d(17)} {video_in:rsc:mgc_in_wire.d(16)} {video_in:rsc:mgc_in_wire.d(15)} {video_in:rsc:mgc_in_wire.d(14)} {video_in:rsc:mgc_in_wire.d(13)} {video_in:rsc:mgc_in_wire.d(12)} {video_in:rsc:mgc_in_wire.d(11)} {video_in:rsc:mgc_in_wire.d(10)} {video_in:rsc:mgc_in_wire.d(9)} {video_in:rsc:mgc_in_wire.d(8)} {video_in:rsc:mgc_in_wire.d(7)} {video_in:rsc:mgc_in_wire.d(6)} {video_in:rsc:mgc_in_wire.d(5)} {video_in:rsc:mgc_in_wire.d(4)} {video_in:rsc:mgc_in_wire.d(3)} {video_in:rsc:mgc_in_wire.d(2)} {video_in:rsc:mgc_in_wire.d(1)} {video_in:rsc:mgc_in_wire.d(0)} -attr xrf 1009 -attr oid 5 -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/video_in:rsc:mgc_in_wire.d}
+load portBus {video_out:rsc:mgc_out_stdreg.d(29:0)} output 30 {video_out:rsc:mgc_out_stdreg.d(29)} {video_out:rsc:mgc_out_stdreg.d(28)} {video_out:rsc:mgc_out_stdreg.d(27)} {video_out:rsc:mgc_out_stdreg.d(26)} {video_out:rsc:mgc_out_stdreg.d(25)} {video_out:rsc:mgc_out_stdreg.d(24)} {video_out:rsc:mgc_out_stdreg.d(23)} {video_out:rsc:mgc_out_stdreg.d(22)} {video_out:rsc:mgc_out_stdreg.d(21)} {video_out:rsc:mgc_out_stdreg.d(20)} {video_out:rsc:mgc_out_stdreg.d(19)} {video_out:rsc:mgc_out_stdreg.d(18)} {video_out:rsc:mgc_out_stdreg.d(17)} {video_out:rsc:mgc_out_stdreg.d(16)} {video_out:rsc:mgc_out_stdreg.d(15)} {video_out:rsc:mgc_out_stdreg.d(14)} {video_out:rsc:mgc_out_stdreg.d(13)} {video_out:rsc:mgc_out_stdreg.d(12)} {video_out:rsc:mgc_out_stdreg.d(11)} {video_out:rsc:mgc_out_stdreg.d(10)} {video_out:rsc:mgc_out_stdreg.d(9)} {video_out:rsc:mgc_out_stdreg.d(8)} {video_out:rsc:mgc_out_stdreg.d(7)} {video_out:rsc:mgc_out_stdreg.d(6)} {video_out:rsc:mgc_out_stdreg.d(5)} {video_out:rsc:mgc_out_stdreg.d(4)} {video_out:rsc:mgc_out_stdreg.d(3)} {video_out:rsc:mgc_out_stdreg.d(2)} {video_out:rsc:mgc_out_stdreg.d(1)} {video_out:rsc:mgc_out_stdreg.d(0)} -attr xrf 1010 -attr oid 6 -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/video_out:rsc:mgc_out_stdreg.d}
+load symbol "not(10)" "INTERFACE" INV boxcolor 0 \
+     portBus {A(9:0)} input 10 {A(9)} {A(8)} {A(7)} {A(6)} {A(5)} {A(4)} {A(3)} {A(2)} {A(1)} {A(0)} \
+     portBus {Z(9:0)} output 10 {Z(9)} {Z(8)} {Z(7)} {Z(6)} {Z(5)} {Z(4)} {Z(3)} {Z(2)} {Z(1)} {Z(0)} \
+
+load symbol "add(11,-1,6,0,11)" "INTERFACE" RTL(+) boxcolor 0 \
+     portBus {A(10:0)} input 11 {A(10)} {A(9)} {A(8)} {A(7)} {A(6)} {A(5)} {A(4)} {A(3)} {A(2)} {A(1)} {A(0)} \
+     portBus {B(5:0)} input 6 {B(5)} {B(4)} {B(3)} {B(2)} {B(1)} {B(0)} \
+     portBus {Z(10:0)} output 11 {Z(10)} {Z(9)} {Z(8)} {Z(7)} {Z(6)} {Z(5)} {Z(4)} {Z(3)} {Z(2)} {Z(1)} {Z(0)} \
+
+load symbol "add(9,0,10,-1,10)" "INTERFACE" RTL(+) boxcolor 0 \
+     portBus {A(8:0)} input 9 {A(8)} {A(7)} {A(6)} {A(5)} {A(4)} {A(3)} {A(2)} {A(1)} {A(0)} \
+     portBus {B(9:0)} input 10 {B(9)} {B(8)} {B(7)} {B(6)} {B(5)} {B(4)} {B(3)} {B(2)} {B(1)} {B(0)} \
+     portBus {Z(9:0)} output 10 {Z(9)} {Z(8)} {Z(7)} {Z(6)} {Z(5)} {Z(4)} {Z(3)} {Z(2)} {Z(1)} {Z(0)} \
+
+load symbol "and(2,1)" "INTERFACE" AND boxcolor 0 \
+     portBus {A0(0:0)} input 1 {A0(0)} \
+     portBus {A1(0:0)} input 1 {A1(0)} \
+     portBus {Z(0:0)} output 1 {Z(0)} \
+
+load symbol "and(2,10)" "INTERFACE" AND boxcolor 0 \
+     portBus {A0(9:0)} input 10 {A0(9)} {A0(8)} {A0(7)} {A0(6)} {A0(5)} {A0(4)} {A0(3)} {A0(2)} {A0(1)} {A0(0)} \
+     portBus {A1(9:0)} input 10 {A1(9)} {A1(8)} {A1(7)} {A1(6)} {A1(5)} {A1(4)} {A1(3)} {A1(2)} {A1(1)} {A1(0)} \
+     portBus {Z(9:0)} output 10 {Z(9)} {Z(8)} {Z(7)} {Z(6)} {Z(5)} {Z(4)} {Z(3)} {Z(2)} {Z(1)} {Z(0)} \
+
+load symbol "reg(10,1,1,-1,0)" "INTERFACE" GEN boxcolor 1 \
+     portBus {D(9:0)} input 10 {D(9)} {D(8)} {D(7)} {D(6)} {D(5)} {D(4)} {D(3)} {D(2)} {D(1)} {D(0)} \
+     portBus {DRa(9:0)} input 10 {DRa(9)} {DRa(8)} {DRa(7)} {DRa(6)} {DRa(5)} {DRa(4)} {DRa(3)} {DRa(2)} {DRa(1)} {DRa(0)} \
+     port {clk} input.clk \
+     portBus {en(0:0)} input 1 {en(0)} \
+     portBus {Ra(0:0)} input 1 {Ra(0)} \
+     portBus {Z(9:0)} output 10 {Z(9)} {Z(8)} {Z(7)} {Z(6)} {Z(5)} {Z(4)} {Z(3)} {Z(2)} {Z(1)} {Z(0)} \
+
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp(0)} -attr vt d
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp(1)} -attr vt d
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp(2)} -attr vt d
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp(3)} -attr vt d
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp(4)} -attr vt d
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp(5)} -attr vt d
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp(6)} -attr vt d
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp(7)} -attr vt d
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp(8)} -attr vt d
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp(9)} -attr vt d
+load netBundle {reg(video_out:rsc:mgc_out_stdreg.d).tmp} 10 {reg(video_out:rsc:mgc_out_stdreg.d).tmp(0)} {reg(video_out:rsc:mgc_out_stdreg.d).tmp(1)} {reg(video_out:rsc:mgc_out_stdreg.d).tmp(2)} {reg(video_out:rsc:mgc_out_stdreg.d).tmp(3)} {reg(video_out:rsc:mgc_out_stdreg.d).tmp(4)} {reg(video_out:rsc:mgc_out_stdreg.d).tmp(5)} {reg(video_out:rsc:mgc_out_stdreg.d).tmp(6)} {reg(video_out:rsc:mgc_out_stdreg.d).tmp(7)} {reg(video_out:rsc:mgc_out_stdreg.d).tmp(8)} {reg(video_out:rsc:mgc_out_stdreg.d).tmp(9)} -attr xrf 1011 -attr oid 7 -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/reg(video_out:rsc:mgc_out_stdreg.d).tmp}
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp#1(0)} -attr vt d
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp#1(1)} -attr vt d
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp#1(2)} -attr vt d
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp#1(3)} -attr vt d
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp#1(4)} -attr vt d
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp#1(5)} -attr vt d
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp#1(6)} -attr vt d
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp#1(7)} -attr vt d
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp#1(8)} -attr vt d
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp#1(9)} -attr vt d
+load netBundle {reg(video_out:rsc:mgc_out_stdreg.d).tmp#1} 10 {reg(video_out:rsc:mgc_out_stdreg.d).tmp#1(0)} {reg(video_out:rsc:mgc_out_stdreg.d).tmp#1(1)} {reg(video_out:rsc:mgc_out_stdreg.d).tmp#1(2)} {reg(video_out:rsc:mgc_out_stdreg.d).tmp#1(3)} {reg(video_out:rsc:mgc_out_stdreg.d).tmp#1(4)} {reg(video_out:rsc:mgc_out_stdreg.d).tmp#1(5)} {reg(video_out:rsc:mgc_out_stdreg.d).tmp#1(6)} {reg(video_out:rsc:mgc_out_stdreg.d).tmp#1(7)} {reg(video_out:rsc:mgc_out_stdreg.d).tmp#1(8)} {reg(video_out:rsc:mgc_out_stdreg.d).tmp#1(9)} -attr xrf 1012 -attr oid 8 -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/reg(video_out:rsc:mgc_out_stdreg.d).tmp#1}
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp#2(0)} -attr vt d
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp#2(1)} -attr vt d
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp#2(2)} -attr vt d
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp#2(3)} -attr vt d
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp#2(4)} -attr vt d
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp#2(5)} -attr vt d
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp#2(6)} -attr vt d
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp#2(7)} -attr vt d
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp#2(8)} -attr vt d
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp#2(9)} -attr vt d
+load netBundle {reg(video_out:rsc:mgc_out_stdreg.d).tmp#2} 10 {reg(video_out:rsc:mgc_out_stdreg.d).tmp#2(0)} {reg(video_out:rsc:mgc_out_stdreg.d).tmp#2(1)} {reg(video_out:rsc:mgc_out_stdreg.d).tmp#2(2)} {reg(video_out:rsc:mgc_out_stdreg.d).tmp#2(3)} {reg(video_out:rsc:mgc_out_stdreg.d).tmp#2(4)} {reg(video_out:rsc:mgc_out_stdreg.d).tmp#2(5)} {reg(video_out:rsc:mgc_out_stdreg.d).tmp#2(6)} {reg(video_out:rsc:mgc_out_stdreg.d).tmp#2(7)} {reg(video_out:rsc:mgc_out_stdreg.d).tmp#2(8)} {reg(video_out:rsc:mgc_out_stdreg.d).tmp#2(9)} -attr xrf 1013 -attr oid 9 -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/reg(video_out:rsc:mgc_out_stdreg.d).tmp#2}
+load net {conc#5.itm(0)} -attr vt d
+load net {conc#5.itm(1)} -attr vt d
+load net {conc#5.itm(2)} -attr vt d
+load net {conc#5.itm(3)} -attr vt d
+load net {conc#5.itm(4)} -attr vt d
+load net {conc#5.itm(5)} -attr vt d
+load net {conc#5.itm(6)} -attr vt d
+load net {conc#5.itm(7)} -attr vt d
+load net {conc#5.itm(8)} -attr vt d
+load net {conc#5.itm(9)} -attr vt d
+load net {conc#5.itm(10)} -attr vt d
+load netBundle {conc#5.itm} 11 {conc#5.itm(0)} {conc#5.itm(1)} {conc#5.itm(2)} {conc#5.itm(3)} {conc#5.itm(4)} {conc#5.itm(5)} {conc#5.itm(6)} {conc#5.itm(7)} {conc#5.itm(8)} {conc#5.itm(9)} {conc#5.itm(10)} -attr xrf 1014 -attr oid 10 -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/conc#5.itm}
+load net {oelse:not#1.itm(0)} -attr vt d
+load net {oelse:not#1.itm(1)} -attr vt d
+load net {oelse:not#1.itm(2)} -attr vt d
+load net {oelse:not#1.itm(3)} -attr vt d
+load net {oelse:not#1.itm(4)} -attr vt d
+load net {oelse:not#1.itm(5)} -attr vt d
+load net {oelse:not#1.itm(6)} -attr vt d
+load net {oelse:not#1.itm(7)} -attr vt d
+load net {oelse:not#1.itm(8)} -attr vt d
+load net {oelse:not#1.itm(9)} -attr vt d
+load netBundle {oelse:not#1.itm} 10 {oelse:not#1.itm(0)} {oelse:not#1.itm(1)} {oelse:not#1.itm(2)} {oelse:not#1.itm(3)} {oelse:not#1.itm(4)} {oelse:not#1.itm(5)} {oelse:not#1.itm(6)} {oelse:not#1.itm(7)} {oelse:not#1.itm(8)} {oelse:not#1.itm(9)} -attr xrf 1015 -attr oid 11 -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/oelse:not#1.itm}
+load net {slc#6.itm(0)} -attr vt d
+load net {slc#6.itm(1)} -attr vt d
+load net {slc#6.itm(2)} -attr vt d
+load net {slc#6.itm(3)} -attr vt d
+load net {slc#6.itm(4)} -attr vt d
+load net {slc#6.itm(5)} -attr vt d
+load net {slc#6.itm(6)} -attr vt d
+load net {slc#6.itm(7)} -attr vt d
+load net {slc#6.itm(8)} -attr vt d
+load net {slc#6.itm(9)} -attr vt d
+load netBundle {slc#6.itm} 10 {slc#6.itm(0)} {slc#6.itm(1)} {slc#6.itm(2)} {slc#6.itm(3)} {slc#6.itm(4)} {slc#6.itm(5)} {slc#6.itm(6)} {slc#6.itm(7)} {slc#6.itm(8)} {slc#6.itm(9)} -attr xrf 1016 -attr oid 12 -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/slc#6.itm}
+load net {slc#1.itm(0)} -attr vt d
+load net {slc#1.itm(1)} -attr vt d
+load net {slc#1.itm(2)} -attr vt d
+load net {slc#1.itm(3)} -attr vt d
+load net {slc#1.itm(4)} -attr vt d
+load net {slc#1.itm(5)} -attr vt d
+load net {slc#1.itm(6)} -attr vt d
+load net {slc#1.itm(7)} -attr vt d
+load net {slc#1.itm(8)} -attr vt d
+load netBundle {slc#1.itm} 9 {slc#1.itm(0)} {slc#1.itm(1)} {slc#1.itm(2)} {slc#1.itm(3)} {slc#1.itm(4)} {slc#1.itm(5)} {slc#1.itm(6)} {slc#1.itm(7)} {slc#1.itm(8)} -attr xrf 1017 -attr oid 13 -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/slc#1.itm}
+load net {and.itm(0)} -attr vt d
+load net {and.itm(1)} -attr vt d
+load net {and.itm(2)} -attr vt d
+load net {and.itm(3)} -attr vt d
+load net {and.itm(4)} -attr vt d
+load net {and.itm(5)} -attr vt d
+load net {and.itm(6)} -attr vt d
+load net {and.itm(7)} -attr vt d
+load net {and.itm(8)} -attr vt d
+load net {and.itm(9)} -attr vt d
+load netBundle {and.itm} 10 {and.itm(0)} {and.itm(1)} {and.itm(2)} {and.itm(3)} {and.itm(4)} {and.itm(5)} {and.itm(6)} {and.itm(7)} {and.itm(8)} {and.itm(9)} -attr xrf 1018 -attr oid 14 -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/and.itm}
+load net {slc#7.itm(0)} -attr vt d
+load net {slc#7.itm(1)} -attr vt d
+load net {slc#7.itm(2)} -attr vt d
+load net {slc#7.itm(3)} -attr vt d
+load net {slc#7.itm(4)} -attr vt d
+load net {slc#7.itm(5)} -attr vt d
+load net {slc#7.itm(6)} -attr vt d
+load net {slc#7.itm(7)} -attr vt d
+load net {slc#7.itm(8)} -attr vt d
+load net {slc#7.itm(9)} -attr vt d
+load netBundle {slc#7.itm} 10 {slc#7.itm(0)} {slc#7.itm(1)} {slc#7.itm(2)} {slc#7.itm(3)} {slc#7.itm(4)} {slc#7.itm(5)} {slc#7.itm(6)} {slc#7.itm(7)} {slc#7.itm(8)} {slc#7.itm(9)} -attr xrf 1019 -attr oid 15 -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/slc#7.itm}
+load net {exs.itm(0)} -attr vt d
+load net {exs.itm(1)} -attr vt d
+load net {exs.itm(2)} -attr vt d
+load net {exs.itm(3)} -attr vt d
+load net {exs.itm(4)} -attr vt d
+load net {exs.itm(5)} -attr vt d
+load net {exs.itm(6)} -attr vt d
+load net {exs.itm(7)} -attr vt d
+load net {exs.itm(8)} -attr vt d
+load net {exs.itm(9)} -attr vt d
+load netBundle {exs.itm} 10 {exs.itm(0)} {exs.itm(1)} {exs.itm(2)} {exs.itm(3)} {exs.itm(4)} {exs.itm(5)} {exs.itm(6)} {exs.itm(7)} {exs.itm(8)} {exs.itm(9)} -attr xrf 1020 -attr oid 16 -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/exs.itm}
+load net {and#1.itm(0)} -attr vt d
+load net {and#1.itm(1)} -attr vt d
+load net {and#1.itm(2)} -attr vt d
+load net {and#1.itm(3)} -attr vt d
+load net {and#1.itm(4)} -attr vt d
+load net {and#1.itm(5)} -attr vt d
+load net {and#1.itm(6)} -attr vt d
+load net {and#1.itm(7)} -attr vt d
+load net {and#1.itm(8)} -attr vt d
+load net {and#1.itm(9)} -attr vt d
+load netBundle {and#1.itm} 10 {and#1.itm(0)} {and#1.itm(1)} {and#1.itm(2)} {and#1.itm(3)} {and#1.itm(4)} {and#1.itm(5)} {and#1.itm(6)} {and#1.itm(7)} {and#1.itm(8)} {and#1.itm(9)} -attr xrf 1021 -attr oid 17 -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/and#1.itm}
+load net {slc#8.itm(0)} -attr vt d
+load net {slc#8.itm(1)} -attr vt d
+load net {slc#8.itm(2)} -attr vt d
+load net {slc#8.itm(3)} -attr vt d
+load net {slc#8.itm(4)} -attr vt d
+load net {slc#8.itm(5)} -attr vt d
+load net {slc#8.itm(6)} -attr vt d
+load net {slc#8.itm(7)} -attr vt d
+load net {slc#8.itm(8)} -attr vt d
+load net {slc#8.itm(9)} -attr vt d
+load netBundle {slc#8.itm} 10 {slc#8.itm(0)} {slc#8.itm(1)} {slc#8.itm(2)} {slc#8.itm(3)} {slc#8.itm(4)} {slc#8.itm(5)} {slc#8.itm(6)} {slc#8.itm(7)} {slc#8.itm(8)} {slc#8.itm(9)} -attr xrf 1022 -attr oid 18 -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/slc#8.itm}
+load net {exs#5.itm(0)} -attr vt d
+load net {exs#5.itm(1)} -attr vt d
+load net {exs#5.itm(2)} -attr vt d
+load net {exs#5.itm(3)} -attr vt d
+load net {exs#5.itm(4)} -attr vt d
+load net {exs#5.itm(5)} -attr vt d
+load net {exs#5.itm(6)} -attr vt d
+load net {exs#5.itm(7)} -attr vt d
+load net {exs#5.itm(8)} -attr vt d
+load net {exs#5.itm(9)} -attr vt d
+load netBundle {exs#5.itm} 10 {exs#5.itm(0)} {exs#5.itm(1)} {exs#5.itm(2)} {exs#5.itm(3)} {exs#5.itm(4)} {exs#5.itm(5)} {exs#5.itm(6)} {exs#5.itm(7)} {exs#5.itm(8)} {exs#5.itm(9)} -attr xrf 1023 -attr oid 19 -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/exs#5.itm}
+load net {and#2.itm(0)} -attr vt d
+load net {and#2.itm(1)} -attr vt d
+load net {and#2.itm(2)} -attr vt d
+load net {and#2.itm(3)} -attr vt d
+load net {and#2.itm(4)} -attr vt d
+load net {and#2.itm(5)} -attr vt d
+load net {and#2.itm(6)} -attr vt d
+load net {and#2.itm(7)} -attr vt d
+load net {and#2.itm(8)} -attr vt d
+load net {and#2.itm(9)} -attr vt d
+load netBundle {and#2.itm} 10 {and#2.itm(0)} {and#2.itm(1)} {and#2.itm(2)} {and#2.itm(3)} {and#2.itm(4)} {and#2.itm(5)} {and#2.itm(6)} {and#2.itm(7)} {and#2.itm(8)} {and#2.itm(9)} -attr xrf 1024 -attr oid 20 -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/and#2.itm}
+load net {slc#5.itm(0)} -attr vt d
+load net {slc#5.itm(1)} -attr vt d
+load net {slc#5.itm(2)} -attr vt d
+load net {slc#5.itm(3)} -attr vt d
+load net {slc#5.itm(4)} -attr vt d
+load net {slc#5.itm(5)} -attr vt d
+load net {slc#5.itm(6)} -attr vt d
+load net {slc#5.itm(7)} -attr vt d
+load net {slc#5.itm(8)} -attr vt d
+load net {slc#5.itm(9)} -attr vt d
+load netBundle {slc#5.itm} 10 {slc#5.itm(0)} {slc#5.itm(1)} {slc#5.itm(2)} {slc#5.itm(3)} {slc#5.itm(4)} {slc#5.itm(5)} {slc#5.itm(6)} {slc#5.itm(7)} {slc#5.itm(8)} {slc#5.itm(9)} -attr xrf 1025 -attr oid 21 -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/slc#5.itm}
+load net {exs#6.itm(0)} -attr vt d
+load net {exs#6.itm(1)} -attr vt d
+load net {exs#6.itm(2)} -attr vt d
+load net {exs#6.itm(3)} -attr vt d
+load net {exs#6.itm(4)} -attr vt d
+load net {exs#6.itm(5)} -attr vt d
+load net {exs#6.itm(6)} -attr vt d
+load net {exs#6.itm(7)} -attr vt d
+load net {exs#6.itm(8)} -attr vt d
+load net {exs#6.itm(9)} -attr vt d
+load netBundle {exs#6.itm} 10 {exs#6.itm(0)} {exs#6.itm(1)} {exs#6.itm(2)} {exs#6.itm(3)} {exs#6.itm(4)} {exs#6.itm(5)} {exs#6.itm(6)} {exs#6.itm(7)} {exs#6.itm(8)} {exs#6.itm(9)} -attr xrf 1026 -attr oid 22 -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/exs#6.itm}
+load net {clk} -attr xrf 1027 -attr oid 23
+load net {clk} -port {clk} -attr xrf 1028 -attr oid 24
+load net {en} -attr xrf 1029 -attr oid 25
+load net {en} -port {en} -attr xrf 1030 -attr oid 26
+load net {arst_n} -attr xrf 1031 -attr oid 27
+load net {arst_n} -port {arst_n} -attr xrf 1032 -attr oid 28
+load net {vga_xy:rsc:mgc_in_wire.d(0)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(1)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(2)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(3)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(4)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(5)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(6)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(7)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(8)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(9)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(10)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(11)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(12)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(13)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(14)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(15)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(16)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(17)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(18)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(19)} -attr vt d
+load netBundle {vga_xy:rsc:mgc_in_wire.d} 20 {vga_xy:rsc:mgc_in_wire.d(0)} {vga_xy:rsc:mgc_in_wire.d(1)} {vga_xy:rsc:mgc_in_wire.d(2)} {vga_xy:rsc:mgc_in_wire.d(3)} {vga_xy:rsc:mgc_in_wire.d(4)} {vga_xy:rsc:mgc_in_wire.d(5)} {vga_xy:rsc:mgc_in_wire.d(6)} {vga_xy:rsc:mgc_in_wire.d(7)} {vga_xy:rsc:mgc_in_wire.d(8)} {vga_xy:rsc:mgc_in_wire.d(9)} {vga_xy:rsc:mgc_in_wire.d(10)} {vga_xy:rsc:mgc_in_wire.d(11)} {vga_xy:rsc:mgc_in_wire.d(12)} {vga_xy:rsc:mgc_in_wire.d(13)} {vga_xy:rsc:mgc_in_wire.d(14)} {vga_xy:rsc:mgc_in_wire.d(15)} {vga_xy:rsc:mgc_in_wire.d(16)} {vga_xy:rsc:mgc_in_wire.d(17)} {vga_xy:rsc:mgc_in_wire.d(18)} {vga_xy:rsc:mgc_in_wire.d(19)} -attr xrf 1033 -attr oid 29 -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d(0)} -port {vga_xy:rsc:mgc_in_wire.d(0)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(1)} -port {vga_xy:rsc:mgc_in_wire.d(1)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(2)} -port {vga_xy:rsc:mgc_in_wire.d(2)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(3)} -port {vga_xy:rsc:mgc_in_wire.d(3)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(4)} -port {vga_xy:rsc:mgc_in_wire.d(4)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(5)} -port {vga_xy:rsc:mgc_in_wire.d(5)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(6)} -port {vga_xy:rsc:mgc_in_wire.d(6)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(7)} -port {vga_xy:rsc:mgc_in_wire.d(7)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(8)} -port {vga_xy:rsc:mgc_in_wire.d(8)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(9)} -port {vga_xy:rsc:mgc_in_wire.d(9)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(10)} -port {vga_xy:rsc:mgc_in_wire.d(10)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(11)} -port {vga_xy:rsc:mgc_in_wire.d(11)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(12)} -port {vga_xy:rsc:mgc_in_wire.d(12)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(13)} -port {vga_xy:rsc:mgc_in_wire.d(13)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(14)} -port {vga_xy:rsc:mgc_in_wire.d(14)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(15)} -port {vga_xy:rsc:mgc_in_wire.d(15)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(16)} -port {vga_xy:rsc:mgc_in_wire.d(16)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(17)} -port {vga_xy:rsc:mgc_in_wire.d(17)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(18)} -port {vga_xy:rsc:mgc_in_wire.d(18)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d(19)} -port {vga_xy:rsc:mgc_in_wire.d(19)} -attr vt d
+load netBundle {vga_xy:rsc:mgc_in_wire.d} 20 {vga_xy:rsc:mgc_in_wire.d(0)} {vga_xy:rsc:mgc_in_wire.d(1)} {vga_xy:rsc:mgc_in_wire.d(2)} {vga_xy:rsc:mgc_in_wire.d(3)} {vga_xy:rsc:mgc_in_wire.d(4)} {vga_xy:rsc:mgc_in_wire.d(5)} {vga_xy:rsc:mgc_in_wire.d(6)} {vga_xy:rsc:mgc_in_wire.d(7)} {vga_xy:rsc:mgc_in_wire.d(8)} {vga_xy:rsc:mgc_in_wire.d(9)} {vga_xy:rsc:mgc_in_wire.d(10)} {vga_xy:rsc:mgc_in_wire.d(11)} {vga_xy:rsc:mgc_in_wire.d(12)} {vga_xy:rsc:mgc_in_wire.d(13)} {vga_xy:rsc:mgc_in_wire.d(14)} {vga_xy:rsc:mgc_in_wire.d(15)} {vga_xy:rsc:mgc_in_wire.d(16)} {vga_xy:rsc:mgc_in_wire.d(17)} {vga_xy:rsc:mgc_in_wire.d(18)} {vga_xy:rsc:mgc_in_wire.d(19)} -attr xrf 1034 -attr oid 30 -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/vga_xy:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d(0)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(1)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(2)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(3)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(4)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(5)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(6)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(7)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(8)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(9)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(10)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(11)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(12)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(13)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(14)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(15)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(16)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(17)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(18)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(19)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(20)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(21)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(22)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(23)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(24)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(25)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(26)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(27)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(28)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(29)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(30)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(31)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(32)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(33)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(34)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(35)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(36)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(37)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(38)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(39)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(40)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(41)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(42)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(43)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(44)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(45)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(46)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(47)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(48)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(49)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(50)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(51)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(52)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(53)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(54)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(55)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(56)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(57)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(58)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(59)} -attr vt d
+load netBundle {video_in:rsc:mgc_in_wire.d} 60 {video_in:rsc:mgc_in_wire.d(0)} {video_in:rsc:mgc_in_wire.d(1)} {video_in:rsc:mgc_in_wire.d(2)} {video_in:rsc:mgc_in_wire.d(3)} {video_in:rsc:mgc_in_wire.d(4)} {video_in:rsc:mgc_in_wire.d(5)} {video_in:rsc:mgc_in_wire.d(6)} {video_in:rsc:mgc_in_wire.d(7)} {video_in:rsc:mgc_in_wire.d(8)} {video_in:rsc:mgc_in_wire.d(9)} {video_in:rsc:mgc_in_wire.d(10)} {video_in:rsc:mgc_in_wire.d(11)} {video_in:rsc:mgc_in_wire.d(12)} {video_in:rsc:mgc_in_wire.d(13)} {video_in:rsc:mgc_in_wire.d(14)} {video_in:rsc:mgc_in_wire.d(15)} {video_in:rsc:mgc_in_wire.d(16)} {video_in:rsc:mgc_in_wire.d(17)} {video_in:rsc:mgc_in_wire.d(18)} {video_in:rsc:mgc_in_wire.d(19)} {video_in:rsc:mgc_in_wire.d(20)} {video_in:rsc:mgc_in_wire.d(21)} {video_in:rsc:mgc_in_wire.d(22)} {video_in:rsc:mgc_in_wire.d(23)} {video_in:rsc:mgc_in_wire.d(24)} {video_in:rsc:mgc_in_wire.d(25)} {video_in:rsc:mgc_in_wire.d(26)} {video_in:rsc:mgc_in_wire.d(27)} {video_in:rsc:mgc_in_wire.d(28)} {video_in:rsc:mgc_in_wire.d(29)} {video_in:rsc:mgc_in_wire.d(30)} {video_in:rsc:mgc_in_wire.d(31)} {video_in:rsc:mgc_in_wire.d(32)} {video_in:rsc:mgc_in_wire.d(33)} {video_in:rsc:mgc_in_wire.d(34)} {video_in:rsc:mgc_in_wire.d(35)} {video_in:rsc:mgc_in_wire.d(36)} {video_in:rsc:mgc_in_wire.d(37)} {video_in:rsc:mgc_in_wire.d(38)} {video_in:rsc:mgc_in_wire.d(39)} {video_in:rsc:mgc_in_wire.d(40)} {video_in:rsc:mgc_in_wire.d(41)} {video_in:rsc:mgc_in_wire.d(42)} {video_in:rsc:mgc_in_wire.d(43)} {video_in:rsc:mgc_in_wire.d(44)} {video_in:rsc:mgc_in_wire.d(45)} {video_in:rsc:mgc_in_wire.d(46)} {video_in:rsc:mgc_in_wire.d(47)} {video_in:rsc:mgc_in_wire.d(48)} {video_in:rsc:mgc_in_wire.d(49)} {video_in:rsc:mgc_in_wire.d(50)} {video_in:rsc:mgc_in_wire.d(51)} {video_in:rsc:mgc_in_wire.d(52)} {video_in:rsc:mgc_in_wire.d(53)} {video_in:rsc:mgc_in_wire.d(54)} {video_in:rsc:mgc_in_wire.d(55)} {video_in:rsc:mgc_in_wire.d(56)} {video_in:rsc:mgc_in_wire.d(57)} {video_in:rsc:mgc_in_wire.d(58)} {video_in:rsc:mgc_in_wire.d(59)} -attr xrf 1035 -attr oid 31 -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d(0)} -port {video_in:rsc:mgc_in_wire.d(0)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(1)} -port {video_in:rsc:mgc_in_wire.d(1)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(2)} -port {video_in:rsc:mgc_in_wire.d(2)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(3)} -port {video_in:rsc:mgc_in_wire.d(3)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(4)} -port {video_in:rsc:mgc_in_wire.d(4)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(5)} -port {video_in:rsc:mgc_in_wire.d(5)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(6)} -port {video_in:rsc:mgc_in_wire.d(6)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(7)} -port {video_in:rsc:mgc_in_wire.d(7)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(8)} -port {video_in:rsc:mgc_in_wire.d(8)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(9)} -port {video_in:rsc:mgc_in_wire.d(9)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(10)} -port {video_in:rsc:mgc_in_wire.d(10)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(11)} -port {video_in:rsc:mgc_in_wire.d(11)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(12)} -port {video_in:rsc:mgc_in_wire.d(12)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(13)} -port {video_in:rsc:mgc_in_wire.d(13)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(14)} -port {video_in:rsc:mgc_in_wire.d(14)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(15)} -port {video_in:rsc:mgc_in_wire.d(15)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(16)} -port {video_in:rsc:mgc_in_wire.d(16)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(17)} -port {video_in:rsc:mgc_in_wire.d(17)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(18)} -port {video_in:rsc:mgc_in_wire.d(18)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(19)} -port {video_in:rsc:mgc_in_wire.d(19)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(20)} -port {video_in:rsc:mgc_in_wire.d(20)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(21)} -port {video_in:rsc:mgc_in_wire.d(21)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(22)} -port {video_in:rsc:mgc_in_wire.d(22)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(23)} -port {video_in:rsc:mgc_in_wire.d(23)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(24)} -port {video_in:rsc:mgc_in_wire.d(24)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(25)} -port {video_in:rsc:mgc_in_wire.d(25)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(26)} -port {video_in:rsc:mgc_in_wire.d(26)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(27)} -port {video_in:rsc:mgc_in_wire.d(27)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(28)} -port {video_in:rsc:mgc_in_wire.d(28)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(29)} -port {video_in:rsc:mgc_in_wire.d(29)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(30)} -port {video_in:rsc:mgc_in_wire.d(30)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(31)} -port {video_in:rsc:mgc_in_wire.d(31)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(32)} -port {video_in:rsc:mgc_in_wire.d(32)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(33)} -port {video_in:rsc:mgc_in_wire.d(33)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(34)} -port {video_in:rsc:mgc_in_wire.d(34)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(35)} -port {video_in:rsc:mgc_in_wire.d(35)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(36)} -port {video_in:rsc:mgc_in_wire.d(36)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(37)} -port {video_in:rsc:mgc_in_wire.d(37)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(38)} -port {video_in:rsc:mgc_in_wire.d(38)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(39)} -port {video_in:rsc:mgc_in_wire.d(39)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(40)} -port {video_in:rsc:mgc_in_wire.d(40)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(41)} -port {video_in:rsc:mgc_in_wire.d(41)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(42)} -port {video_in:rsc:mgc_in_wire.d(42)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(43)} -port {video_in:rsc:mgc_in_wire.d(43)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(44)} -port {video_in:rsc:mgc_in_wire.d(44)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(45)} -port {video_in:rsc:mgc_in_wire.d(45)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(46)} -port {video_in:rsc:mgc_in_wire.d(46)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(47)} -port {video_in:rsc:mgc_in_wire.d(47)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(48)} -port {video_in:rsc:mgc_in_wire.d(48)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(49)} -port {video_in:rsc:mgc_in_wire.d(49)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(50)} -port {video_in:rsc:mgc_in_wire.d(50)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(51)} -port {video_in:rsc:mgc_in_wire.d(51)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(52)} -port {video_in:rsc:mgc_in_wire.d(52)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(53)} -port {video_in:rsc:mgc_in_wire.d(53)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(54)} -port {video_in:rsc:mgc_in_wire.d(54)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(55)} -port {video_in:rsc:mgc_in_wire.d(55)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(56)} -port {video_in:rsc:mgc_in_wire.d(56)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(57)} -port {video_in:rsc:mgc_in_wire.d(57)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(58)} -port {video_in:rsc:mgc_in_wire.d(58)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d(59)} -port {video_in:rsc:mgc_in_wire.d(59)} -attr vt d
+load netBundle {video_in:rsc:mgc_in_wire.d} 60 {video_in:rsc:mgc_in_wire.d(0)} {video_in:rsc:mgc_in_wire.d(1)} {video_in:rsc:mgc_in_wire.d(2)} {video_in:rsc:mgc_in_wire.d(3)} {video_in:rsc:mgc_in_wire.d(4)} {video_in:rsc:mgc_in_wire.d(5)} {video_in:rsc:mgc_in_wire.d(6)} {video_in:rsc:mgc_in_wire.d(7)} {video_in:rsc:mgc_in_wire.d(8)} {video_in:rsc:mgc_in_wire.d(9)} {video_in:rsc:mgc_in_wire.d(10)} {video_in:rsc:mgc_in_wire.d(11)} {video_in:rsc:mgc_in_wire.d(12)} {video_in:rsc:mgc_in_wire.d(13)} {video_in:rsc:mgc_in_wire.d(14)} {video_in:rsc:mgc_in_wire.d(15)} {video_in:rsc:mgc_in_wire.d(16)} {video_in:rsc:mgc_in_wire.d(17)} {video_in:rsc:mgc_in_wire.d(18)} {video_in:rsc:mgc_in_wire.d(19)} {video_in:rsc:mgc_in_wire.d(20)} {video_in:rsc:mgc_in_wire.d(21)} {video_in:rsc:mgc_in_wire.d(22)} {video_in:rsc:mgc_in_wire.d(23)} {video_in:rsc:mgc_in_wire.d(24)} {video_in:rsc:mgc_in_wire.d(25)} {video_in:rsc:mgc_in_wire.d(26)} {video_in:rsc:mgc_in_wire.d(27)} {video_in:rsc:mgc_in_wire.d(28)} {video_in:rsc:mgc_in_wire.d(29)} {video_in:rsc:mgc_in_wire.d(30)} {video_in:rsc:mgc_in_wire.d(31)} {video_in:rsc:mgc_in_wire.d(32)} {video_in:rsc:mgc_in_wire.d(33)} {video_in:rsc:mgc_in_wire.d(34)} {video_in:rsc:mgc_in_wire.d(35)} {video_in:rsc:mgc_in_wire.d(36)} {video_in:rsc:mgc_in_wire.d(37)} {video_in:rsc:mgc_in_wire.d(38)} {video_in:rsc:mgc_in_wire.d(39)} {video_in:rsc:mgc_in_wire.d(40)} {video_in:rsc:mgc_in_wire.d(41)} {video_in:rsc:mgc_in_wire.d(42)} {video_in:rsc:mgc_in_wire.d(43)} {video_in:rsc:mgc_in_wire.d(44)} {video_in:rsc:mgc_in_wire.d(45)} {video_in:rsc:mgc_in_wire.d(46)} {video_in:rsc:mgc_in_wire.d(47)} {video_in:rsc:mgc_in_wire.d(48)} {video_in:rsc:mgc_in_wire.d(49)} {video_in:rsc:mgc_in_wire.d(50)} {video_in:rsc:mgc_in_wire.d(51)} {video_in:rsc:mgc_in_wire.d(52)} {video_in:rsc:mgc_in_wire.d(53)} {video_in:rsc:mgc_in_wire.d(54)} {video_in:rsc:mgc_in_wire.d(55)} {video_in:rsc:mgc_in_wire.d(56)} {video_in:rsc:mgc_in_wire.d(57)} {video_in:rsc:mgc_in_wire.d(58)} {video_in:rsc:mgc_in_wire.d(59)} -attr xrf 1036 -attr oid 32 -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/video_in:rsc:mgc_in_wire.d}
+load net {video_out:rsc:mgc_out_stdreg.d(0)} -attr vt d
+load net {video_out:rsc:mgc_out_stdreg.d(1)} -attr vt d
+load net {video_out:rsc:mgc_out_stdreg.d(2)} -attr vt d
+load net {video_out:rsc:mgc_out_stdreg.d(3)} -attr vt d
+load net {video_out:rsc:mgc_out_stdreg.d(4)} -attr vt d
+load net {video_out:rsc:mgc_out_stdreg.d(5)} -attr vt d
+load net {video_out:rsc:mgc_out_stdreg.d(6)} -attr vt d
+load net {video_out:rsc:mgc_out_stdreg.d(7)} -attr vt d
+load net {video_out:rsc:mgc_out_stdreg.d(8)} -attr vt d
+load net {video_out:rsc:mgc_out_stdreg.d(9)} -attr vt d
+load net {video_out:rsc:mgc_out_stdreg.d(10)} -attr vt d
+load net {video_out:rsc:mgc_out_stdreg.d(11)} -attr vt d
+load net {video_out:rsc:mgc_out_stdreg.d(12)} -attr vt d
+load net {video_out:rsc:mgc_out_stdreg.d(13)} -attr vt d
+load net {video_out:rsc:mgc_out_stdreg.d(14)} -attr vt d
+load net {video_out:rsc:mgc_out_stdreg.d(15)} -attr vt d
+load net {video_out:rsc:mgc_out_stdreg.d(16)} -attr vt d
+load net {video_out:rsc:mgc_out_stdreg.d(17)} -attr vt d
+load net {video_out:rsc:mgc_out_stdreg.d(18)} -attr vt d
+load net {video_out:rsc:mgc_out_stdreg.d(19)} -attr vt d
+load net {video_out:rsc:mgc_out_stdreg.d(20)} -attr vt d
+load net {video_out:rsc:mgc_out_stdreg.d(21)} -attr vt d
+load net {video_out:rsc:mgc_out_stdreg.d(22)} -attr vt d
+load net {video_out:rsc:mgc_out_stdreg.d(23)} -attr vt d
+load net {video_out:rsc:mgc_out_stdreg.d(24)} -attr vt d
+load net {video_out:rsc:mgc_out_stdreg.d(25)} -attr vt d
+load net {video_out:rsc:mgc_out_stdreg.d(26)} -attr vt d
+load net {video_out:rsc:mgc_out_stdreg.d(27)} -attr vt d
+load net {video_out:rsc:mgc_out_stdreg.d(28)} -attr vt d
+load net {video_out:rsc:mgc_out_stdreg.d(29)} -attr vt d
+load netBundle {video_out:rsc:mgc_out_stdreg.d} 30 {video_out:rsc:mgc_out_stdreg.d(0)} {video_out:rsc:mgc_out_stdreg.d(1)} {video_out:rsc:mgc_out_stdreg.d(2)} {video_out:rsc:mgc_out_stdreg.d(3)} {video_out:rsc:mgc_out_stdreg.d(4)} {video_out:rsc:mgc_out_stdreg.d(5)} {video_out:rsc:mgc_out_stdreg.d(6)} {video_out:rsc:mgc_out_stdreg.d(7)} {video_out:rsc:mgc_out_stdreg.d(8)} {video_out:rsc:mgc_out_stdreg.d(9)} {video_out:rsc:mgc_out_stdreg.d(10)} {video_out:rsc:mgc_out_stdreg.d(11)} {video_out:rsc:mgc_out_stdreg.d(12)} {video_out:rsc:mgc_out_stdreg.d(13)} {video_out:rsc:mgc_out_stdreg.d(14)} {video_out:rsc:mgc_out_stdreg.d(15)} {video_out:rsc:mgc_out_stdreg.d(16)} {video_out:rsc:mgc_out_stdreg.d(17)} {video_out:rsc:mgc_out_stdreg.d(18)} {video_out:rsc:mgc_out_stdreg.d(19)} {video_out:rsc:mgc_out_stdreg.d(20)} {video_out:rsc:mgc_out_stdreg.d(21)} {video_out:rsc:mgc_out_stdreg.d(22)} {video_out:rsc:mgc_out_stdreg.d(23)} {video_out:rsc:mgc_out_stdreg.d(24)} {video_out:rsc:mgc_out_stdreg.d(25)} {video_out:rsc:mgc_out_stdreg.d(26)} {video_out:rsc:mgc_out_stdreg.d(27)} {video_out:rsc:mgc_out_stdreg.d(28)} {video_out:rsc:mgc_out_stdreg.d(29)} -attr xrf 1037 -attr oid 33 -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/video_out:rsc:mgc_out_stdreg.d}
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp#2(0)} -port {video_out:rsc:mgc_out_stdreg.d(0)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/video_out:rsc:mgc_out_stdreg.d}
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp#2(1)} -port {video_out:rsc:mgc_out_stdreg.d(1)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/video_out:rsc:mgc_out_stdreg.d}
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp#2(2)} -port {video_out:rsc:mgc_out_stdreg.d(2)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/video_out:rsc:mgc_out_stdreg.d}
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp#2(3)} -port {video_out:rsc:mgc_out_stdreg.d(3)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/video_out:rsc:mgc_out_stdreg.d}
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp#2(4)} -port {video_out:rsc:mgc_out_stdreg.d(4)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/video_out:rsc:mgc_out_stdreg.d}
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp#2(5)} -port {video_out:rsc:mgc_out_stdreg.d(5)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/video_out:rsc:mgc_out_stdreg.d}
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp#2(6)} -port {video_out:rsc:mgc_out_stdreg.d(6)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/video_out:rsc:mgc_out_stdreg.d}
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp#2(7)} -port {video_out:rsc:mgc_out_stdreg.d(7)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/video_out:rsc:mgc_out_stdreg.d}
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp#2(8)} -port {video_out:rsc:mgc_out_stdreg.d(8)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/video_out:rsc:mgc_out_stdreg.d}
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp#2(9)} -port {video_out:rsc:mgc_out_stdreg.d(9)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/video_out:rsc:mgc_out_stdreg.d}
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp#1(0)} -port {video_out:rsc:mgc_out_stdreg.d(10)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/video_out:rsc:mgc_out_stdreg.d}
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp#1(1)} -port {video_out:rsc:mgc_out_stdreg.d(11)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/video_out:rsc:mgc_out_stdreg.d}
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp#1(2)} -port {video_out:rsc:mgc_out_stdreg.d(12)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/video_out:rsc:mgc_out_stdreg.d}
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp#1(3)} -port {video_out:rsc:mgc_out_stdreg.d(13)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/video_out:rsc:mgc_out_stdreg.d}
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp#1(4)} -port {video_out:rsc:mgc_out_stdreg.d(14)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/video_out:rsc:mgc_out_stdreg.d}
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp#1(5)} -port {video_out:rsc:mgc_out_stdreg.d(15)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/video_out:rsc:mgc_out_stdreg.d}
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp#1(6)} -port {video_out:rsc:mgc_out_stdreg.d(16)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/video_out:rsc:mgc_out_stdreg.d}
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp#1(7)} -port {video_out:rsc:mgc_out_stdreg.d(17)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/video_out:rsc:mgc_out_stdreg.d}
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp#1(8)} -port {video_out:rsc:mgc_out_stdreg.d(18)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/video_out:rsc:mgc_out_stdreg.d}
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp#1(9)} -port {video_out:rsc:mgc_out_stdreg.d(19)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/video_out:rsc:mgc_out_stdreg.d}
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp(0)} -port {video_out:rsc:mgc_out_stdreg.d(20)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/video_out:rsc:mgc_out_stdreg.d}
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp(1)} -port {video_out:rsc:mgc_out_stdreg.d(21)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/video_out:rsc:mgc_out_stdreg.d}
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp(2)} -port {video_out:rsc:mgc_out_stdreg.d(22)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/video_out:rsc:mgc_out_stdreg.d}
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp(3)} -port {video_out:rsc:mgc_out_stdreg.d(23)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/video_out:rsc:mgc_out_stdreg.d}
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp(4)} -port {video_out:rsc:mgc_out_stdreg.d(24)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/video_out:rsc:mgc_out_stdreg.d}
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp(5)} -port {video_out:rsc:mgc_out_stdreg.d(25)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/video_out:rsc:mgc_out_stdreg.d}
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp(6)} -port {video_out:rsc:mgc_out_stdreg.d(26)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/video_out:rsc:mgc_out_stdreg.d}
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp(7)} -port {video_out:rsc:mgc_out_stdreg.d(27)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/video_out:rsc:mgc_out_stdreg.d}
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp(8)} -port {video_out:rsc:mgc_out_stdreg.d(28)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/video_out:rsc:mgc_out_stdreg.d}
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp(9)} -port {video_out:rsc:mgc_out_stdreg.d(29)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/video_out:rsc:mgc_out_stdreg.d}
+load inst "oelse:not#1" "not(10)" "INTERFACE" -attr xrf 1038 -attr oid 34 -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/oelse:not#1} -attr area 0.001000 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_not(10)"
+load net {vga_xy:rsc:mgc_in_wire.d(0)} -pin  "oelse:not#1" {A(0)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/slc#6.itm}
+load net {vga_xy:rsc:mgc_in_wire.d(1)} -pin  "oelse:not#1" {A(1)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/slc#6.itm}
+load net {vga_xy:rsc:mgc_in_wire.d(2)} -pin  "oelse:not#1" {A(2)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/slc#6.itm}
+load net {vga_xy:rsc:mgc_in_wire.d(3)} -pin  "oelse:not#1" {A(3)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/slc#6.itm}
+load net {vga_xy:rsc:mgc_in_wire.d(4)} -pin  "oelse:not#1" {A(4)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/slc#6.itm}
+load net {vga_xy:rsc:mgc_in_wire.d(5)} -pin  "oelse:not#1" {A(5)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/slc#6.itm}
+load net {vga_xy:rsc:mgc_in_wire.d(6)} -pin  "oelse:not#1" {A(6)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/slc#6.itm}
+load net {vga_xy:rsc:mgc_in_wire.d(7)} -pin  "oelse:not#1" {A(7)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/slc#6.itm}
+load net {vga_xy:rsc:mgc_in_wire.d(8)} -pin  "oelse:not#1" {A(8)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/slc#6.itm}
+load net {vga_xy:rsc:mgc_in_wire.d(9)} -pin  "oelse:not#1" {A(9)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/slc#6.itm}
+load net {oelse:not#1.itm(0)} -pin  "oelse:not#1" {Z(0)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/oelse:not#1.itm}
+load net {oelse:not#1.itm(1)} -pin  "oelse:not#1" {Z(1)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/oelse:not#1.itm}
+load net {oelse:not#1.itm(2)} -pin  "oelse:not#1" {Z(2)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/oelse:not#1.itm}
+load net {oelse:not#1.itm(3)} -pin  "oelse:not#1" {Z(3)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/oelse:not#1.itm}
+load net {oelse:not#1.itm(4)} -pin  "oelse:not#1" {Z(4)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/oelse:not#1.itm}
+load net {oelse:not#1.itm(5)} -pin  "oelse:not#1" {Z(5)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/oelse:not#1.itm}
+load net {oelse:not#1.itm(6)} -pin  "oelse:not#1" {Z(6)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/oelse:not#1.itm}
+load net {oelse:not#1.itm(7)} -pin  "oelse:not#1" {Z(7)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/oelse:not#1.itm}
+load net {oelse:not#1.itm(8)} -pin  "oelse:not#1" {Z(8)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/oelse:not#1.itm}
+load net {oelse:not#1.itm(9)} -pin  "oelse:not#1" {Z(9)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/oelse:not#1.itm}
+load inst "oelse:acc" "add(11,-1,6,0,11)" "INTERFACE" -attr xrf 1039 -attr oid 35 -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/oelse:acc} -attr area 12.000000 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(11,0,7,1,11)"
+load net {oelse:not#1.itm(0)} -pin  "oelse:acc" {A(0)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/conc#5.itm}
+load net {oelse:not#1.itm(1)} -pin  "oelse:acc" {A(1)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/conc#5.itm}
+load net {oelse:not#1.itm(2)} -pin  "oelse:acc" {A(2)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/conc#5.itm}
+load net {oelse:not#1.itm(3)} -pin  "oelse:acc" {A(3)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/conc#5.itm}
+load net {oelse:not#1.itm(4)} -pin  "oelse:acc" {A(4)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/conc#5.itm}
+load net {oelse:not#1.itm(5)} -pin  "oelse:acc" {A(5)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/conc#5.itm}
+load net {oelse:not#1.itm(6)} -pin  "oelse:acc" {A(6)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/conc#5.itm}
+load net {oelse:not#1.itm(7)} -pin  "oelse:acc" {A(7)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/conc#5.itm}
+load net {oelse:not#1.itm(8)} -pin  "oelse:acc" {A(8)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/conc#5.itm}
+load net {oelse:not#1.itm(9)} -pin  "oelse:acc" {A(9)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/conc#5.itm}
+load net {PWR} -pin  "oelse:acc" {A(10)} -attr @path {/static_anaglyph/static_anaglyph:core/conc#5.itm}
+load net {PWR} -pin  "oelse:acc" {B(0)} -attr @path {/static_anaglyph/static_anaglyph:core/C51_6}
+load net {PWR} -pin  "oelse:acc" {B(1)} -attr @path {/static_anaglyph/static_anaglyph:core/C51_6}
+load net {GND} -pin  "oelse:acc" {B(2)} -attr @path {/static_anaglyph/static_anaglyph:core/C51_6}
+load net {GND} -pin  "oelse:acc" {B(3)} -attr @path {/static_anaglyph/static_anaglyph:core/C51_6}
+load net {PWR} -pin  "oelse:acc" {B(4)} -attr @path {/static_anaglyph/static_anaglyph:core/C51_6}
+load net {PWR} -pin  "oelse:acc" {B(5)} -attr @path {/static_anaglyph/static_anaglyph:core/C51_6}
+load net {oelse:acc.itm(0)} -pin  "oelse:acc" {Z(0)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/oelse:acc.itm}
+load net {oelse:acc.itm(1)} -pin  "oelse:acc" {Z(1)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/oelse:acc.itm}
+load net {oelse:acc.itm(2)} -pin  "oelse:acc" {Z(2)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/oelse:acc.itm}
+load net {oelse:acc.itm(3)} -pin  "oelse:acc" {Z(3)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/oelse:acc.itm}
+load net {oelse:acc.itm(4)} -pin  "oelse:acc" {Z(4)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/oelse:acc.itm}
+load net {oelse:acc.itm(5)} -pin  "oelse:acc" {Z(5)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/oelse:acc.itm}
+load net {oelse:acc.itm(6)} -pin  "oelse:acc" {Z(6)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/oelse:acc.itm}
+load net {oelse:acc.itm(7)} -pin  "oelse:acc" {Z(7)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/oelse:acc.itm}
+load net {oelse:acc.itm(8)} -pin  "oelse:acc" {Z(8)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/oelse:acc.itm}
+load net {oelse:acc.itm(9)} -pin  "oelse:acc" {Z(9)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/oelse:acc.itm}
+load net {oelse:acc.itm(10)} -pin  "oelse:acc" {Z(10)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/oelse:acc.itm}
+load inst "if:acc" "add(9,0,10,-1,10)" "INTERFACE" -attr xrf 1040 -attr oid 36 -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/if:acc} -attr area 11.244984 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_add(10,0,9,0,10)"
+load net {vga_xy:rsc:mgc_in_wire.d(1)} -pin  "if:acc" {A(0)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/slc#1.itm}
+load net {vga_xy:rsc:mgc_in_wire.d(2)} -pin  "if:acc" {A(1)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/slc#1.itm}
+load net {vga_xy:rsc:mgc_in_wire.d(3)} -pin  "if:acc" {A(2)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/slc#1.itm}
+load net {vga_xy:rsc:mgc_in_wire.d(4)} -pin  "if:acc" {A(3)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/slc#1.itm}
+load net {vga_xy:rsc:mgc_in_wire.d(5)} -pin  "if:acc" {A(4)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/slc#1.itm}
+load net {vga_xy:rsc:mgc_in_wire.d(6)} -pin  "if:acc" {A(5)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/slc#1.itm}
+load net {vga_xy:rsc:mgc_in_wire.d(7)} -pin  "if:acc" {A(6)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/slc#1.itm}
+load net {vga_xy:rsc:mgc_in_wire.d(8)} -pin  "if:acc" {A(7)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/slc#1.itm}
+load net {vga_xy:rsc:mgc_in_wire.d(9)} -pin  "if:acc" {A(8)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/slc#1.itm}
+load net {PWR} -pin  "if:acc" {B(0)} -attr @path {/static_anaglyph/static_anaglyph:core/Cn375_10}
+load net {GND} -pin  "if:acc" {B(1)} -attr @path {/static_anaglyph/static_anaglyph:core/Cn375_10}
+load net {GND} -pin  "if:acc" {B(2)} -attr @path {/static_anaglyph/static_anaglyph:core/Cn375_10}
+load net {PWR} -pin  "if:acc" {B(3)} -attr @path {/static_anaglyph/static_anaglyph:core/Cn375_10}
+load net {GND} -pin  "if:acc" {B(4)} -attr @path {/static_anaglyph/static_anaglyph:core/Cn375_10}
+load net {GND} -pin  "if:acc" {B(5)} -attr @path {/static_anaglyph/static_anaglyph:core/Cn375_10}
+load net {GND} -pin  "if:acc" {B(6)} -attr @path {/static_anaglyph/static_anaglyph:core/Cn375_10}
+load net {PWR} -pin  "if:acc" {B(7)} -attr @path {/static_anaglyph/static_anaglyph:core/Cn375_10}
+load net {GND} -pin  "if:acc" {B(8)} -attr @path {/static_anaglyph/static_anaglyph:core/Cn375_10}
+load net {PWR} -pin  "if:acc" {B(9)} -attr @path {/static_anaglyph/static_anaglyph:core/Cn375_10}
+load net {if:acc.itm(0)} -pin  "if:acc" {Z(0)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/if:acc.itm}
+load net {if:acc.itm(1)} -pin  "if:acc" {Z(1)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/if:acc.itm}
+load net {if:acc.itm(2)} -pin  "if:acc" {Z(2)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/if:acc.itm}
+load net {if:acc.itm(3)} -pin  "if:acc" {Z(3)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/if:acc.itm}
+load net {if:acc.itm(4)} -pin  "if:acc" {Z(4)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/if:acc.itm}
+load net {if:acc.itm(5)} -pin  "if:acc" {Z(5)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/if:acc.itm}
+load net {if:acc.itm(6)} -pin  "if:acc" {Z(6)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/if:acc.itm}
+load net {if:acc.itm(7)} -pin  "if:acc" {Z(7)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/if:acc.itm}
+load net {if:acc.itm(8)} -pin  "if:acc" {Z(8)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/if:acc.itm}
+load net {if:acc.itm(9)} -pin  "if:acc" {Z(9)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/if:acc.itm}
+load inst "and#3" "and(2,1)" "INTERFACE" -attr xrf 1041 -attr oid 37 -attr vt c -attr @path {/static_anaglyph/static_anaglyph:core/and#3} -attr area 0.730832 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_and(1,2)"
+load net {oelse:acc.itm(10)} -pin  "and#3" {A0(0)} -attr vt c -attr @path {/static_anaglyph/static_anaglyph:core/oelse:slc.itm}
+load net {if:acc.itm(9)} -pin  "and#3" {A1(0)} -attr @path {/static_anaglyph/static_anaglyph:core/slc.itm}
+load net {and#3.itm} -pin  "and#3" {Z(0)} -attr vt c -attr @path {/static_anaglyph/static_anaglyph:core/and#3.itm}
+load inst "and" "and(2,10)" "INTERFACE" -attr xrf 1042 -attr oid 38 -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/and} -attr area 7.298324 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_and(10,2)"
+load net {video_in:rsc:mgc_in_wire.d(20)} -pin  "and" {A0(0)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/slc#7.itm}
+load net {video_in:rsc:mgc_in_wire.d(21)} -pin  "and" {A0(1)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/slc#7.itm}
+load net {video_in:rsc:mgc_in_wire.d(22)} -pin  "and" {A0(2)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/slc#7.itm}
+load net {video_in:rsc:mgc_in_wire.d(23)} -pin  "and" {A0(3)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/slc#7.itm}
+load net {video_in:rsc:mgc_in_wire.d(24)} -pin  "and" {A0(4)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/slc#7.itm}
+load net {video_in:rsc:mgc_in_wire.d(25)} -pin  "and" {A0(5)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/slc#7.itm}
+load net {video_in:rsc:mgc_in_wire.d(26)} -pin  "and" {A0(6)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/slc#7.itm}
+load net {video_in:rsc:mgc_in_wire.d(27)} -pin  "and" {A0(7)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/slc#7.itm}
+load net {video_in:rsc:mgc_in_wire.d(28)} -pin  "and" {A0(8)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/slc#7.itm}
+load net {video_in:rsc:mgc_in_wire.d(29)} -pin  "and" {A0(9)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/slc#7.itm}
+load net {and#3.itm} -pin  "and" {A1(0)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/exs.itm}
+load net {and#3.itm} -pin  "and" {A1(1)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/exs.itm}
+load net {and#3.itm} -pin  "and" {A1(2)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/exs.itm}
+load net {and#3.itm} -pin  "and" {A1(3)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/exs.itm}
+load net {and#3.itm} -pin  "and" {A1(4)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/exs.itm}
+load net {and#3.itm} -pin  "and" {A1(5)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/exs.itm}
+load net {and#3.itm} -pin  "and" {A1(6)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/exs.itm}
+load net {and#3.itm} -pin  "and" {A1(7)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/exs.itm}
+load net {and#3.itm} -pin  "and" {A1(8)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/exs.itm}
+load net {and#3.itm} -pin  "and" {A1(9)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/exs.itm}
+load net {and.itm(0)} -pin  "and" {Z(0)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/and.itm}
+load net {and.itm(1)} -pin  "and" {Z(1)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/and.itm}
+load net {and.itm(2)} -pin  "and" {Z(2)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/and.itm}
+load net {and.itm(3)} -pin  "and" {Z(3)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/and.itm}
+load net {and.itm(4)} -pin  "and" {Z(4)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/and.itm}
+load net {and.itm(5)} -pin  "and" {Z(5)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/and.itm}
+load net {and.itm(6)} -pin  "and" {Z(6)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/and.itm}
+load net {and.itm(7)} -pin  "and" {Z(7)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/and.itm}
+load net {and.itm(8)} -pin  "and" {Z(8)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/and.itm}
+load net {and.itm(9)} -pin  "and" {Z(9)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/and.itm}
+load inst "reg(video_out:rsc:mgc_out_stdreg.d)" "reg(10,1,1,-1,0)" "INTERFACE" -attr xrf 1043 -attr oid 39 -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/reg(video_out:rsc:mgc_out_stdreg.d)}
+load net {and.itm(0)} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)" {D(0)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/and.itm}
+load net {and.itm(1)} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)" {D(1)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/and.itm}
+load net {and.itm(2)} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)" {D(2)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/and.itm}
+load net {and.itm(3)} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)" {D(3)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/and.itm}
+load net {and.itm(4)} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)" {D(4)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/and.itm}
+load net {and.itm(5)} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)" {D(5)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/and.itm}
+load net {and.itm(6)} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)" {D(6)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/and.itm}
+load net {and.itm(7)} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)" {D(7)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/and.itm}
+load net {and.itm(8)} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)" {D(8)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/and.itm}
+load net {and.itm(9)} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)" {D(9)} -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core/and.itm}
+load net {GND} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)" {DRa(0)} -attr @path {/static_anaglyph/static_anaglyph:core/C0_30#1}
+load net {GND} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)" {DRa(1)} -attr @path {/static_anaglyph/static_anaglyph:core/C0_30#1}
+load net {GND} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)" {DRa(2)} -attr @path {/static_anaglyph/static_anaglyph:core/C0_30#1}
+load net {GND} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)" {DRa(3)} -attr @path {/static_anaglyph/static_anaglyph:core/C0_30#1}
+load net {GND} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)" {DRa(4)} -attr @path {/static_anaglyph/static_anaglyph:core/C0_30#1}
+load net {GND} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)" {DRa(5)} -attr @path {/static_anaglyph/static_anaglyph:core/C0_30#1}
+load net {GND} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)" {DRa(6)} -attr @path {/static_anaglyph/static_anaglyph:core/C0_30#1}
+load net {GND} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)" {DRa(7)} -attr @path {/static_anaglyph/static_anaglyph:core/C0_30#1}
+load net {GND} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)" {DRa(8)} -attr @path {/static_anaglyph/static_anaglyph:core/C0_30#1}
+load net {GND} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)" {DRa(9)} -attr @path {/static_anaglyph/static_anaglyph:core/C0_30#1}
+load net {clk} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)" {clk} -attr xrf 1044 -attr oid 40 -attr @path {/static_anaglyph/static_anaglyph:core/clk}
+load net {en} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)" {en(0)} -attr @path {/static_anaglyph/static_anaglyph:core/en}
+load net {arst_n} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)" {Ra(0)} -attr @path {/static_anaglyph/static_anaglyph:core/arst_n}
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp(0)} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)" {Z(0)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/reg(video_out:rsc:mgc_out_stdreg.d).tmp}
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp(1)} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)" {Z(1)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/reg(video_out:rsc:mgc_out_stdreg.d).tmp}
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp(2)} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)" {Z(2)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/reg(video_out:rsc:mgc_out_stdreg.d).tmp}
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp(3)} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)" {Z(3)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/reg(video_out:rsc:mgc_out_stdreg.d).tmp}
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp(4)} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)" {Z(4)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/reg(video_out:rsc:mgc_out_stdreg.d).tmp}
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp(5)} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)" {Z(5)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/reg(video_out:rsc:mgc_out_stdreg.d).tmp}
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp(6)} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)" {Z(6)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/reg(video_out:rsc:mgc_out_stdreg.d).tmp}
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp(7)} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)" {Z(7)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/reg(video_out:rsc:mgc_out_stdreg.d).tmp}
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp(8)} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)" {Z(8)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/reg(video_out:rsc:mgc_out_stdreg.d).tmp}
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp(9)} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)" {Z(9)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/reg(video_out:rsc:mgc_out_stdreg.d).tmp}
+load inst "and#1" "and(2,10)" "INTERFACE" -attr xrf 1045 -attr oid 41 -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/and#1} -attr area 7.298324 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_and(10,2)"
+load net {video_in:rsc:mgc_in_wire.d(40)} -pin  "and#1" {A0(0)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/slc#8.itm}
+load net {video_in:rsc:mgc_in_wire.d(41)} -pin  "and#1" {A0(1)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/slc#8.itm}
+load net {video_in:rsc:mgc_in_wire.d(42)} -pin  "and#1" {A0(2)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/slc#8.itm}
+load net {video_in:rsc:mgc_in_wire.d(43)} -pin  "and#1" {A0(3)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/slc#8.itm}
+load net {video_in:rsc:mgc_in_wire.d(44)} -pin  "and#1" {A0(4)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/slc#8.itm}
+load net {video_in:rsc:mgc_in_wire.d(45)} -pin  "and#1" {A0(5)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/slc#8.itm}
+load net {video_in:rsc:mgc_in_wire.d(46)} -pin  "and#1" {A0(6)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/slc#8.itm}
+load net {video_in:rsc:mgc_in_wire.d(47)} -pin  "and#1" {A0(7)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/slc#8.itm}
+load net {video_in:rsc:mgc_in_wire.d(48)} -pin  "and#1" {A0(8)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/slc#8.itm}
+load net {video_in:rsc:mgc_in_wire.d(49)} -pin  "and#1" {A0(9)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/slc#8.itm}
+load net {and#3.itm} -pin  "and#1" {A1(0)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/exs#5.itm}
+load net {and#3.itm} -pin  "and#1" {A1(1)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/exs#5.itm}
+load net {and#3.itm} -pin  "and#1" {A1(2)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/exs#5.itm}
+load net {and#3.itm} -pin  "and#1" {A1(3)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/exs#5.itm}
+load net {and#3.itm} -pin  "and#1" {A1(4)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/exs#5.itm}
+load net {and#3.itm} -pin  "and#1" {A1(5)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/exs#5.itm}
+load net {and#3.itm} -pin  "and#1" {A1(6)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/exs#5.itm}
+load net {and#3.itm} -pin  "and#1" {A1(7)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/exs#5.itm}
+load net {and#3.itm} -pin  "and#1" {A1(8)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/exs#5.itm}
+load net {and#3.itm} -pin  "and#1" {A1(9)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/exs#5.itm}
+load net {and#1.itm(0)} -pin  "and#1" {Z(0)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/and#1.itm}
+load net {and#1.itm(1)} -pin  "and#1" {Z(1)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/and#1.itm}
+load net {and#1.itm(2)} -pin  "and#1" {Z(2)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/and#1.itm}
+load net {and#1.itm(3)} -pin  "and#1" {Z(3)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/and#1.itm}
+load net {and#1.itm(4)} -pin  "and#1" {Z(4)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/and#1.itm}
+load net {and#1.itm(5)} -pin  "and#1" {Z(5)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/and#1.itm}
+load net {and#1.itm(6)} -pin  "and#1" {Z(6)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/and#1.itm}
+load net {and#1.itm(7)} -pin  "and#1" {Z(7)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/and#1.itm}
+load net {and#1.itm(8)} -pin  "and#1" {Z(8)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/and#1.itm}
+load net {and#1.itm(9)} -pin  "and#1" {Z(9)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/and#1.itm}
+load inst "reg(video_out:rsc:mgc_out_stdreg.d)#1" "reg(10,1,1,-1,0)" "INTERFACE" -attr xrf 1046 -attr oid 42 -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/reg(video_out:rsc:mgc_out_stdreg.d)#1}
+load net {and#1.itm(0)} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)#1" {D(0)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/and#1.itm}
+load net {and#1.itm(1)} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)#1" {D(1)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/and#1.itm}
+load net {and#1.itm(2)} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)#1" {D(2)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/and#1.itm}
+load net {and#1.itm(3)} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)#1" {D(3)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/and#1.itm}
+load net {and#1.itm(4)} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)#1" {D(4)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/and#1.itm}
+load net {and#1.itm(5)} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)#1" {D(5)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/and#1.itm}
+load net {and#1.itm(6)} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)#1" {D(6)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/and#1.itm}
+load net {and#1.itm(7)} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)#1" {D(7)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/and#1.itm}
+load net {and#1.itm(8)} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)#1" {D(8)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/and#1.itm}
+load net {and#1.itm(9)} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)#1" {D(9)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/and#1.itm}
+load net {GND} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)#1" {DRa(0)} -attr @path {/static_anaglyph/static_anaglyph:core/C0_30#2}
+load net {GND} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)#1" {DRa(1)} -attr @path {/static_anaglyph/static_anaglyph:core/C0_30#2}
+load net {GND} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)#1" {DRa(2)} -attr @path {/static_anaglyph/static_anaglyph:core/C0_30#2}
+load net {GND} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)#1" {DRa(3)} -attr @path {/static_anaglyph/static_anaglyph:core/C0_30#2}
+load net {GND} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)#1" {DRa(4)} -attr @path {/static_anaglyph/static_anaglyph:core/C0_30#2}
+load net {GND} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)#1" {DRa(5)} -attr @path {/static_anaglyph/static_anaglyph:core/C0_30#2}
+load net {GND} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)#1" {DRa(6)} -attr @path {/static_anaglyph/static_anaglyph:core/C0_30#2}
+load net {GND} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)#1" {DRa(7)} -attr @path {/static_anaglyph/static_anaglyph:core/C0_30#2}
+load net {GND} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)#1" {DRa(8)} -attr @path {/static_anaglyph/static_anaglyph:core/C0_30#2}
+load net {GND} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)#1" {DRa(9)} -attr @path {/static_anaglyph/static_anaglyph:core/C0_30#2}
+load net {clk} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)#1" {clk} -attr xrf 1047 -attr oid 43 -attr @path {/static_anaglyph/static_anaglyph:core/clk}
+load net {en} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)#1" {en(0)} -attr @path {/static_anaglyph/static_anaglyph:core/en}
+load net {arst_n} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)#1" {Ra(0)} -attr @path {/static_anaglyph/static_anaglyph:core/arst_n}
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp#1(0)} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)#1" {Z(0)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/reg(video_out:rsc:mgc_out_stdreg.d).tmp#1}
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp#1(1)} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)#1" {Z(1)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/reg(video_out:rsc:mgc_out_stdreg.d).tmp#1}
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp#1(2)} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)#1" {Z(2)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/reg(video_out:rsc:mgc_out_stdreg.d).tmp#1}
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp#1(3)} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)#1" {Z(3)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/reg(video_out:rsc:mgc_out_stdreg.d).tmp#1}
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp#1(4)} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)#1" {Z(4)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/reg(video_out:rsc:mgc_out_stdreg.d).tmp#1}
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp#1(5)} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)#1" {Z(5)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/reg(video_out:rsc:mgc_out_stdreg.d).tmp#1}
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp#1(6)} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)#1" {Z(6)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/reg(video_out:rsc:mgc_out_stdreg.d).tmp#1}
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp#1(7)} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)#1" {Z(7)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/reg(video_out:rsc:mgc_out_stdreg.d).tmp#1}
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp#1(8)} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)#1" {Z(8)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/reg(video_out:rsc:mgc_out_stdreg.d).tmp#1}
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp#1(9)} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)#1" {Z(9)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/reg(video_out:rsc:mgc_out_stdreg.d).tmp#1}
+load inst "and#2" "and(2,10)" "INTERFACE" -attr xrf 1048 -attr oid 44 -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/and#2} -attr area 7.298324 -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_Altera-Cyclone-III-6_beh_psr.mgc_and(10,2)"
+load net {video_in:rsc:mgc_in_wire.d(30)} -pin  "and#2" {A0(0)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/slc#5.itm}
+load net {video_in:rsc:mgc_in_wire.d(31)} -pin  "and#2" {A0(1)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/slc#5.itm}
+load net {video_in:rsc:mgc_in_wire.d(32)} -pin  "and#2" {A0(2)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/slc#5.itm}
+load net {video_in:rsc:mgc_in_wire.d(33)} -pin  "and#2" {A0(3)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/slc#5.itm}
+load net {video_in:rsc:mgc_in_wire.d(34)} -pin  "and#2" {A0(4)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/slc#5.itm}
+load net {video_in:rsc:mgc_in_wire.d(35)} -pin  "and#2" {A0(5)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/slc#5.itm}
+load net {video_in:rsc:mgc_in_wire.d(36)} -pin  "and#2" {A0(6)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/slc#5.itm}
+load net {video_in:rsc:mgc_in_wire.d(37)} -pin  "and#2" {A0(7)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/slc#5.itm}
+load net {video_in:rsc:mgc_in_wire.d(38)} -pin  "and#2" {A0(8)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/slc#5.itm}
+load net {video_in:rsc:mgc_in_wire.d(39)} -pin  "and#2" {A0(9)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/slc#5.itm}
+load net {and#3.itm} -pin  "and#2" {A1(0)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/exs#6.itm}
+load net {and#3.itm} -pin  "and#2" {A1(1)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/exs#6.itm}
+load net {and#3.itm} -pin  "and#2" {A1(2)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/exs#6.itm}
+load net {and#3.itm} -pin  "and#2" {A1(3)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/exs#6.itm}
+load net {and#3.itm} -pin  "and#2" {A1(4)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/exs#6.itm}
+load net {and#3.itm} -pin  "and#2" {A1(5)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/exs#6.itm}
+load net {and#3.itm} -pin  "and#2" {A1(6)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/exs#6.itm}
+load net {and#3.itm} -pin  "and#2" {A1(7)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/exs#6.itm}
+load net {and#3.itm} -pin  "and#2" {A1(8)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/exs#6.itm}
+load net {and#3.itm} -pin  "and#2" {A1(9)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/exs#6.itm}
+load net {and#2.itm(0)} -pin  "and#2" {Z(0)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/and#2.itm}
+load net {and#2.itm(1)} -pin  "and#2" {Z(1)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/and#2.itm}
+load net {and#2.itm(2)} -pin  "and#2" {Z(2)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/and#2.itm}
+load net {and#2.itm(3)} -pin  "and#2" {Z(3)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/and#2.itm}
+load net {and#2.itm(4)} -pin  "and#2" {Z(4)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/and#2.itm}
+load net {and#2.itm(5)} -pin  "and#2" {Z(5)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/and#2.itm}
+load net {and#2.itm(6)} -pin  "and#2" {Z(6)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/and#2.itm}
+load net {and#2.itm(7)} -pin  "and#2" {Z(7)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/and#2.itm}
+load net {and#2.itm(8)} -pin  "and#2" {Z(8)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/and#2.itm}
+load net {and#2.itm(9)} -pin  "and#2" {Z(9)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/and#2.itm}
+load inst "reg(video_out:rsc:mgc_out_stdreg.d)#2" "reg(10,1,1,-1,0)" "INTERFACE" -attr xrf 1049 -attr oid 45 -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/reg(video_out:rsc:mgc_out_stdreg.d)#2}
+load net {and#2.itm(0)} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)#2" {D(0)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/and#2.itm}
+load net {and#2.itm(1)} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)#2" {D(1)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/and#2.itm}
+load net {and#2.itm(2)} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)#2" {D(2)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/and#2.itm}
+load net {and#2.itm(3)} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)#2" {D(3)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/and#2.itm}
+load net {and#2.itm(4)} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)#2" {D(4)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/and#2.itm}
+load net {and#2.itm(5)} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)#2" {D(5)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/and#2.itm}
+load net {and#2.itm(6)} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)#2" {D(6)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/and#2.itm}
+load net {and#2.itm(7)} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)#2" {D(7)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/and#2.itm}
+load net {and#2.itm(8)} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)#2" {D(8)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/and#2.itm}
+load net {and#2.itm(9)} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)#2" {D(9)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/and#2.itm}
+load net {GND} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)#2" {DRa(0)} -attr @path {/static_anaglyph/static_anaglyph:core/C0_30#3}
+load net {GND} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)#2" {DRa(1)} -attr @path {/static_anaglyph/static_anaglyph:core/C0_30#3}
+load net {GND} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)#2" {DRa(2)} -attr @path {/static_anaglyph/static_anaglyph:core/C0_30#3}
+load net {GND} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)#2" {DRa(3)} -attr @path {/static_anaglyph/static_anaglyph:core/C0_30#3}
+load net {GND} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)#2" {DRa(4)} -attr @path {/static_anaglyph/static_anaglyph:core/C0_30#3}
+load net {GND} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)#2" {DRa(5)} -attr @path {/static_anaglyph/static_anaglyph:core/C0_30#3}
+load net {GND} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)#2" {DRa(6)} -attr @path {/static_anaglyph/static_anaglyph:core/C0_30#3}
+load net {GND} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)#2" {DRa(7)} -attr @path {/static_anaglyph/static_anaglyph:core/C0_30#3}
+load net {GND} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)#2" {DRa(8)} -attr @path {/static_anaglyph/static_anaglyph:core/C0_30#3}
+load net {GND} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)#2" {DRa(9)} -attr @path {/static_anaglyph/static_anaglyph:core/C0_30#3}
+load net {clk} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)#2" {clk} -attr xrf 1050 -attr oid 46 -attr @path {/static_anaglyph/static_anaglyph:core/clk}
+load net {en} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)#2" {en(0)} -attr @path {/static_anaglyph/static_anaglyph:core/en}
+load net {arst_n} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)#2" {Ra(0)} -attr @path {/static_anaglyph/static_anaglyph:core/arst_n}
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp#2(0)} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)#2" {Z(0)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/reg(video_out:rsc:mgc_out_stdreg.d).tmp#2}
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp#2(1)} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)#2" {Z(1)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/reg(video_out:rsc:mgc_out_stdreg.d).tmp#2}
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp#2(2)} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)#2" {Z(2)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/reg(video_out:rsc:mgc_out_stdreg.d).tmp#2}
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp#2(3)} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)#2" {Z(3)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/reg(video_out:rsc:mgc_out_stdreg.d).tmp#2}
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp#2(4)} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)#2" {Z(4)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/reg(video_out:rsc:mgc_out_stdreg.d).tmp#2}
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp#2(5)} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)#2" {Z(5)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/reg(video_out:rsc:mgc_out_stdreg.d).tmp#2}
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp#2(6)} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)#2" {Z(6)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/reg(video_out:rsc:mgc_out_stdreg.d).tmp#2}
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp#2(7)} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)#2" {Z(7)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/reg(video_out:rsc:mgc_out_stdreg.d).tmp#2}
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp#2(8)} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)#2" {Z(8)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/reg(video_out:rsc:mgc_out_stdreg.d).tmp#2}
+load net {reg(video_out:rsc:mgc_out_stdreg.d).tmp#2(9)} -pin  "reg(video_out:rsc:mgc_out_stdreg.d)#2" {Z(9)} -attr vt d -attr @path {/static_anaglyph/static_anaglyph:core/reg(video_out:rsc:mgc_out_stdreg.d).tmp#2}
+### END MODULE 
+
+module new "static_anaglyph" "orig"
+load portBus {vga_xy:rsc.z(19:0)} input 20 {vga_xy:rsc.z(19)} {vga_xy:rsc.z(18)} {vga_xy:rsc.z(17)} {vga_xy:rsc.z(16)} {vga_xy:rsc.z(15)} {vga_xy:rsc.z(14)} {vga_xy:rsc.z(13)} {vga_xy:rsc.z(12)} {vga_xy:rsc.z(11)} {vga_xy:rsc.z(10)} {vga_xy:rsc.z(9)} {vga_xy:rsc.z(8)} {vga_xy:rsc.z(7)} {vga_xy:rsc.z(6)} {vga_xy:rsc.z(5)} {vga_xy:rsc.z(4)} {vga_xy:rsc.z(3)} {vga_xy:rsc.z(2)} {vga_xy:rsc.z(1)} {vga_xy:rsc.z(0)} -attr xrf 1051 -attr oid 47 -attr vt d -attr @path {/static_anaglyph/vga_xy:rsc.z}
+load portBus {video_in:rsc.z(59:0)} input 60 {video_in:rsc.z(59)} {video_in:rsc.z(58)} {video_in:rsc.z(57)} {video_in:rsc.z(56)} {video_in:rsc.z(55)} {video_in:rsc.z(54)} {video_in:rsc.z(53)} {video_in:rsc.z(52)} {video_in:rsc.z(51)} {video_in:rsc.z(50)} {video_in:rsc.z(49)} {video_in:rsc.z(48)} {video_in:rsc.z(47)} {video_in:rsc.z(46)} {video_in:rsc.z(45)} {video_in:rsc.z(44)} {video_in:rsc.z(43)} {video_in:rsc.z(42)} {video_in:rsc.z(41)} {video_in:rsc.z(40)} {video_in:rsc.z(39)} {video_in:rsc.z(38)} {video_in:rsc.z(37)} {video_in:rsc.z(36)} {video_in:rsc.z(35)} {video_in:rsc.z(34)} {video_in:rsc.z(33)} {video_in:rsc.z(32)} {video_in:rsc.z(31)} {video_in:rsc.z(30)} {video_in:rsc.z(29)} {video_in:rsc.z(28)} {video_in:rsc.z(27)} {video_in:rsc.z(26)} {video_in:rsc.z(25)} {video_in:rsc.z(24)} {video_in:rsc.z(23)} {video_in:rsc.z(22)} {video_in:rsc.z(21)} {video_in:rsc.z(20)} {video_in:rsc.z(19)} {video_in:rsc.z(18)} {video_in:rsc.z(17)} {video_in:rsc.z(16)} {video_in:rsc.z(15)} {video_in:rsc.z(14)} {video_in:rsc.z(13)} {video_in:rsc.z(12)} {video_in:rsc.z(11)} {video_in:rsc.z(10)} {video_in:rsc.z(9)} {video_in:rsc.z(8)} {video_in:rsc.z(7)} {video_in:rsc.z(6)} {video_in:rsc.z(5)} {video_in:rsc.z(4)} {video_in:rsc.z(3)} {video_in:rsc.z(2)} {video_in:rsc.z(1)} {video_in:rsc.z(0)} -attr xrf 1052 -attr oid 48 -attr vt d -attr @path {/static_anaglyph/video_in:rsc.z}
+load portBus {video_out:rsc.z(29:0)} output 30 {video_out:rsc.z(29)} {video_out:rsc.z(28)} {video_out:rsc.z(27)} {video_out:rsc.z(26)} {video_out:rsc.z(25)} {video_out:rsc.z(24)} {video_out:rsc.z(23)} {video_out:rsc.z(22)} {video_out:rsc.z(21)} {video_out:rsc.z(20)} {video_out:rsc.z(19)} {video_out:rsc.z(18)} {video_out:rsc.z(17)} {video_out:rsc.z(16)} {video_out:rsc.z(15)} {video_out:rsc.z(14)} {video_out:rsc.z(13)} {video_out:rsc.z(12)} {video_out:rsc.z(11)} {video_out:rsc.z(10)} {video_out:rsc.z(9)} {video_out:rsc.z(8)} {video_out:rsc.z(7)} {video_out:rsc.z(6)} {video_out:rsc.z(5)} {video_out:rsc.z(4)} {video_out:rsc.z(3)} {video_out:rsc.z(2)} {video_out:rsc.z(1)} {video_out:rsc.z(0)} -attr xrf 1053 -attr oid 49 -attr vt d -attr @path {/static_anaglyph/video_out:rsc.z}
+load port {clk} input -attr xrf 1054 -attr oid 50 -attr vt d -attr @path {/static_anaglyph/clk}
+load port {en} input -attr xrf 1055 -attr oid 51 -attr vt d -attr @path {/static_anaglyph/en}
+load port {arst_n} input -attr xrf 1056 -attr oid 52 -attr vt d -attr @path {/static_anaglyph/arst_n}
+load symbol "mgc_ioport.mgc_in_wire(1,20)" "INTERFACE" GEN boxcolor 0 \
+     portBus {d(19:0)} output 20 {d(19)} {d(18)} {d(17)} {d(16)} {d(15)} {d(14)} {d(13)} {d(12)} {d(11)} {d(10)} {d(9)} {d(8)} {d(7)} {d(6)} {d(5)} {d(4)} {d(3)} {d(2)} {d(1)} {d(0)} \
+     portBus {z(19:0)} input 20 {z(19)} {z(18)} {z(17)} {z(16)} {z(15)} {z(14)} {z(13)} {z(12)} {z(11)} {z(10)} {z(9)} {z(8)} {z(7)} {z(6)} {z(5)} {z(4)} {z(3)} {z(2)} {z(1)} {z(0)} \
+
+load symbol "mgc_ioport.mgc_in_wire(2,60)" "INTERFACE" GEN boxcolor 0 \
+     portBus {d(59:0)} output 60 {d(59)} {d(58)} {d(57)} {d(56)} {d(55)} {d(54)} {d(53)} {d(52)} {d(51)} {d(50)} {d(49)} {d(48)} {d(47)} {d(46)} {d(45)} {d(44)} {d(43)} {d(42)} {d(41)} {d(40)} {d(39)} {d(38)} {d(37)} {d(36)} {d(35)} {d(34)} {d(33)} {d(32)} {d(31)} {d(30)} {d(29)} {d(28)} {d(27)} {d(26)} {d(25)} {d(24)} {d(23)} {d(22)} {d(21)} {d(20)} {d(19)} {d(18)} {d(17)} {d(16)} {d(15)} {d(14)} {d(13)} {d(12)} {d(11)} {d(10)} {d(9)} {d(8)} {d(7)} {d(6)} {d(5)} {d(4)} {d(3)} {d(2)} {d(1)} {d(0)} \
+     portBus {z(59:0)} input 60 {z(59)} {z(58)} {z(57)} {z(56)} {z(55)} {z(54)} {z(53)} {z(52)} {z(51)} {z(50)} {z(49)} {z(48)} {z(47)} {z(46)} {z(45)} {z(44)} {z(43)} {z(42)} {z(41)} {z(40)} {z(39)} {z(38)} {z(37)} {z(36)} {z(35)} {z(34)} {z(33)} {z(32)} {z(31)} {z(30)} {z(29)} {z(28)} {z(27)} {z(26)} {z(25)} {z(24)} {z(23)} {z(22)} {z(21)} {z(20)} {z(19)} {z(18)} {z(17)} {z(16)} {z(15)} {z(14)} {z(13)} {z(12)} {z(11)} {z(10)} {z(9)} {z(8)} {z(7)} {z(6)} {z(5)} {z(4)} {z(3)} {z(2)} {z(1)} {z(0)} \
+
+load symbol "mgc_ioport.mgc_out_stdreg(3,30)" "INTERFACE" GEN boxcolor 0 \
+     portBus {d(29:0)} input 30 {d(29)} {d(28)} {d(27)} {d(26)} {d(25)} {d(24)} {d(23)} {d(22)} {d(21)} {d(20)} {d(19)} {d(18)} {d(17)} {d(16)} {d(15)} {d(14)} {d(13)} {d(12)} {d(11)} {d(10)} {d(9)} {d(8)} {d(7)} {d(6)} {d(5)} {d(4)} {d(3)} {d(2)} {d(1)} {d(0)} \
+     portBus {z(29:0)} output 30 {z(29)} {z(28)} {z(27)} {z(26)} {z(25)} {z(24)} {z(23)} {z(22)} {z(21)} {z(20)} {z(19)} {z(18)} {z(17)} {z(16)} {z(15)} {z(14)} {z(13)} {z(12)} {z(11)} {z(10)} {z(9)} {z(8)} {z(7)} {z(6)} {z(5)} {z(4)} {z(3)} {z(2)} {z(1)} {z(0)} \
+
+load symbol "static_anaglyph:core" "orig" GEN \
+     port {clk#1} input \
+     port {en#1} input \
+     port {arst_n#1} input \
+     portBus {vga_xy:rsc:mgc_in_wire.d(19:0)} input 20 {vga_xy:rsc:mgc_in_wire.d(19)} {vga_xy:rsc:mgc_in_wire.d(18)} {vga_xy:rsc:mgc_in_wire.d(17)} {vga_xy:rsc:mgc_in_wire.d(16)} {vga_xy:rsc:mgc_in_wire.d(15)} {vga_xy:rsc:mgc_in_wire.d(14)} {vga_xy:rsc:mgc_in_wire.d(13)} {vga_xy:rsc:mgc_in_wire.d(12)} {vga_xy:rsc:mgc_in_wire.d(11)} {vga_xy:rsc:mgc_in_wire.d(10)} {vga_xy:rsc:mgc_in_wire.d(9)} {vga_xy:rsc:mgc_in_wire.d(8)} {vga_xy:rsc:mgc_in_wire.d(7)} {vga_xy:rsc:mgc_in_wire.d(6)} {vga_xy:rsc:mgc_in_wire.d(5)} {vga_xy:rsc:mgc_in_wire.d(4)} {vga_xy:rsc:mgc_in_wire.d(3)} {vga_xy:rsc:mgc_in_wire.d(2)} {vga_xy:rsc:mgc_in_wire.d(1)} {vga_xy:rsc:mgc_in_wire.d(0)} \
+     portBus {video_in:rsc:mgc_in_wire.d(59:0)} input 60 {video_in:rsc:mgc_in_wire.d(59)} {video_in:rsc:mgc_in_wire.d(58)} {video_in:rsc:mgc_in_wire.d(57)} {video_in:rsc:mgc_in_wire.d(56)} {video_in:rsc:mgc_in_wire.d(55)} {video_in:rsc:mgc_in_wire.d(54)} {video_in:rsc:mgc_in_wire.d(53)} {video_in:rsc:mgc_in_wire.d(52)} {video_in:rsc:mgc_in_wire.d(51)} {video_in:rsc:mgc_in_wire.d(50)} {video_in:rsc:mgc_in_wire.d(49)} {video_in:rsc:mgc_in_wire.d(48)} {video_in:rsc:mgc_in_wire.d(47)} {video_in:rsc:mgc_in_wire.d(46)} {video_in:rsc:mgc_in_wire.d(45)} {video_in:rsc:mgc_in_wire.d(44)} {video_in:rsc:mgc_in_wire.d(43)} {video_in:rsc:mgc_in_wire.d(42)} {video_in:rsc:mgc_in_wire.d(41)} {video_in:rsc:mgc_in_wire.d(40)} {video_in:rsc:mgc_in_wire.d(39)} {video_in:rsc:mgc_in_wire.d(38)} {video_in:rsc:mgc_in_wire.d(37)} {video_in:rsc:mgc_in_wire.d(36)} {video_in:rsc:mgc_in_wire.d(35)} {video_in:rsc:mgc_in_wire.d(34)} {video_in:rsc:mgc_in_wire.d(33)} {video_in:rsc:mgc_in_wire.d(32)} {video_in:rsc:mgc_in_wire.d(31)} {video_in:rsc:mgc_in_wire.d(30)} {video_in:rsc:mgc_in_wire.d(29)} {video_in:rsc:mgc_in_wire.d(28)} {video_in:rsc:mgc_in_wire.d(27)} {video_in:rsc:mgc_in_wire.d(26)} {video_in:rsc:mgc_in_wire.d(25)} {video_in:rsc:mgc_in_wire.d(24)} {video_in:rsc:mgc_in_wire.d(23)} {video_in:rsc:mgc_in_wire.d(22)} {video_in:rsc:mgc_in_wire.d(21)} {video_in:rsc:mgc_in_wire.d(20)} {video_in:rsc:mgc_in_wire.d(19)} {video_in:rsc:mgc_in_wire.d(18)} {video_in:rsc:mgc_in_wire.d(17)} {video_in:rsc:mgc_in_wire.d(16)} {video_in:rsc:mgc_in_wire.d(15)} {video_in:rsc:mgc_in_wire.d(14)} {video_in:rsc:mgc_in_wire.d(13)} {video_in:rsc:mgc_in_wire.d(12)} {video_in:rsc:mgc_in_wire.d(11)} {video_in:rsc:mgc_in_wire.d(10)} {video_in:rsc:mgc_in_wire.d(9)} {video_in:rsc:mgc_in_wire.d(8)} {video_in:rsc:mgc_in_wire.d(7)} {video_in:rsc:mgc_in_wire.d(6)} {video_in:rsc:mgc_in_wire.d(5)} {video_in:rsc:mgc_in_wire.d(4)} {video_in:rsc:mgc_in_wire.d(3)} {video_in:rsc:mgc_in_wire.d(2)} {video_in:rsc:mgc_in_wire.d(1)} {video_in:rsc:mgc_in_wire.d(0)} \
+     portBus {video_out:rsc:mgc_out_stdreg.d(29:0)} output 30 {video_out:rsc:mgc_out_stdreg.d(29)} {video_out:rsc:mgc_out_stdreg.d(28)} {video_out:rsc:mgc_out_stdreg.d(27)} {video_out:rsc:mgc_out_stdreg.d(26)} {video_out:rsc:mgc_out_stdreg.d(25)} {video_out:rsc:mgc_out_stdreg.d(24)} {video_out:rsc:mgc_out_stdreg.d(23)} {video_out:rsc:mgc_out_stdreg.d(22)} {video_out:rsc:mgc_out_stdreg.d(21)} {video_out:rsc:mgc_out_stdreg.d(20)} {video_out:rsc:mgc_out_stdreg.d(19)} {video_out:rsc:mgc_out_stdreg.d(18)} {video_out:rsc:mgc_out_stdreg.d(17)} {video_out:rsc:mgc_out_stdreg.d(16)} {video_out:rsc:mgc_out_stdreg.d(15)} {video_out:rsc:mgc_out_stdreg.d(14)} {video_out:rsc:mgc_out_stdreg.d(13)} {video_out:rsc:mgc_out_stdreg.d(12)} {video_out:rsc:mgc_out_stdreg.d(11)} {video_out:rsc:mgc_out_stdreg.d(10)} {video_out:rsc:mgc_out_stdreg.d(9)} {video_out:rsc:mgc_out_stdreg.d(8)} {video_out:rsc:mgc_out_stdreg.d(7)} {video_out:rsc:mgc_out_stdreg.d(6)} {video_out:rsc:mgc_out_stdreg.d(5)} {video_out:rsc:mgc_out_stdreg.d(4)} {video_out:rsc:mgc_out_stdreg.d(3)} {video_out:rsc:mgc_out_stdreg.d(2)} {video_out:rsc:mgc_out_stdreg.d(1)} {video_out:rsc:mgc_out_stdreg.d(0)} \
+
+load net {vga_xy:rsc:mgc_in_wire.d#1(0)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d#1(1)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d#1(2)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d#1(3)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d#1(4)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d#1(5)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d#1(6)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d#1(7)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d#1(8)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d#1(9)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d#1(10)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d#1(11)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d#1(12)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d#1(13)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d#1(14)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d#1(15)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d#1(16)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d#1(17)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d#1(18)} -attr vt d
+load net {vga_xy:rsc:mgc_in_wire.d#1(19)} -attr vt d
+load netBundle {vga_xy:rsc:mgc_in_wire.d#1} 20 {vga_xy:rsc:mgc_in_wire.d#1(0)} {vga_xy:rsc:mgc_in_wire.d#1(1)} {vga_xy:rsc:mgc_in_wire.d#1(2)} {vga_xy:rsc:mgc_in_wire.d#1(3)} {vga_xy:rsc:mgc_in_wire.d#1(4)} {vga_xy:rsc:mgc_in_wire.d#1(5)} {vga_xy:rsc:mgc_in_wire.d#1(6)} {vga_xy:rsc:mgc_in_wire.d#1(7)} {vga_xy:rsc:mgc_in_wire.d#1(8)} {vga_xy:rsc:mgc_in_wire.d#1(9)} {vga_xy:rsc:mgc_in_wire.d#1(10)} {vga_xy:rsc:mgc_in_wire.d#1(11)} {vga_xy:rsc:mgc_in_wire.d#1(12)} {vga_xy:rsc:mgc_in_wire.d#1(13)} {vga_xy:rsc:mgc_in_wire.d#1(14)} {vga_xy:rsc:mgc_in_wire.d#1(15)} {vga_xy:rsc:mgc_in_wire.d#1(16)} {vga_xy:rsc:mgc_in_wire.d#1(17)} {vga_xy:rsc:mgc_in_wire.d#1(18)} {vga_xy:rsc:mgc_in_wire.d#1(19)} -attr xrf 1057 -attr oid 53 -attr vt d -attr @path {/static_anaglyph/vga_xy:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(0)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d#1(1)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d#1(2)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d#1(3)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d#1(4)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d#1(5)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d#1(6)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d#1(7)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d#1(8)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d#1(9)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d#1(10)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d#1(11)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d#1(12)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d#1(13)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d#1(14)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d#1(15)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d#1(16)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d#1(17)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d#1(18)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d#1(19)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d#1(20)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d#1(21)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d#1(22)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d#1(23)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d#1(24)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d#1(25)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d#1(26)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d#1(27)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d#1(28)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d#1(29)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d#1(30)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d#1(31)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d#1(32)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d#1(33)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d#1(34)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d#1(35)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d#1(36)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d#1(37)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d#1(38)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d#1(39)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d#1(40)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d#1(41)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d#1(42)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d#1(43)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d#1(44)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d#1(45)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d#1(46)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d#1(47)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d#1(48)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d#1(49)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d#1(50)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d#1(51)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d#1(52)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d#1(53)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d#1(54)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d#1(55)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d#1(56)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d#1(57)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d#1(58)} -attr vt d
+load net {video_in:rsc:mgc_in_wire.d#1(59)} -attr vt d
+load netBundle {video_in:rsc:mgc_in_wire.d#1} 60 {video_in:rsc:mgc_in_wire.d#1(0)} {video_in:rsc:mgc_in_wire.d#1(1)} {video_in:rsc:mgc_in_wire.d#1(2)} {video_in:rsc:mgc_in_wire.d#1(3)} {video_in:rsc:mgc_in_wire.d#1(4)} {video_in:rsc:mgc_in_wire.d#1(5)} {video_in:rsc:mgc_in_wire.d#1(6)} {video_in:rsc:mgc_in_wire.d#1(7)} {video_in:rsc:mgc_in_wire.d#1(8)} {video_in:rsc:mgc_in_wire.d#1(9)} {video_in:rsc:mgc_in_wire.d#1(10)} {video_in:rsc:mgc_in_wire.d#1(11)} {video_in:rsc:mgc_in_wire.d#1(12)} {video_in:rsc:mgc_in_wire.d#1(13)} {video_in:rsc:mgc_in_wire.d#1(14)} {video_in:rsc:mgc_in_wire.d#1(15)} {video_in:rsc:mgc_in_wire.d#1(16)} {video_in:rsc:mgc_in_wire.d#1(17)} {video_in:rsc:mgc_in_wire.d#1(18)} {video_in:rsc:mgc_in_wire.d#1(19)} {video_in:rsc:mgc_in_wire.d#1(20)} {video_in:rsc:mgc_in_wire.d#1(21)} {video_in:rsc:mgc_in_wire.d#1(22)} {video_in:rsc:mgc_in_wire.d#1(23)} {video_in:rsc:mgc_in_wire.d#1(24)} {video_in:rsc:mgc_in_wire.d#1(25)} {video_in:rsc:mgc_in_wire.d#1(26)} {video_in:rsc:mgc_in_wire.d#1(27)} {video_in:rsc:mgc_in_wire.d#1(28)} {video_in:rsc:mgc_in_wire.d#1(29)} {video_in:rsc:mgc_in_wire.d#1(30)} {video_in:rsc:mgc_in_wire.d#1(31)} {video_in:rsc:mgc_in_wire.d#1(32)} {video_in:rsc:mgc_in_wire.d#1(33)} {video_in:rsc:mgc_in_wire.d#1(34)} {video_in:rsc:mgc_in_wire.d#1(35)} {video_in:rsc:mgc_in_wire.d#1(36)} {video_in:rsc:mgc_in_wire.d#1(37)} {video_in:rsc:mgc_in_wire.d#1(38)} {video_in:rsc:mgc_in_wire.d#1(39)} {video_in:rsc:mgc_in_wire.d#1(40)} {video_in:rsc:mgc_in_wire.d#1(41)} {video_in:rsc:mgc_in_wire.d#1(42)} {video_in:rsc:mgc_in_wire.d#1(43)} {video_in:rsc:mgc_in_wire.d#1(44)} {video_in:rsc:mgc_in_wire.d#1(45)} {video_in:rsc:mgc_in_wire.d#1(46)} {video_in:rsc:mgc_in_wire.d#1(47)} {video_in:rsc:mgc_in_wire.d#1(48)} {video_in:rsc:mgc_in_wire.d#1(49)} {video_in:rsc:mgc_in_wire.d#1(50)} {video_in:rsc:mgc_in_wire.d#1(51)} {video_in:rsc:mgc_in_wire.d#1(52)} {video_in:rsc:mgc_in_wire.d#1(53)} {video_in:rsc:mgc_in_wire.d#1(54)} {video_in:rsc:mgc_in_wire.d#1(55)} {video_in:rsc:mgc_in_wire.d#1(56)} {video_in:rsc:mgc_in_wire.d#1(57)} {video_in:rsc:mgc_in_wire.d#1(58)} {video_in:rsc:mgc_in_wire.d#1(59)} -attr xrf 1058 -attr oid 54 -attr vt d -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_out:rsc:mgc_out_stdreg.d#1(0)} -attr vt d
+load net {video_out:rsc:mgc_out_stdreg.d#1(1)} -attr vt d
+load net {video_out:rsc:mgc_out_stdreg.d#1(2)} -attr vt d
+load net {video_out:rsc:mgc_out_stdreg.d#1(3)} -attr vt d
+load net {video_out:rsc:mgc_out_stdreg.d#1(4)} -attr vt d
+load net {video_out:rsc:mgc_out_stdreg.d#1(5)} -attr vt d
+load net {video_out:rsc:mgc_out_stdreg.d#1(6)} -attr vt d
+load net {video_out:rsc:mgc_out_stdreg.d#1(7)} -attr vt d
+load net {video_out:rsc:mgc_out_stdreg.d#1(8)} -attr vt d
+load net {video_out:rsc:mgc_out_stdreg.d#1(9)} -attr vt d
+load net {video_out:rsc:mgc_out_stdreg.d#1(10)} -attr vt d
+load net {video_out:rsc:mgc_out_stdreg.d#1(11)} -attr vt d
+load net {video_out:rsc:mgc_out_stdreg.d#1(12)} -attr vt d
+load net {video_out:rsc:mgc_out_stdreg.d#1(13)} -attr vt d
+load net {video_out:rsc:mgc_out_stdreg.d#1(14)} -attr vt d
+load net {video_out:rsc:mgc_out_stdreg.d#1(15)} -attr vt d
+load net {video_out:rsc:mgc_out_stdreg.d#1(16)} -attr vt d
+load net {video_out:rsc:mgc_out_stdreg.d#1(17)} -attr vt d
+load net {video_out:rsc:mgc_out_stdreg.d#1(18)} -attr vt d
+load net {video_out:rsc:mgc_out_stdreg.d#1(19)} -attr vt d
+load net {video_out:rsc:mgc_out_stdreg.d#1(20)} -attr vt d
+load net {video_out:rsc:mgc_out_stdreg.d#1(21)} -attr vt d
+load net {video_out:rsc:mgc_out_stdreg.d#1(22)} -attr vt d
+load net {video_out:rsc:mgc_out_stdreg.d#1(23)} -attr vt d
+load net {video_out:rsc:mgc_out_stdreg.d#1(24)} -attr vt d
+load net {video_out:rsc:mgc_out_stdreg.d#1(25)} -attr vt d
+load net {video_out:rsc:mgc_out_stdreg.d#1(26)} -attr vt d
+load net {video_out:rsc:mgc_out_stdreg.d#1(27)} -attr vt d
+load net {video_out:rsc:mgc_out_stdreg.d#1(28)} -attr vt d
+load net {video_out:rsc:mgc_out_stdreg.d#1(29)} -attr vt d
+load netBundle {video_out:rsc:mgc_out_stdreg.d#1} 30 {video_out:rsc:mgc_out_stdreg.d#1(0)} {video_out:rsc:mgc_out_stdreg.d#1(1)} {video_out:rsc:mgc_out_stdreg.d#1(2)} {video_out:rsc:mgc_out_stdreg.d#1(3)} {video_out:rsc:mgc_out_stdreg.d#1(4)} {video_out:rsc:mgc_out_stdreg.d#1(5)} {video_out:rsc:mgc_out_stdreg.d#1(6)} {video_out:rsc:mgc_out_stdreg.d#1(7)} {video_out:rsc:mgc_out_stdreg.d#1(8)} {video_out:rsc:mgc_out_stdreg.d#1(9)} {video_out:rsc:mgc_out_stdreg.d#1(10)} {video_out:rsc:mgc_out_stdreg.d#1(11)} {video_out:rsc:mgc_out_stdreg.d#1(12)} {video_out:rsc:mgc_out_stdreg.d#1(13)} {video_out:rsc:mgc_out_stdreg.d#1(14)} {video_out:rsc:mgc_out_stdreg.d#1(15)} {video_out:rsc:mgc_out_stdreg.d#1(16)} {video_out:rsc:mgc_out_stdreg.d#1(17)} {video_out:rsc:mgc_out_stdreg.d#1(18)} {video_out:rsc:mgc_out_stdreg.d#1(19)} {video_out:rsc:mgc_out_stdreg.d#1(20)} {video_out:rsc:mgc_out_stdreg.d#1(21)} {video_out:rsc:mgc_out_stdreg.d#1(22)} {video_out:rsc:mgc_out_stdreg.d#1(23)} {video_out:rsc:mgc_out_stdreg.d#1(24)} {video_out:rsc:mgc_out_stdreg.d#1(25)} {video_out:rsc:mgc_out_stdreg.d#1(26)} {video_out:rsc:mgc_out_stdreg.d#1(27)} {video_out:rsc:mgc_out_stdreg.d#1(28)} {video_out:rsc:mgc_out_stdreg.d#1(29)} -attr xrf 1059 -attr oid 55 -attr vt d -attr @path {/static_anaglyph/video_out:rsc:mgc_out_stdreg.d}
+load net {vga_xy:rsc.z(0)} -attr vt d
+load net {vga_xy:rsc.z(1)} -attr vt d
+load net {vga_xy:rsc.z(2)} -attr vt d
+load net {vga_xy:rsc.z(3)} -attr vt d
+load net {vga_xy:rsc.z(4)} -attr vt d
+load net {vga_xy:rsc.z(5)} -attr vt d
+load net {vga_xy:rsc.z(6)} -attr vt d
+load net {vga_xy:rsc.z(7)} -attr vt d
+load net {vga_xy:rsc.z(8)} -attr vt d
+load net {vga_xy:rsc.z(9)} -attr vt d
+load net {vga_xy:rsc.z(10)} -attr vt d
+load net {vga_xy:rsc.z(11)} -attr vt d
+load net {vga_xy:rsc.z(12)} -attr vt d
+load net {vga_xy:rsc.z(13)} -attr vt d
+load net {vga_xy:rsc.z(14)} -attr vt d
+load net {vga_xy:rsc.z(15)} -attr vt d
+load net {vga_xy:rsc.z(16)} -attr vt d
+load net {vga_xy:rsc.z(17)} -attr vt d
+load net {vga_xy:rsc.z(18)} -attr vt d
+load net {vga_xy:rsc.z(19)} -attr vt d
+load netBundle {vga_xy:rsc.z} 20 {vga_xy:rsc.z(0)} {vga_xy:rsc.z(1)} {vga_xy:rsc.z(2)} {vga_xy:rsc.z(3)} {vga_xy:rsc.z(4)} {vga_xy:rsc.z(5)} {vga_xy:rsc.z(6)} {vga_xy:rsc.z(7)} {vga_xy:rsc.z(8)} {vga_xy:rsc.z(9)} {vga_xy:rsc.z(10)} {vga_xy:rsc.z(11)} {vga_xy:rsc.z(12)} {vga_xy:rsc.z(13)} {vga_xy:rsc.z(14)} {vga_xy:rsc.z(15)} {vga_xy:rsc.z(16)} {vga_xy:rsc.z(17)} {vga_xy:rsc.z(18)} {vga_xy:rsc.z(19)} -attr xrf 1060 -attr oid 56 -attr vt d -attr @path {/static_anaglyph/vga_xy:rsc.z}
+load net {vga_xy:rsc.z(0)} -port {vga_xy:rsc.z(0)} -attr vt d
+load net {vga_xy:rsc.z(1)} -port {vga_xy:rsc.z(1)} -attr vt d
+load net {vga_xy:rsc.z(2)} -port {vga_xy:rsc.z(2)} -attr vt d
+load net {vga_xy:rsc.z(3)} -port {vga_xy:rsc.z(3)} -attr vt d
+load net {vga_xy:rsc.z(4)} -port {vga_xy:rsc.z(4)} -attr vt d
+load net {vga_xy:rsc.z(5)} -port {vga_xy:rsc.z(5)} -attr vt d
+load net {vga_xy:rsc.z(6)} -port {vga_xy:rsc.z(6)} -attr vt d
+load net {vga_xy:rsc.z(7)} -port {vga_xy:rsc.z(7)} -attr vt d
+load net {vga_xy:rsc.z(8)} -port {vga_xy:rsc.z(8)} -attr vt d
+load net {vga_xy:rsc.z(9)} -port {vga_xy:rsc.z(9)} -attr vt d
+load net {vga_xy:rsc.z(10)} -port {vga_xy:rsc.z(10)} -attr vt d
+load net {vga_xy:rsc.z(11)} -port {vga_xy:rsc.z(11)} -attr vt d
+load net {vga_xy:rsc.z(12)} -port {vga_xy:rsc.z(12)} -attr vt d
+load net {vga_xy:rsc.z(13)} -port {vga_xy:rsc.z(13)} -attr vt d
+load net {vga_xy:rsc.z(14)} -port {vga_xy:rsc.z(14)} -attr vt d
+load net {vga_xy:rsc.z(15)} -port {vga_xy:rsc.z(15)} -attr vt d
+load net {vga_xy:rsc.z(16)} -port {vga_xy:rsc.z(16)} -attr vt d
+load net {vga_xy:rsc.z(17)} -port {vga_xy:rsc.z(17)} -attr vt d
+load net {vga_xy:rsc.z(18)} -port {vga_xy:rsc.z(18)} -attr vt d
+load net {vga_xy:rsc.z(19)} -port {vga_xy:rsc.z(19)} -attr vt d
+load netBundle {vga_xy:rsc.z} 20 {vga_xy:rsc.z(0)} {vga_xy:rsc.z(1)} {vga_xy:rsc.z(2)} {vga_xy:rsc.z(3)} {vga_xy:rsc.z(4)} {vga_xy:rsc.z(5)} {vga_xy:rsc.z(6)} {vga_xy:rsc.z(7)} {vga_xy:rsc.z(8)} {vga_xy:rsc.z(9)} {vga_xy:rsc.z(10)} {vga_xy:rsc.z(11)} {vga_xy:rsc.z(12)} {vga_xy:rsc.z(13)} {vga_xy:rsc.z(14)} {vga_xy:rsc.z(15)} {vga_xy:rsc.z(16)} {vga_xy:rsc.z(17)} {vga_xy:rsc.z(18)} {vga_xy:rsc.z(19)} -attr xrf 1061 -attr oid 57 -attr vt d -attr @path {/static_anaglyph/vga_xy:rsc.z}
+load net {video_in:rsc.z(0)} -attr vt d
+load net {video_in:rsc.z(1)} -attr vt d
+load net {video_in:rsc.z(2)} -attr vt d
+load net {video_in:rsc.z(3)} -attr vt d
+load net {video_in:rsc.z(4)} -attr vt d
+load net {video_in:rsc.z(5)} -attr vt d
+load net {video_in:rsc.z(6)} -attr vt d
+load net {video_in:rsc.z(7)} -attr vt d
+load net {video_in:rsc.z(8)} -attr vt d
+load net {video_in:rsc.z(9)} -attr vt d
+load net {video_in:rsc.z(10)} -attr vt d
+load net {video_in:rsc.z(11)} -attr vt d
+load net {video_in:rsc.z(12)} -attr vt d
+load net {video_in:rsc.z(13)} -attr vt d
+load net {video_in:rsc.z(14)} -attr vt d
+load net {video_in:rsc.z(15)} -attr vt d
+load net {video_in:rsc.z(16)} -attr vt d
+load net {video_in:rsc.z(17)} -attr vt d
+load net {video_in:rsc.z(18)} -attr vt d
+load net {video_in:rsc.z(19)} -attr vt d
+load net {video_in:rsc.z(20)} -attr vt d
+load net {video_in:rsc.z(21)} -attr vt d
+load net {video_in:rsc.z(22)} -attr vt d
+load net {video_in:rsc.z(23)} -attr vt d
+load net {video_in:rsc.z(24)} -attr vt d
+load net {video_in:rsc.z(25)} -attr vt d
+load net {video_in:rsc.z(26)} -attr vt d
+load net {video_in:rsc.z(27)} -attr vt d
+load net {video_in:rsc.z(28)} -attr vt d
+load net {video_in:rsc.z(29)} -attr vt d
+load net {video_in:rsc.z(30)} -attr vt d
+load net {video_in:rsc.z(31)} -attr vt d
+load net {video_in:rsc.z(32)} -attr vt d
+load net {video_in:rsc.z(33)} -attr vt d
+load net {video_in:rsc.z(34)} -attr vt d
+load net {video_in:rsc.z(35)} -attr vt d
+load net {video_in:rsc.z(36)} -attr vt d
+load net {video_in:rsc.z(37)} -attr vt d
+load net {video_in:rsc.z(38)} -attr vt d
+load net {video_in:rsc.z(39)} -attr vt d
+load net {video_in:rsc.z(40)} -attr vt d
+load net {video_in:rsc.z(41)} -attr vt d
+load net {video_in:rsc.z(42)} -attr vt d
+load net {video_in:rsc.z(43)} -attr vt d
+load net {video_in:rsc.z(44)} -attr vt d
+load net {video_in:rsc.z(45)} -attr vt d
+load net {video_in:rsc.z(46)} -attr vt d
+load net {video_in:rsc.z(47)} -attr vt d
+load net {video_in:rsc.z(48)} -attr vt d
+load net {video_in:rsc.z(49)} -attr vt d
+load net {video_in:rsc.z(50)} -attr vt d
+load net {video_in:rsc.z(51)} -attr vt d
+load net {video_in:rsc.z(52)} -attr vt d
+load net {video_in:rsc.z(53)} -attr vt d
+load net {video_in:rsc.z(54)} -attr vt d
+load net {video_in:rsc.z(55)} -attr vt d
+load net {video_in:rsc.z(56)} -attr vt d
+load net {video_in:rsc.z(57)} -attr vt d
+load net {video_in:rsc.z(58)} -attr vt d
+load net {video_in:rsc.z(59)} -attr vt d
+load netBundle {video_in:rsc.z} 60 {video_in:rsc.z(0)} {video_in:rsc.z(1)} {video_in:rsc.z(2)} {video_in:rsc.z(3)} {video_in:rsc.z(4)} {video_in:rsc.z(5)} {video_in:rsc.z(6)} {video_in:rsc.z(7)} {video_in:rsc.z(8)} {video_in:rsc.z(9)} {video_in:rsc.z(10)} {video_in:rsc.z(11)} {video_in:rsc.z(12)} {video_in:rsc.z(13)} {video_in:rsc.z(14)} {video_in:rsc.z(15)} {video_in:rsc.z(16)} {video_in:rsc.z(17)} {video_in:rsc.z(18)} {video_in:rsc.z(19)} {video_in:rsc.z(20)} {video_in:rsc.z(21)} {video_in:rsc.z(22)} {video_in:rsc.z(23)} {video_in:rsc.z(24)} {video_in:rsc.z(25)} {video_in:rsc.z(26)} {video_in:rsc.z(27)} {video_in:rsc.z(28)} {video_in:rsc.z(29)} {video_in:rsc.z(30)} {video_in:rsc.z(31)} {video_in:rsc.z(32)} {video_in:rsc.z(33)} {video_in:rsc.z(34)} {video_in:rsc.z(35)} {video_in:rsc.z(36)} {video_in:rsc.z(37)} {video_in:rsc.z(38)} {video_in:rsc.z(39)} {video_in:rsc.z(40)} {video_in:rsc.z(41)} {video_in:rsc.z(42)} {video_in:rsc.z(43)} {video_in:rsc.z(44)} {video_in:rsc.z(45)} {video_in:rsc.z(46)} {video_in:rsc.z(47)} {video_in:rsc.z(48)} {video_in:rsc.z(49)} {video_in:rsc.z(50)} {video_in:rsc.z(51)} {video_in:rsc.z(52)} {video_in:rsc.z(53)} {video_in:rsc.z(54)} {video_in:rsc.z(55)} {video_in:rsc.z(56)} {video_in:rsc.z(57)} {video_in:rsc.z(58)} {video_in:rsc.z(59)} -attr xrf 1062 -attr oid 58 -attr vt d -attr @path {/static_anaglyph/video_in:rsc.z}
+load net {video_in:rsc.z(0)} -port {video_in:rsc.z(0)} -attr vt d
+load net {video_in:rsc.z(1)} -port {video_in:rsc.z(1)} -attr vt d
+load net {video_in:rsc.z(2)} -port {video_in:rsc.z(2)} -attr vt d
+load net {video_in:rsc.z(3)} -port {video_in:rsc.z(3)} -attr vt d
+load net {video_in:rsc.z(4)} -port {video_in:rsc.z(4)} -attr vt d
+load net {video_in:rsc.z(5)} -port {video_in:rsc.z(5)} -attr vt d
+load net {video_in:rsc.z(6)} -port {video_in:rsc.z(6)} -attr vt d
+load net {video_in:rsc.z(7)} -port {video_in:rsc.z(7)} -attr vt d
+load net {video_in:rsc.z(8)} -port {video_in:rsc.z(8)} -attr vt d
+load net {video_in:rsc.z(9)} -port {video_in:rsc.z(9)} -attr vt d
+load net {video_in:rsc.z(10)} -port {video_in:rsc.z(10)} -attr vt d
+load net {video_in:rsc.z(11)} -port {video_in:rsc.z(11)} -attr vt d
+load net {video_in:rsc.z(12)} -port {video_in:rsc.z(12)} -attr vt d
+load net {video_in:rsc.z(13)} -port {video_in:rsc.z(13)} -attr vt d
+load net {video_in:rsc.z(14)} -port {video_in:rsc.z(14)} -attr vt d
+load net {video_in:rsc.z(15)} -port {video_in:rsc.z(15)} -attr vt d
+load net {video_in:rsc.z(16)} -port {video_in:rsc.z(16)} -attr vt d
+load net {video_in:rsc.z(17)} -port {video_in:rsc.z(17)} -attr vt d
+load net {video_in:rsc.z(18)} -port {video_in:rsc.z(18)} -attr vt d
+load net {video_in:rsc.z(19)} -port {video_in:rsc.z(19)} -attr vt d
+load net {video_in:rsc.z(20)} -port {video_in:rsc.z(20)} -attr vt d
+load net {video_in:rsc.z(21)} -port {video_in:rsc.z(21)} -attr vt d
+load net {video_in:rsc.z(22)} -port {video_in:rsc.z(22)} -attr vt d
+load net {video_in:rsc.z(23)} -port {video_in:rsc.z(23)} -attr vt d
+load net {video_in:rsc.z(24)} -port {video_in:rsc.z(24)} -attr vt d
+load net {video_in:rsc.z(25)} -port {video_in:rsc.z(25)} -attr vt d
+load net {video_in:rsc.z(26)} -port {video_in:rsc.z(26)} -attr vt d
+load net {video_in:rsc.z(27)} -port {video_in:rsc.z(27)} -attr vt d
+load net {video_in:rsc.z(28)} -port {video_in:rsc.z(28)} -attr vt d
+load net {video_in:rsc.z(29)} -port {video_in:rsc.z(29)} -attr vt d
+load net {video_in:rsc.z(30)} -port {video_in:rsc.z(30)} -attr vt d
+load net {video_in:rsc.z(31)} -port {video_in:rsc.z(31)} -attr vt d
+load net {video_in:rsc.z(32)} -port {video_in:rsc.z(32)} -attr vt d
+load net {video_in:rsc.z(33)} -port {video_in:rsc.z(33)} -attr vt d
+load net {video_in:rsc.z(34)} -port {video_in:rsc.z(34)} -attr vt d
+load net {video_in:rsc.z(35)} -port {video_in:rsc.z(35)} -attr vt d
+load net {video_in:rsc.z(36)} -port {video_in:rsc.z(36)} -attr vt d
+load net {video_in:rsc.z(37)} -port {video_in:rsc.z(37)} -attr vt d
+load net {video_in:rsc.z(38)} -port {video_in:rsc.z(38)} -attr vt d
+load net {video_in:rsc.z(39)} -port {video_in:rsc.z(39)} -attr vt d
+load net {video_in:rsc.z(40)} -port {video_in:rsc.z(40)} -attr vt d
+load net {video_in:rsc.z(41)} -port {video_in:rsc.z(41)} -attr vt d
+load net {video_in:rsc.z(42)} -port {video_in:rsc.z(42)} -attr vt d
+load net {video_in:rsc.z(43)} -port {video_in:rsc.z(43)} -attr vt d
+load net {video_in:rsc.z(44)} -port {video_in:rsc.z(44)} -attr vt d
+load net {video_in:rsc.z(45)} -port {video_in:rsc.z(45)} -attr vt d
+load net {video_in:rsc.z(46)} -port {video_in:rsc.z(46)} -attr vt d
+load net {video_in:rsc.z(47)} -port {video_in:rsc.z(47)} -attr vt d
+load net {video_in:rsc.z(48)} -port {video_in:rsc.z(48)} -attr vt d
+load net {video_in:rsc.z(49)} -port {video_in:rsc.z(49)} -attr vt d
+load net {video_in:rsc.z(50)} -port {video_in:rsc.z(50)} -attr vt d
+load net {video_in:rsc.z(51)} -port {video_in:rsc.z(51)} -attr vt d
+load net {video_in:rsc.z(52)} -port {video_in:rsc.z(52)} -attr vt d
+load net {video_in:rsc.z(53)} -port {video_in:rsc.z(53)} -attr vt d
+load net {video_in:rsc.z(54)} -port {video_in:rsc.z(54)} -attr vt d
+load net {video_in:rsc.z(55)} -port {video_in:rsc.z(55)} -attr vt d
+load net {video_in:rsc.z(56)} -port {video_in:rsc.z(56)} -attr vt d
+load net {video_in:rsc.z(57)} -port {video_in:rsc.z(57)} -attr vt d
+load net {video_in:rsc.z(58)} -port {video_in:rsc.z(58)} -attr vt d
+load net {video_in:rsc.z(59)} -port {video_in:rsc.z(59)} -attr vt d
+load netBundle {video_in:rsc.z} 60 {video_in:rsc.z(0)} {video_in:rsc.z(1)} {video_in:rsc.z(2)} {video_in:rsc.z(3)} {video_in:rsc.z(4)} {video_in:rsc.z(5)} {video_in:rsc.z(6)} {video_in:rsc.z(7)} {video_in:rsc.z(8)} {video_in:rsc.z(9)} {video_in:rsc.z(10)} {video_in:rsc.z(11)} {video_in:rsc.z(12)} {video_in:rsc.z(13)} {video_in:rsc.z(14)} {video_in:rsc.z(15)} {video_in:rsc.z(16)} {video_in:rsc.z(17)} {video_in:rsc.z(18)} {video_in:rsc.z(19)} {video_in:rsc.z(20)} {video_in:rsc.z(21)} {video_in:rsc.z(22)} {video_in:rsc.z(23)} {video_in:rsc.z(24)} {video_in:rsc.z(25)} {video_in:rsc.z(26)} {video_in:rsc.z(27)} {video_in:rsc.z(28)} {video_in:rsc.z(29)} {video_in:rsc.z(30)} {video_in:rsc.z(31)} {video_in:rsc.z(32)} {video_in:rsc.z(33)} {video_in:rsc.z(34)} {video_in:rsc.z(35)} {video_in:rsc.z(36)} {video_in:rsc.z(37)} {video_in:rsc.z(38)} {video_in:rsc.z(39)} {video_in:rsc.z(40)} {video_in:rsc.z(41)} {video_in:rsc.z(42)} {video_in:rsc.z(43)} {video_in:rsc.z(44)} {video_in:rsc.z(45)} {video_in:rsc.z(46)} {video_in:rsc.z(47)} {video_in:rsc.z(48)} {video_in:rsc.z(49)} {video_in:rsc.z(50)} {video_in:rsc.z(51)} {video_in:rsc.z(52)} {video_in:rsc.z(53)} {video_in:rsc.z(54)} {video_in:rsc.z(55)} {video_in:rsc.z(56)} {video_in:rsc.z(57)} {video_in:rsc.z(58)} {video_in:rsc.z(59)} -attr xrf 1063 -attr oid 59 -attr vt d -attr @path {/static_anaglyph/video_in:rsc.z}
+load net {video_out:rsc.z(0)} -attr vt d
+load net {video_out:rsc.z(1)} -attr vt d
+load net {video_out:rsc.z(2)} -attr vt d
+load net {video_out:rsc.z(3)} -attr vt d
+load net {video_out:rsc.z(4)} -attr vt d
+load net {video_out:rsc.z(5)} -attr vt d
+load net {video_out:rsc.z(6)} -attr vt d
+load net {video_out:rsc.z(7)} -attr vt d
+load net {video_out:rsc.z(8)} -attr vt d
+load net {video_out:rsc.z(9)} -attr vt d
+load net {video_out:rsc.z(10)} -attr vt d
+load net {video_out:rsc.z(11)} -attr vt d
+load net {video_out:rsc.z(12)} -attr vt d
+load net {video_out:rsc.z(13)} -attr vt d
+load net {video_out:rsc.z(14)} -attr vt d
+load net {video_out:rsc.z(15)} -attr vt d
+load net {video_out:rsc.z(16)} -attr vt d
+load net {video_out:rsc.z(17)} -attr vt d
+load net {video_out:rsc.z(18)} -attr vt d
+load net {video_out:rsc.z(19)} -attr vt d
+load net {video_out:rsc.z(20)} -attr vt d
+load net {video_out:rsc.z(21)} -attr vt d
+load net {video_out:rsc.z(22)} -attr vt d
+load net {video_out:rsc.z(23)} -attr vt d
+load net {video_out:rsc.z(24)} -attr vt d
+load net {video_out:rsc.z(25)} -attr vt d
+load net {video_out:rsc.z(26)} -attr vt d
+load net {video_out:rsc.z(27)} -attr vt d
+load net {video_out:rsc.z(28)} -attr vt d
+load net {video_out:rsc.z(29)} -attr vt d
+load netBundle {video_out:rsc.z} 30 {video_out:rsc.z(0)} {video_out:rsc.z(1)} {video_out:rsc.z(2)} {video_out:rsc.z(3)} {video_out:rsc.z(4)} {video_out:rsc.z(5)} {video_out:rsc.z(6)} {video_out:rsc.z(7)} {video_out:rsc.z(8)} {video_out:rsc.z(9)} {video_out:rsc.z(10)} {video_out:rsc.z(11)} {video_out:rsc.z(12)} {video_out:rsc.z(13)} {video_out:rsc.z(14)} {video_out:rsc.z(15)} {video_out:rsc.z(16)} {video_out:rsc.z(17)} {video_out:rsc.z(18)} {video_out:rsc.z(19)} {video_out:rsc.z(20)} {video_out:rsc.z(21)} {video_out:rsc.z(22)} {video_out:rsc.z(23)} {video_out:rsc.z(24)} {video_out:rsc.z(25)} {video_out:rsc.z(26)} {video_out:rsc.z(27)} {video_out:rsc.z(28)} {video_out:rsc.z(29)} -attr xrf 1064 -attr oid 60 -attr vt d -attr @path {/static_anaglyph/video_out:rsc.z}
+load net {video_out:rsc.z(0)} -port {video_out:rsc.z(0)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc.z}
+load net {video_out:rsc.z(1)} -port {video_out:rsc.z(1)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc.z}
+load net {video_out:rsc.z(2)} -port {video_out:rsc.z(2)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc.z}
+load net {video_out:rsc.z(3)} -port {video_out:rsc.z(3)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc.z}
+load net {video_out:rsc.z(4)} -port {video_out:rsc.z(4)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc.z}
+load net {video_out:rsc.z(5)} -port {video_out:rsc.z(5)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc.z}
+load net {video_out:rsc.z(6)} -port {video_out:rsc.z(6)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc.z}
+load net {video_out:rsc.z(7)} -port {video_out:rsc.z(7)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc.z}
+load net {video_out:rsc.z(8)} -port {video_out:rsc.z(8)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc.z}
+load net {video_out:rsc.z(9)} -port {video_out:rsc.z(9)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc.z}
+load net {video_out:rsc.z(10)} -port {video_out:rsc.z(10)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc.z}
+load net {video_out:rsc.z(11)} -port {video_out:rsc.z(11)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc.z}
+load net {video_out:rsc.z(12)} -port {video_out:rsc.z(12)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc.z}
+load net {video_out:rsc.z(13)} -port {video_out:rsc.z(13)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc.z}
+load net {video_out:rsc.z(14)} -port {video_out:rsc.z(14)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc.z}
+load net {video_out:rsc.z(15)} -port {video_out:rsc.z(15)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc.z}
+load net {video_out:rsc.z(16)} -port {video_out:rsc.z(16)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc.z}
+load net {video_out:rsc.z(17)} -port {video_out:rsc.z(17)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc.z}
+load net {video_out:rsc.z(18)} -port {video_out:rsc.z(18)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc.z}
+load net {video_out:rsc.z(19)} -port {video_out:rsc.z(19)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc.z}
+load net {video_out:rsc.z(20)} -port {video_out:rsc.z(20)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc.z}
+load net {video_out:rsc.z(21)} -port {video_out:rsc.z(21)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc.z}
+load net {video_out:rsc.z(22)} -port {video_out:rsc.z(22)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc.z}
+load net {video_out:rsc.z(23)} -port {video_out:rsc.z(23)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc.z}
+load net {video_out:rsc.z(24)} -port {video_out:rsc.z(24)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc.z}
+load net {video_out:rsc.z(25)} -port {video_out:rsc.z(25)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc.z}
+load net {video_out:rsc.z(26)} -port {video_out:rsc.z(26)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc.z}
+load net {video_out:rsc.z(27)} -port {video_out:rsc.z(27)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc.z}
+load net {video_out:rsc.z(28)} -port {video_out:rsc.z(28)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc.z}
+load net {video_out:rsc.z(29)} -port {video_out:rsc.z(29)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc.z}
+load net {clk} -attr xrf 1065 -attr oid 61
+load net {clk} -port {clk} -attr xrf 1066 -attr oid 62
+load net {en} -attr xrf 1067 -attr oid 63
+load net {en} -port {en} -attr xrf 1068 -attr oid 64
+load net {arst_n} -attr xrf 1069 -attr oid 65
+load net {arst_n} -port {arst_n} -attr xrf 1070 -attr oid 66
+load inst "static_anaglyph:core:inst" "static_anaglyph:core" "orig" -attr xrf 1071 -attr oid 67 -attr vt dc -attr @path {/static_anaglyph/static_anaglyph:core:inst} -attr area 45.871789 -attr hier "/static_anaglyph/static_anaglyph:core" -pg 1 -lvl 3
+load net {clk} -pin  "static_anaglyph:core:inst" {clk#1} -attr xrf 1072 -attr oid 68 -attr @path {/static_anaglyph/clk}
+load net {en} -pin  "static_anaglyph:core:inst" {en#1} -attr xrf 1073 -attr oid 69 -attr @path {/static_anaglyph/en}
+load net {arst_n} -pin  "static_anaglyph:core:inst" {arst_n#1} -attr xrf 1074 -attr oid 70 -attr @path {/static_anaglyph/arst_n}
+load net {vga_xy:rsc:mgc_in_wire.d#1(0)} -pin  "static_anaglyph:core:inst" {vga_xy:rsc:mgc_in_wire.d(0)} -attr vt dc -attr @path {/static_anaglyph/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(1)} -pin  "static_anaglyph:core:inst" {vga_xy:rsc:mgc_in_wire.d(1)} -attr vt dc -attr @path {/static_anaglyph/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(2)} -pin  "static_anaglyph:core:inst" {vga_xy:rsc:mgc_in_wire.d(2)} -attr vt dc -attr @path {/static_anaglyph/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(3)} -pin  "static_anaglyph:core:inst" {vga_xy:rsc:mgc_in_wire.d(3)} -attr vt dc -attr @path {/static_anaglyph/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(4)} -pin  "static_anaglyph:core:inst" {vga_xy:rsc:mgc_in_wire.d(4)} -attr vt dc -attr @path {/static_anaglyph/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(5)} -pin  "static_anaglyph:core:inst" {vga_xy:rsc:mgc_in_wire.d(5)} -attr vt dc -attr @path {/static_anaglyph/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(6)} -pin  "static_anaglyph:core:inst" {vga_xy:rsc:mgc_in_wire.d(6)} -attr vt dc -attr @path {/static_anaglyph/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(7)} -pin  "static_anaglyph:core:inst" {vga_xy:rsc:mgc_in_wire.d(7)} -attr vt dc -attr @path {/static_anaglyph/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(8)} -pin  "static_anaglyph:core:inst" {vga_xy:rsc:mgc_in_wire.d(8)} -attr vt dc -attr @path {/static_anaglyph/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(9)} -pin  "static_anaglyph:core:inst" {vga_xy:rsc:mgc_in_wire.d(9)} -attr vt dc -attr @path {/static_anaglyph/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(10)} -pin  "static_anaglyph:core:inst" {vga_xy:rsc:mgc_in_wire.d(10)} -attr vt dc -attr @path {/static_anaglyph/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(11)} -pin  "static_anaglyph:core:inst" {vga_xy:rsc:mgc_in_wire.d(11)} -attr vt dc -attr @path {/static_anaglyph/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(12)} -pin  "static_anaglyph:core:inst" {vga_xy:rsc:mgc_in_wire.d(12)} -attr vt dc -attr @path {/static_anaglyph/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(13)} -pin  "static_anaglyph:core:inst" {vga_xy:rsc:mgc_in_wire.d(13)} -attr vt dc -attr @path {/static_anaglyph/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(14)} -pin  "static_anaglyph:core:inst" {vga_xy:rsc:mgc_in_wire.d(14)} -attr vt dc -attr @path {/static_anaglyph/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(15)} -pin  "static_anaglyph:core:inst" {vga_xy:rsc:mgc_in_wire.d(15)} -attr vt dc -attr @path {/static_anaglyph/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(16)} -pin  "static_anaglyph:core:inst" {vga_xy:rsc:mgc_in_wire.d(16)} -attr vt dc -attr @path {/static_anaglyph/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(17)} -pin  "static_anaglyph:core:inst" {vga_xy:rsc:mgc_in_wire.d(17)} -attr vt dc -attr @path {/static_anaglyph/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(18)} -pin  "static_anaglyph:core:inst" {vga_xy:rsc:mgc_in_wire.d(18)} -attr vt dc -attr @path {/static_anaglyph/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(19)} -pin  "static_anaglyph:core:inst" {vga_xy:rsc:mgc_in_wire.d(19)} -attr vt dc -attr @path {/static_anaglyph/vga_xy:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(0)} -pin  "static_anaglyph:core:inst" {video_in:rsc:mgc_in_wire.d(0)} -attr vt dc -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(1)} -pin  "static_anaglyph:core:inst" {video_in:rsc:mgc_in_wire.d(1)} -attr vt dc -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(2)} -pin  "static_anaglyph:core:inst" {video_in:rsc:mgc_in_wire.d(2)} -attr vt dc -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(3)} -pin  "static_anaglyph:core:inst" {video_in:rsc:mgc_in_wire.d(3)} -attr vt dc -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(4)} -pin  "static_anaglyph:core:inst" {video_in:rsc:mgc_in_wire.d(4)} -attr vt dc -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(5)} -pin  "static_anaglyph:core:inst" {video_in:rsc:mgc_in_wire.d(5)} -attr vt dc -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(6)} -pin  "static_anaglyph:core:inst" {video_in:rsc:mgc_in_wire.d(6)} -attr vt dc -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(7)} -pin  "static_anaglyph:core:inst" {video_in:rsc:mgc_in_wire.d(7)} -attr vt dc -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(8)} -pin  "static_anaglyph:core:inst" {video_in:rsc:mgc_in_wire.d(8)} -attr vt dc -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(9)} -pin  "static_anaglyph:core:inst" {video_in:rsc:mgc_in_wire.d(9)} -attr vt dc -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(10)} -pin  "static_anaglyph:core:inst" {video_in:rsc:mgc_in_wire.d(10)} -attr vt dc -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(11)} -pin  "static_anaglyph:core:inst" {video_in:rsc:mgc_in_wire.d(11)} -attr vt dc -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(12)} -pin  "static_anaglyph:core:inst" {video_in:rsc:mgc_in_wire.d(12)} -attr vt dc -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(13)} -pin  "static_anaglyph:core:inst" {video_in:rsc:mgc_in_wire.d(13)} -attr vt dc -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(14)} -pin  "static_anaglyph:core:inst" {video_in:rsc:mgc_in_wire.d(14)} -attr vt dc -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(15)} -pin  "static_anaglyph:core:inst" {video_in:rsc:mgc_in_wire.d(15)} -attr vt dc -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(16)} -pin  "static_anaglyph:core:inst" {video_in:rsc:mgc_in_wire.d(16)} -attr vt dc -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(17)} -pin  "static_anaglyph:core:inst" {video_in:rsc:mgc_in_wire.d(17)} -attr vt dc -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(18)} -pin  "static_anaglyph:core:inst" {video_in:rsc:mgc_in_wire.d(18)} -attr vt dc -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(19)} -pin  "static_anaglyph:core:inst" {video_in:rsc:mgc_in_wire.d(19)} -attr vt dc -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(20)} -pin  "static_anaglyph:core:inst" {video_in:rsc:mgc_in_wire.d(20)} -attr vt dc -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(21)} -pin  "static_anaglyph:core:inst" {video_in:rsc:mgc_in_wire.d(21)} -attr vt dc -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(22)} -pin  "static_anaglyph:core:inst" {video_in:rsc:mgc_in_wire.d(22)} -attr vt dc -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(23)} -pin  "static_anaglyph:core:inst" {video_in:rsc:mgc_in_wire.d(23)} -attr vt dc -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(24)} -pin  "static_anaglyph:core:inst" {video_in:rsc:mgc_in_wire.d(24)} -attr vt dc -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(25)} -pin  "static_anaglyph:core:inst" {video_in:rsc:mgc_in_wire.d(25)} -attr vt dc -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(26)} -pin  "static_anaglyph:core:inst" {video_in:rsc:mgc_in_wire.d(26)} -attr vt dc -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(27)} -pin  "static_anaglyph:core:inst" {video_in:rsc:mgc_in_wire.d(27)} -attr vt dc -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(28)} -pin  "static_anaglyph:core:inst" {video_in:rsc:mgc_in_wire.d(28)} -attr vt dc -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(29)} -pin  "static_anaglyph:core:inst" {video_in:rsc:mgc_in_wire.d(29)} -attr vt dc -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(30)} -pin  "static_anaglyph:core:inst" {video_in:rsc:mgc_in_wire.d(30)} -attr vt dc -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(31)} -pin  "static_anaglyph:core:inst" {video_in:rsc:mgc_in_wire.d(31)} -attr vt dc -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(32)} -pin  "static_anaglyph:core:inst" {video_in:rsc:mgc_in_wire.d(32)} -attr vt dc -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(33)} -pin  "static_anaglyph:core:inst" {video_in:rsc:mgc_in_wire.d(33)} -attr vt dc -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(34)} -pin  "static_anaglyph:core:inst" {video_in:rsc:mgc_in_wire.d(34)} -attr vt dc -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(35)} -pin  "static_anaglyph:core:inst" {video_in:rsc:mgc_in_wire.d(35)} -attr vt dc -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(36)} -pin  "static_anaglyph:core:inst" {video_in:rsc:mgc_in_wire.d(36)} -attr vt dc -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(37)} -pin  "static_anaglyph:core:inst" {video_in:rsc:mgc_in_wire.d(37)} -attr vt dc -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(38)} -pin  "static_anaglyph:core:inst" {video_in:rsc:mgc_in_wire.d(38)} -attr vt dc -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(39)} -pin  "static_anaglyph:core:inst" {video_in:rsc:mgc_in_wire.d(39)} -attr vt dc -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(40)} -pin  "static_anaglyph:core:inst" {video_in:rsc:mgc_in_wire.d(40)} -attr vt dc -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(41)} -pin  "static_anaglyph:core:inst" {video_in:rsc:mgc_in_wire.d(41)} -attr vt dc -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(42)} -pin  "static_anaglyph:core:inst" {video_in:rsc:mgc_in_wire.d(42)} -attr vt dc -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(43)} -pin  "static_anaglyph:core:inst" {video_in:rsc:mgc_in_wire.d(43)} -attr vt dc -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(44)} -pin  "static_anaglyph:core:inst" {video_in:rsc:mgc_in_wire.d(44)} -attr vt dc -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(45)} -pin  "static_anaglyph:core:inst" {video_in:rsc:mgc_in_wire.d(45)} -attr vt dc -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(46)} -pin  "static_anaglyph:core:inst" {video_in:rsc:mgc_in_wire.d(46)} -attr vt dc -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(47)} -pin  "static_anaglyph:core:inst" {video_in:rsc:mgc_in_wire.d(47)} -attr vt dc -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(48)} -pin  "static_anaglyph:core:inst" {video_in:rsc:mgc_in_wire.d(48)} -attr vt dc -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(49)} -pin  "static_anaglyph:core:inst" {video_in:rsc:mgc_in_wire.d(49)} -attr vt dc -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(50)} -pin  "static_anaglyph:core:inst" {video_in:rsc:mgc_in_wire.d(50)} -attr vt dc -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(51)} -pin  "static_anaglyph:core:inst" {video_in:rsc:mgc_in_wire.d(51)} -attr vt dc -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(52)} -pin  "static_anaglyph:core:inst" {video_in:rsc:mgc_in_wire.d(52)} -attr vt dc -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(53)} -pin  "static_anaglyph:core:inst" {video_in:rsc:mgc_in_wire.d(53)} -attr vt dc -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(54)} -pin  "static_anaglyph:core:inst" {video_in:rsc:mgc_in_wire.d(54)} -attr vt dc -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(55)} -pin  "static_anaglyph:core:inst" {video_in:rsc:mgc_in_wire.d(55)} -attr vt dc -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(56)} -pin  "static_anaglyph:core:inst" {video_in:rsc:mgc_in_wire.d(56)} -attr vt dc -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(57)} -pin  "static_anaglyph:core:inst" {video_in:rsc:mgc_in_wire.d(57)} -attr vt dc -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(58)} -pin  "static_anaglyph:core:inst" {video_in:rsc:mgc_in_wire.d(58)} -attr vt dc -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(59)} -pin  "static_anaglyph:core:inst" {video_in:rsc:mgc_in_wire.d(59)} -attr vt dc -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_out:rsc:mgc_out_stdreg.d#1(0)} -pin  "static_anaglyph:core:inst" {video_out:rsc:mgc_out_stdreg.d(0)} -attr vt dc -attr @path {/static_anaglyph/video_out:rsc:mgc_out_stdreg.d}
+load net {video_out:rsc:mgc_out_stdreg.d#1(1)} -pin  "static_anaglyph:core:inst" {video_out:rsc:mgc_out_stdreg.d(1)} -attr vt dc -attr @path {/static_anaglyph/video_out:rsc:mgc_out_stdreg.d}
+load net {video_out:rsc:mgc_out_stdreg.d#1(2)} -pin  "static_anaglyph:core:inst" {video_out:rsc:mgc_out_stdreg.d(2)} -attr vt dc -attr @path {/static_anaglyph/video_out:rsc:mgc_out_stdreg.d}
+load net {video_out:rsc:mgc_out_stdreg.d#1(3)} -pin  "static_anaglyph:core:inst" {video_out:rsc:mgc_out_stdreg.d(3)} -attr vt dc -attr @path {/static_anaglyph/video_out:rsc:mgc_out_stdreg.d}
+load net {video_out:rsc:mgc_out_stdreg.d#1(4)} -pin  "static_anaglyph:core:inst" {video_out:rsc:mgc_out_stdreg.d(4)} -attr vt dc -attr @path {/static_anaglyph/video_out:rsc:mgc_out_stdreg.d}
+load net {video_out:rsc:mgc_out_stdreg.d#1(5)} -pin  "static_anaglyph:core:inst" {video_out:rsc:mgc_out_stdreg.d(5)} -attr vt dc -attr @path {/static_anaglyph/video_out:rsc:mgc_out_stdreg.d}
+load net {video_out:rsc:mgc_out_stdreg.d#1(6)} -pin  "static_anaglyph:core:inst" {video_out:rsc:mgc_out_stdreg.d(6)} -attr vt dc -attr @path {/static_anaglyph/video_out:rsc:mgc_out_stdreg.d}
+load net {video_out:rsc:mgc_out_stdreg.d#1(7)} -pin  "static_anaglyph:core:inst" {video_out:rsc:mgc_out_stdreg.d(7)} -attr vt dc -attr @path {/static_anaglyph/video_out:rsc:mgc_out_stdreg.d}
+load net {video_out:rsc:mgc_out_stdreg.d#1(8)} -pin  "static_anaglyph:core:inst" {video_out:rsc:mgc_out_stdreg.d(8)} -attr vt dc -attr @path {/static_anaglyph/video_out:rsc:mgc_out_stdreg.d}
+load net {video_out:rsc:mgc_out_stdreg.d#1(9)} -pin  "static_anaglyph:core:inst" {video_out:rsc:mgc_out_stdreg.d(9)} -attr vt dc -attr @path {/static_anaglyph/video_out:rsc:mgc_out_stdreg.d}
+load net {video_out:rsc:mgc_out_stdreg.d#1(10)} -pin  "static_anaglyph:core:inst" {video_out:rsc:mgc_out_stdreg.d(10)} -attr vt dc -attr @path {/static_anaglyph/video_out:rsc:mgc_out_stdreg.d}
+load net {video_out:rsc:mgc_out_stdreg.d#1(11)} -pin  "static_anaglyph:core:inst" {video_out:rsc:mgc_out_stdreg.d(11)} -attr vt dc -attr @path {/static_anaglyph/video_out:rsc:mgc_out_stdreg.d}
+load net {video_out:rsc:mgc_out_stdreg.d#1(12)} -pin  "static_anaglyph:core:inst" {video_out:rsc:mgc_out_stdreg.d(12)} -attr vt dc -attr @path {/static_anaglyph/video_out:rsc:mgc_out_stdreg.d}
+load net {video_out:rsc:mgc_out_stdreg.d#1(13)} -pin  "static_anaglyph:core:inst" {video_out:rsc:mgc_out_stdreg.d(13)} -attr vt dc -attr @path {/static_anaglyph/video_out:rsc:mgc_out_stdreg.d}
+load net {video_out:rsc:mgc_out_stdreg.d#1(14)} -pin  "static_anaglyph:core:inst" {video_out:rsc:mgc_out_stdreg.d(14)} -attr vt dc -attr @path {/static_anaglyph/video_out:rsc:mgc_out_stdreg.d}
+load net {video_out:rsc:mgc_out_stdreg.d#1(15)} -pin  "static_anaglyph:core:inst" {video_out:rsc:mgc_out_stdreg.d(15)} -attr vt dc -attr @path {/static_anaglyph/video_out:rsc:mgc_out_stdreg.d}
+load net {video_out:rsc:mgc_out_stdreg.d#1(16)} -pin  "static_anaglyph:core:inst" {video_out:rsc:mgc_out_stdreg.d(16)} -attr vt dc -attr @path {/static_anaglyph/video_out:rsc:mgc_out_stdreg.d}
+load net {video_out:rsc:mgc_out_stdreg.d#1(17)} -pin  "static_anaglyph:core:inst" {video_out:rsc:mgc_out_stdreg.d(17)} -attr vt dc -attr @path {/static_anaglyph/video_out:rsc:mgc_out_stdreg.d}
+load net {video_out:rsc:mgc_out_stdreg.d#1(18)} -pin  "static_anaglyph:core:inst" {video_out:rsc:mgc_out_stdreg.d(18)} -attr vt dc -attr @path {/static_anaglyph/video_out:rsc:mgc_out_stdreg.d}
+load net {video_out:rsc:mgc_out_stdreg.d#1(19)} -pin  "static_anaglyph:core:inst" {video_out:rsc:mgc_out_stdreg.d(19)} -attr vt dc -attr @path {/static_anaglyph/video_out:rsc:mgc_out_stdreg.d}
+load net {video_out:rsc:mgc_out_stdreg.d#1(20)} -pin  "static_anaglyph:core:inst" {video_out:rsc:mgc_out_stdreg.d(20)} -attr vt dc -attr @path {/static_anaglyph/video_out:rsc:mgc_out_stdreg.d}
+load net {video_out:rsc:mgc_out_stdreg.d#1(21)} -pin  "static_anaglyph:core:inst" {video_out:rsc:mgc_out_stdreg.d(21)} -attr vt dc -attr @path {/static_anaglyph/video_out:rsc:mgc_out_stdreg.d}
+load net {video_out:rsc:mgc_out_stdreg.d#1(22)} -pin  "static_anaglyph:core:inst" {video_out:rsc:mgc_out_stdreg.d(22)} -attr vt dc -attr @path {/static_anaglyph/video_out:rsc:mgc_out_stdreg.d}
+load net {video_out:rsc:mgc_out_stdreg.d#1(23)} -pin  "static_anaglyph:core:inst" {video_out:rsc:mgc_out_stdreg.d(23)} -attr vt dc -attr @path {/static_anaglyph/video_out:rsc:mgc_out_stdreg.d}
+load net {video_out:rsc:mgc_out_stdreg.d#1(24)} -pin  "static_anaglyph:core:inst" {video_out:rsc:mgc_out_stdreg.d(24)} -attr vt dc -attr @path {/static_anaglyph/video_out:rsc:mgc_out_stdreg.d}
+load net {video_out:rsc:mgc_out_stdreg.d#1(25)} -pin  "static_anaglyph:core:inst" {video_out:rsc:mgc_out_stdreg.d(25)} -attr vt dc -attr @path {/static_anaglyph/video_out:rsc:mgc_out_stdreg.d}
+load net {video_out:rsc:mgc_out_stdreg.d#1(26)} -pin  "static_anaglyph:core:inst" {video_out:rsc:mgc_out_stdreg.d(26)} -attr vt dc -attr @path {/static_anaglyph/video_out:rsc:mgc_out_stdreg.d}
+load net {video_out:rsc:mgc_out_stdreg.d#1(27)} -pin  "static_anaglyph:core:inst" {video_out:rsc:mgc_out_stdreg.d(27)} -attr vt dc -attr @path {/static_anaglyph/video_out:rsc:mgc_out_stdreg.d}
+load net {video_out:rsc:mgc_out_stdreg.d#1(28)} -pin  "static_anaglyph:core:inst" {video_out:rsc:mgc_out_stdreg.d(28)} -attr vt dc -attr @path {/static_anaglyph/video_out:rsc:mgc_out_stdreg.d}
+load net {video_out:rsc:mgc_out_stdreg.d#1(29)} -pin  "static_anaglyph:core:inst" {video_out:rsc:mgc_out_stdreg.d(29)} -attr vt dc -attr @path {/static_anaglyph/video_out:rsc:mgc_out_stdreg.d}
+load inst "vga_xy:rsc:mgc_in_wire" "mgc_ioport.mgc_in_wire(1,20)" "INTERFACE" -attr xrf 1075 -attr oid 71 -attr vt d -attr @path {/static_anaglyph/vga_xy:rsc:mgc_in_wire} -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_ioport.mgc_in_wire(1,20)" -pg 1 -lvl 1
+load net {vga_xy:rsc:mgc_in_wire.d#1(0)} -pin  "vga_xy:rsc:mgc_in_wire" {d(0)} -attr vt d -attr @path {/static_anaglyph/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(1)} -pin  "vga_xy:rsc:mgc_in_wire" {d(1)} -attr vt d -attr @path {/static_anaglyph/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(2)} -pin  "vga_xy:rsc:mgc_in_wire" {d(2)} -attr vt d -attr @path {/static_anaglyph/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(3)} -pin  "vga_xy:rsc:mgc_in_wire" {d(3)} -attr vt d -attr @path {/static_anaglyph/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(4)} -pin  "vga_xy:rsc:mgc_in_wire" {d(4)} -attr vt d -attr @path {/static_anaglyph/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(5)} -pin  "vga_xy:rsc:mgc_in_wire" {d(5)} -attr vt d -attr @path {/static_anaglyph/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(6)} -pin  "vga_xy:rsc:mgc_in_wire" {d(6)} -attr vt d -attr @path {/static_anaglyph/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(7)} -pin  "vga_xy:rsc:mgc_in_wire" {d(7)} -attr vt d -attr @path {/static_anaglyph/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(8)} -pin  "vga_xy:rsc:mgc_in_wire" {d(8)} -attr vt d -attr @path {/static_anaglyph/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(9)} -pin  "vga_xy:rsc:mgc_in_wire" {d(9)} -attr vt d -attr @path {/static_anaglyph/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(10)} -pin  "vga_xy:rsc:mgc_in_wire" {d(10)} -attr vt d -attr @path {/static_anaglyph/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(11)} -pin  "vga_xy:rsc:mgc_in_wire" {d(11)} -attr vt d -attr @path {/static_anaglyph/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(12)} -pin  "vga_xy:rsc:mgc_in_wire" {d(12)} -attr vt d -attr @path {/static_anaglyph/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(13)} -pin  "vga_xy:rsc:mgc_in_wire" {d(13)} -attr vt d -attr @path {/static_anaglyph/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(14)} -pin  "vga_xy:rsc:mgc_in_wire" {d(14)} -attr vt d -attr @path {/static_anaglyph/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(15)} -pin  "vga_xy:rsc:mgc_in_wire" {d(15)} -attr vt d -attr @path {/static_anaglyph/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(16)} -pin  "vga_xy:rsc:mgc_in_wire" {d(16)} -attr vt d -attr @path {/static_anaglyph/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(17)} -pin  "vga_xy:rsc:mgc_in_wire" {d(17)} -attr vt d -attr @path {/static_anaglyph/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(18)} -pin  "vga_xy:rsc:mgc_in_wire" {d(18)} -attr vt d -attr @path {/static_anaglyph/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc:mgc_in_wire.d#1(19)} -pin  "vga_xy:rsc:mgc_in_wire" {d(19)} -attr vt d -attr @path {/static_anaglyph/vga_xy:rsc:mgc_in_wire.d}
+load net {vga_xy:rsc.z(0)} -pin  "vga_xy:rsc:mgc_in_wire" {z(0)} -attr vt d -attr @path {/static_anaglyph/vga_xy:rsc.z}
+load net {vga_xy:rsc.z(1)} -pin  "vga_xy:rsc:mgc_in_wire" {z(1)} -attr vt d -attr @path {/static_anaglyph/vga_xy:rsc.z}
+load net {vga_xy:rsc.z(2)} -pin  "vga_xy:rsc:mgc_in_wire" {z(2)} -attr vt d -attr @path {/static_anaglyph/vga_xy:rsc.z}
+load net {vga_xy:rsc.z(3)} -pin  "vga_xy:rsc:mgc_in_wire" {z(3)} -attr vt d -attr @path {/static_anaglyph/vga_xy:rsc.z}
+load net {vga_xy:rsc.z(4)} -pin  "vga_xy:rsc:mgc_in_wire" {z(4)} -attr vt d -attr @path {/static_anaglyph/vga_xy:rsc.z}
+load net {vga_xy:rsc.z(5)} -pin  "vga_xy:rsc:mgc_in_wire" {z(5)} -attr vt d -attr @path {/static_anaglyph/vga_xy:rsc.z}
+load net {vga_xy:rsc.z(6)} -pin  "vga_xy:rsc:mgc_in_wire" {z(6)} -attr vt d -attr @path {/static_anaglyph/vga_xy:rsc.z}
+load net {vga_xy:rsc.z(7)} -pin  "vga_xy:rsc:mgc_in_wire" {z(7)} -attr vt d -attr @path {/static_anaglyph/vga_xy:rsc.z}
+load net {vga_xy:rsc.z(8)} -pin  "vga_xy:rsc:mgc_in_wire" {z(8)} -attr vt d -attr @path {/static_anaglyph/vga_xy:rsc.z}
+load net {vga_xy:rsc.z(9)} -pin  "vga_xy:rsc:mgc_in_wire" {z(9)} -attr vt d -attr @path {/static_anaglyph/vga_xy:rsc.z}
+load net {vga_xy:rsc.z(10)} -pin  "vga_xy:rsc:mgc_in_wire" {z(10)} -attr vt d -attr @path {/static_anaglyph/vga_xy:rsc.z}
+load net {vga_xy:rsc.z(11)} -pin  "vga_xy:rsc:mgc_in_wire" {z(11)} -attr vt d -attr @path {/static_anaglyph/vga_xy:rsc.z}
+load net {vga_xy:rsc.z(12)} -pin  "vga_xy:rsc:mgc_in_wire" {z(12)} -attr vt d -attr @path {/static_anaglyph/vga_xy:rsc.z}
+load net {vga_xy:rsc.z(13)} -pin  "vga_xy:rsc:mgc_in_wire" {z(13)} -attr vt d -attr @path {/static_anaglyph/vga_xy:rsc.z}
+load net {vga_xy:rsc.z(14)} -pin  "vga_xy:rsc:mgc_in_wire" {z(14)} -attr vt d -attr @path {/static_anaglyph/vga_xy:rsc.z}
+load net {vga_xy:rsc.z(15)} -pin  "vga_xy:rsc:mgc_in_wire" {z(15)} -attr vt d -attr @path {/static_anaglyph/vga_xy:rsc.z}
+load net {vga_xy:rsc.z(16)} -pin  "vga_xy:rsc:mgc_in_wire" {z(16)} -attr vt d -attr @path {/static_anaglyph/vga_xy:rsc.z}
+load net {vga_xy:rsc.z(17)} -pin  "vga_xy:rsc:mgc_in_wire" {z(17)} -attr vt d -attr @path {/static_anaglyph/vga_xy:rsc.z}
+load net {vga_xy:rsc.z(18)} -pin  "vga_xy:rsc:mgc_in_wire" {z(18)} -attr vt d -attr @path {/static_anaglyph/vga_xy:rsc.z}
+load net {vga_xy:rsc.z(19)} -pin  "vga_xy:rsc:mgc_in_wire" {z(19)} -attr vt d -attr @path {/static_anaglyph/vga_xy:rsc.z}
+load inst "video_in:rsc:mgc_in_wire" "mgc_ioport.mgc_in_wire(2,60)" "INTERFACE" -attr xrf 1076 -attr oid 72 -attr vt d -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire} -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_ioport.mgc_in_wire(2,60)" -pg 1 -lvl 1
+load net {video_in:rsc:mgc_in_wire.d#1(0)} -pin  "video_in:rsc:mgc_in_wire" {d(0)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(1)} -pin  "video_in:rsc:mgc_in_wire" {d(1)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(2)} -pin  "video_in:rsc:mgc_in_wire" {d(2)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(3)} -pin  "video_in:rsc:mgc_in_wire" {d(3)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(4)} -pin  "video_in:rsc:mgc_in_wire" {d(4)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(5)} -pin  "video_in:rsc:mgc_in_wire" {d(5)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(6)} -pin  "video_in:rsc:mgc_in_wire" {d(6)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(7)} -pin  "video_in:rsc:mgc_in_wire" {d(7)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(8)} -pin  "video_in:rsc:mgc_in_wire" {d(8)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(9)} -pin  "video_in:rsc:mgc_in_wire" {d(9)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(10)} -pin  "video_in:rsc:mgc_in_wire" {d(10)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(11)} -pin  "video_in:rsc:mgc_in_wire" {d(11)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(12)} -pin  "video_in:rsc:mgc_in_wire" {d(12)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(13)} -pin  "video_in:rsc:mgc_in_wire" {d(13)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(14)} -pin  "video_in:rsc:mgc_in_wire" {d(14)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(15)} -pin  "video_in:rsc:mgc_in_wire" {d(15)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(16)} -pin  "video_in:rsc:mgc_in_wire" {d(16)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(17)} -pin  "video_in:rsc:mgc_in_wire" {d(17)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(18)} -pin  "video_in:rsc:mgc_in_wire" {d(18)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(19)} -pin  "video_in:rsc:mgc_in_wire" {d(19)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(20)} -pin  "video_in:rsc:mgc_in_wire" {d(20)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(21)} -pin  "video_in:rsc:mgc_in_wire" {d(21)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(22)} -pin  "video_in:rsc:mgc_in_wire" {d(22)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(23)} -pin  "video_in:rsc:mgc_in_wire" {d(23)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(24)} -pin  "video_in:rsc:mgc_in_wire" {d(24)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(25)} -pin  "video_in:rsc:mgc_in_wire" {d(25)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(26)} -pin  "video_in:rsc:mgc_in_wire" {d(26)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(27)} -pin  "video_in:rsc:mgc_in_wire" {d(27)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(28)} -pin  "video_in:rsc:mgc_in_wire" {d(28)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(29)} -pin  "video_in:rsc:mgc_in_wire" {d(29)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(30)} -pin  "video_in:rsc:mgc_in_wire" {d(30)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(31)} -pin  "video_in:rsc:mgc_in_wire" {d(31)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(32)} -pin  "video_in:rsc:mgc_in_wire" {d(32)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(33)} -pin  "video_in:rsc:mgc_in_wire" {d(33)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(34)} -pin  "video_in:rsc:mgc_in_wire" {d(34)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(35)} -pin  "video_in:rsc:mgc_in_wire" {d(35)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(36)} -pin  "video_in:rsc:mgc_in_wire" {d(36)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(37)} -pin  "video_in:rsc:mgc_in_wire" {d(37)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(38)} -pin  "video_in:rsc:mgc_in_wire" {d(38)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(39)} -pin  "video_in:rsc:mgc_in_wire" {d(39)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(40)} -pin  "video_in:rsc:mgc_in_wire" {d(40)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(41)} -pin  "video_in:rsc:mgc_in_wire" {d(41)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(42)} -pin  "video_in:rsc:mgc_in_wire" {d(42)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(43)} -pin  "video_in:rsc:mgc_in_wire" {d(43)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(44)} -pin  "video_in:rsc:mgc_in_wire" {d(44)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(45)} -pin  "video_in:rsc:mgc_in_wire" {d(45)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(46)} -pin  "video_in:rsc:mgc_in_wire" {d(46)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(47)} -pin  "video_in:rsc:mgc_in_wire" {d(47)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(48)} -pin  "video_in:rsc:mgc_in_wire" {d(48)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(49)} -pin  "video_in:rsc:mgc_in_wire" {d(49)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(50)} -pin  "video_in:rsc:mgc_in_wire" {d(50)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(51)} -pin  "video_in:rsc:mgc_in_wire" {d(51)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(52)} -pin  "video_in:rsc:mgc_in_wire" {d(52)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(53)} -pin  "video_in:rsc:mgc_in_wire" {d(53)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(54)} -pin  "video_in:rsc:mgc_in_wire" {d(54)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(55)} -pin  "video_in:rsc:mgc_in_wire" {d(55)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(56)} -pin  "video_in:rsc:mgc_in_wire" {d(56)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(57)} -pin  "video_in:rsc:mgc_in_wire" {d(57)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(58)} -pin  "video_in:rsc:mgc_in_wire" {d(58)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc:mgc_in_wire.d#1(59)} -pin  "video_in:rsc:mgc_in_wire" {d(59)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc:mgc_in_wire.d}
+load net {video_in:rsc.z(0)} -pin  "video_in:rsc:mgc_in_wire" {z(0)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc.z}
+load net {video_in:rsc.z(1)} -pin  "video_in:rsc:mgc_in_wire" {z(1)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc.z}
+load net {video_in:rsc.z(2)} -pin  "video_in:rsc:mgc_in_wire" {z(2)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc.z}
+load net {video_in:rsc.z(3)} -pin  "video_in:rsc:mgc_in_wire" {z(3)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc.z}
+load net {video_in:rsc.z(4)} -pin  "video_in:rsc:mgc_in_wire" {z(4)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc.z}
+load net {video_in:rsc.z(5)} -pin  "video_in:rsc:mgc_in_wire" {z(5)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc.z}
+load net {video_in:rsc.z(6)} -pin  "video_in:rsc:mgc_in_wire" {z(6)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc.z}
+load net {video_in:rsc.z(7)} -pin  "video_in:rsc:mgc_in_wire" {z(7)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc.z}
+load net {video_in:rsc.z(8)} -pin  "video_in:rsc:mgc_in_wire" {z(8)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc.z}
+load net {video_in:rsc.z(9)} -pin  "video_in:rsc:mgc_in_wire" {z(9)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc.z}
+load net {video_in:rsc.z(10)} -pin  "video_in:rsc:mgc_in_wire" {z(10)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc.z}
+load net {video_in:rsc.z(11)} -pin  "video_in:rsc:mgc_in_wire" {z(11)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc.z}
+load net {video_in:rsc.z(12)} -pin  "video_in:rsc:mgc_in_wire" {z(12)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc.z}
+load net {video_in:rsc.z(13)} -pin  "video_in:rsc:mgc_in_wire" {z(13)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc.z}
+load net {video_in:rsc.z(14)} -pin  "video_in:rsc:mgc_in_wire" {z(14)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc.z}
+load net {video_in:rsc.z(15)} -pin  "video_in:rsc:mgc_in_wire" {z(15)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc.z}
+load net {video_in:rsc.z(16)} -pin  "video_in:rsc:mgc_in_wire" {z(16)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc.z}
+load net {video_in:rsc.z(17)} -pin  "video_in:rsc:mgc_in_wire" {z(17)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc.z}
+load net {video_in:rsc.z(18)} -pin  "video_in:rsc:mgc_in_wire" {z(18)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc.z}
+load net {video_in:rsc.z(19)} -pin  "video_in:rsc:mgc_in_wire" {z(19)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc.z}
+load net {video_in:rsc.z(20)} -pin  "video_in:rsc:mgc_in_wire" {z(20)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc.z}
+load net {video_in:rsc.z(21)} -pin  "video_in:rsc:mgc_in_wire" {z(21)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc.z}
+load net {video_in:rsc.z(22)} -pin  "video_in:rsc:mgc_in_wire" {z(22)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc.z}
+load net {video_in:rsc.z(23)} -pin  "video_in:rsc:mgc_in_wire" {z(23)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc.z}
+load net {video_in:rsc.z(24)} -pin  "video_in:rsc:mgc_in_wire" {z(24)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc.z}
+load net {video_in:rsc.z(25)} -pin  "video_in:rsc:mgc_in_wire" {z(25)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc.z}
+load net {video_in:rsc.z(26)} -pin  "video_in:rsc:mgc_in_wire" {z(26)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc.z}
+load net {video_in:rsc.z(27)} -pin  "video_in:rsc:mgc_in_wire" {z(27)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc.z}
+load net {video_in:rsc.z(28)} -pin  "video_in:rsc:mgc_in_wire" {z(28)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc.z}
+load net {video_in:rsc.z(29)} -pin  "video_in:rsc:mgc_in_wire" {z(29)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc.z}
+load net {video_in:rsc.z(30)} -pin  "video_in:rsc:mgc_in_wire" {z(30)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc.z}
+load net {video_in:rsc.z(31)} -pin  "video_in:rsc:mgc_in_wire" {z(31)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc.z}
+load net {video_in:rsc.z(32)} -pin  "video_in:rsc:mgc_in_wire" {z(32)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc.z}
+load net {video_in:rsc.z(33)} -pin  "video_in:rsc:mgc_in_wire" {z(33)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc.z}
+load net {video_in:rsc.z(34)} -pin  "video_in:rsc:mgc_in_wire" {z(34)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc.z}
+load net {video_in:rsc.z(35)} -pin  "video_in:rsc:mgc_in_wire" {z(35)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc.z}
+load net {video_in:rsc.z(36)} -pin  "video_in:rsc:mgc_in_wire" {z(36)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc.z}
+load net {video_in:rsc.z(37)} -pin  "video_in:rsc:mgc_in_wire" {z(37)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc.z}
+load net {video_in:rsc.z(38)} -pin  "video_in:rsc:mgc_in_wire" {z(38)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc.z}
+load net {video_in:rsc.z(39)} -pin  "video_in:rsc:mgc_in_wire" {z(39)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc.z}
+load net {video_in:rsc.z(40)} -pin  "video_in:rsc:mgc_in_wire" {z(40)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc.z}
+load net {video_in:rsc.z(41)} -pin  "video_in:rsc:mgc_in_wire" {z(41)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc.z}
+load net {video_in:rsc.z(42)} -pin  "video_in:rsc:mgc_in_wire" {z(42)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc.z}
+load net {video_in:rsc.z(43)} -pin  "video_in:rsc:mgc_in_wire" {z(43)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc.z}
+load net {video_in:rsc.z(44)} -pin  "video_in:rsc:mgc_in_wire" {z(44)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc.z}
+load net {video_in:rsc.z(45)} -pin  "video_in:rsc:mgc_in_wire" {z(45)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc.z}
+load net {video_in:rsc.z(46)} -pin  "video_in:rsc:mgc_in_wire" {z(46)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc.z}
+load net {video_in:rsc.z(47)} -pin  "video_in:rsc:mgc_in_wire" {z(47)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc.z}
+load net {video_in:rsc.z(48)} -pin  "video_in:rsc:mgc_in_wire" {z(48)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc.z}
+load net {video_in:rsc.z(49)} -pin  "video_in:rsc:mgc_in_wire" {z(49)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc.z}
+load net {video_in:rsc.z(50)} -pin  "video_in:rsc:mgc_in_wire" {z(50)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc.z}
+load net {video_in:rsc.z(51)} -pin  "video_in:rsc:mgc_in_wire" {z(51)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc.z}
+load net {video_in:rsc.z(52)} -pin  "video_in:rsc:mgc_in_wire" {z(52)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc.z}
+load net {video_in:rsc.z(53)} -pin  "video_in:rsc:mgc_in_wire" {z(53)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc.z}
+load net {video_in:rsc.z(54)} -pin  "video_in:rsc:mgc_in_wire" {z(54)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc.z}
+load net {video_in:rsc.z(55)} -pin  "video_in:rsc:mgc_in_wire" {z(55)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc.z}
+load net {video_in:rsc.z(56)} -pin  "video_in:rsc:mgc_in_wire" {z(56)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc.z}
+load net {video_in:rsc.z(57)} -pin  "video_in:rsc:mgc_in_wire" {z(57)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc.z}
+load net {video_in:rsc.z(58)} -pin  "video_in:rsc:mgc_in_wire" {z(58)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc.z}
+load net {video_in:rsc.z(59)} -pin  "video_in:rsc:mgc_in_wire" {z(59)} -attr vt d -attr @path {/static_anaglyph/video_in:rsc.z}
+load inst "video_out:rsc:mgc_out_stdreg" "mgc_ioport.mgc_out_stdreg(3,30)" "INTERFACE" -attr xrf 1077 -attr oid 73 -attr vt d -attr @path {/static_anaglyph/video_out:rsc:mgc_out_stdreg} -attr delay -1000000000000000000000000000000.000000 -attr qmod "mgc_ioport.mgc_out_stdreg(3,30)" -pg 1 -lvl 1002
+load net {video_out:rsc:mgc_out_stdreg.d#1(0)} -pin  "video_out:rsc:mgc_out_stdreg" {d(0)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc:mgc_out_stdreg.d}
+load net {video_out:rsc:mgc_out_stdreg.d#1(1)} -pin  "video_out:rsc:mgc_out_stdreg" {d(1)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc:mgc_out_stdreg.d}
+load net {video_out:rsc:mgc_out_stdreg.d#1(2)} -pin  "video_out:rsc:mgc_out_stdreg" {d(2)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc:mgc_out_stdreg.d}
+load net {video_out:rsc:mgc_out_stdreg.d#1(3)} -pin  "video_out:rsc:mgc_out_stdreg" {d(3)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc:mgc_out_stdreg.d}
+load net {video_out:rsc:mgc_out_stdreg.d#1(4)} -pin  "video_out:rsc:mgc_out_stdreg" {d(4)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc:mgc_out_stdreg.d}
+load net {video_out:rsc:mgc_out_stdreg.d#1(5)} -pin  "video_out:rsc:mgc_out_stdreg" {d(5)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc:mgc_out_stdreg.d}
+load net {video_out:rsc:mgc_out_stdreg.d#1(6)} -pin  "video_out:rsc:mgc_out_stdreg" {d(6)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc:mgc_out_stdreg.d}
+load net {video_out:rsc:mgc_out_stdreg.d#1(7)} -pin  "video_out:rsc:mgc_out_stdreg" {d(7)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc:mgc_out_stdreg.d}
+load net {video_out:rsc:mgc_out_stdreg.d#1(8)} -pin  "video_out:rsc:mgc_out_stdreg" {d(8)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc:mgc_out_stdreg.d}
+load net {video_out:rsc:mgc_out_stdreg.d#1(9)} -pin  "video_out:rsc:mgc_out_stdreg" {d(9)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc:mgc_out_stdreg.d}
+load net {video_out:rsc:mgc_out_stdreg.d#1(10)} -pin  "video_out:rsc:mgc_out_stdreg" {d(10)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc:mgc_out_stdreg.d}
+load net {video_out:rsc:mgc_out_stdreg.d#1(11)} -pin  "video_out:rsc:mgc_out_stdreg" {d(11)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc:mgc_out_stdreg.d}
+load net {video_out:rsc:mgc_out_stdreg.d#1(12)} -pin  "video_out:rsc:mgc_out_stdreg" {d(12)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc:mgc_out_stdreg.d}
+load net {video_out:rsc:mgc_out_stdreg.d#1(13)} -pin  "video_out:rsc:mgc_out_stdreg" {d(13)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc:mgc_out_stdreg.d}
+load net {video_out:rsc:mgc_out_stdreg.d#1(14)} -pin  "video_out:rsc:mgc_out_stdreg" {d(14)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc:mgc_out_stdreg.d}
+load net {video_out:rsc:mgc_out_stdreg.d#1(15)} -pin  "video_out:rsc:mgc_out_stdreg" {d(15)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc:mgc_out_stdreg.d}
+load net {video_out:rsc:mgc_out_stdreg.d#1(16)} -pin  "video_out:rsc:mgc_out_stdreg" {d(16)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc:mgc_out_stdreg.d}
+load net {video_out:rsc:mgc_out_stdreg.d#1(17)} -pin  "video_out:rsc:mgc_out_stdreg" {d(17)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc:mgc_out_stdreg.d}
+load net {video_out:rsc:mgc_out_stdreg.d#1(18)} -pin  "video_out:rsc:mgc_out_stdreg" {d(18)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc:mgc_out_stdreg.d}
+load net {video_out:rsc:mgc_out_stdreg.d#1(19)} -pin  "video_out:rsc:mgc_out_stdreg" {d(19)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc:mgc_out_stdreg.d}
+load net {video_out:rsc:mgc_out_stdreg.d#1(20)} -pin  "video_out:rsc:mgc_out_stdreg" {d(20)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc:mgc_out_stdreg.d}
+load net {video_out:rsc:mgc_out_stdreg.d#1(21)} -pin  "video_out:rsc:mgc_out_stdreg" {d(21)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc:mgc_out_stdreg.d}
+load net {video_out:rsc:mgc_out_stdreg.d#1(22)} -pin  "video_out:rsc:mgc_out_stdreg" {d(22)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc:mgc_out_stdreg.d}
+load net {video_out:rsc:mgc_out_stdreg.d#1(23)} -pin  "video_out:rsc:mgc_out_stdreg" {d(23)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc:mgc_out_stdreg.d}
+load net {video_out:rsc:mgc_out_stdreg.d#1(24)} -pin  "video_out:rsc:mgc_out_stdreg" {d(24)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc:mgc_out_stdreg.d}
+load net {video_out:rsc:mgc_out_stdreg.d#1(25)} -pin  "video_out:rsc:mgc_out_stdreg" {d(25)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc:mgc_out_stdreg.d}
+load net {video_out:rsc:mgc_out_stdreg.d#1(26)} -pin  "video_out:rsc:mgc_out_stdreg" {d(26)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc:mgc_out_stdreg.d}
+load net {video_out:rsc:mgc_out_stdreg.d#1(27)} -pin  "video_out:rsc:mgc_out_stdreg" {d(27)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc:mgc_out_stdreg.d}
+load net {video_out:rsc:mgc_out_stdreg.d#1(28)} -pin  "video_out:rsc:mgc_out_stdreg" {d(28)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc:mgc_out_stdreg.d}
+load net {video_out:rsc:mgc_out_stdreg.d#1(29)} -pin  "video_out:rsc:mgc_out_stdreg" {d(29)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc:mgc_out_stdreg.d}
+load net {video_out:rsc.z(0)} -pin  "video_out:rsc:mgc_out_stdreg" {z(0)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc.z}
+load net {video_out:rsc.z(1)} -pin  "video_out:rsc:mgc_out_stdreg" {z(1)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc.z}
+load net {video_out:rsc.z(2)} -pin  "video_out:rsc:mgc_out_stdreg" {z(2)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc.z}
+load net {video_out:rsc.z(3)} -pin  "video_out:rsc:mgc_out_stdreg" {z(3)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc.z}
+load net {video_out:rsc.z(4)} -pin  "video_out:rsc:mgc_out_stdreg" {z(4)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc.z}
+load net {video_out:rsc.z(5)} -pin  "video_out:rsc:mgc_out_stdreg" {z(5)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc.z}
+load net {video_out:rsc.z(6)} -pin  "video_out:rsc:mgc_out_stdreg" {z(6)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc.z}
+load net {video_out:rsc.z(7)} -pin  "video_out:rsc:mgc_out_stdreg" {z(7)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc.z}
+load net {video_out:rsc.z(8)} -pin  "video_out:rsc:mgc_out_stdreg" {z(8)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc.z}
+load net {video_out:rsc.z(9)} -pin  "video_out:rsc:mgc_out_stdreg" {z(9)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc.z}
+load net {video_out:rsc.z(10)} -pin  "video_out:rsc:mgc_out_stdreg" {z(10)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc.z}
+load net {video_out:rsc.z(11)} -pin  "video_out:rsc:mgc_out_stdreg" {z(11)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc.z}
+load net {video_out:rsc.z(12)} -pin  "video_out:rsc:mgc_out_stdreg" {z(12)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc.z}
+load net {video_out:rsc.z(13)} -pin  "video_out:rsc:mgc_out_stdreg" {z(13)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc.z}
+load net {video_out:rsc.z(14)} -pin  "video_out:rsc:mgc_out_stdreg" {z(14)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc.z}
+load net {video_out:rsc.z(15)} -pin  "video_out:rsc:mgc_out_stdreg" {z(15)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc.z}
+load net {video_out:rsc.z(16)} -pin  "video_out:rsc:mgc_out_stdreg" {z(16)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc.z}
+load net {video_out:rsc.z(17)} -pin  "video_out:rsc:mgc_out_stdreg" {z(17)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc.z}
+load net {video_out:rsc.z(18)} -pin  "video_out:rsc:mgc_out_stdreg" {z(18)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc.z}
+load net {video_out:rsc.z(19)} -pin  "video_out:rsc:mgc_out_stdreg" {z(19)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc.z}
+load net {video_out:rsc.z(20)} -pin  "video_out:rsc:mgc_out_stdreg" {z(20)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc.z}
+load net {video_out:rsc.z(21)} -pin  "video_out:rsc:mgc_out_stdreg" {z(21)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc.z}
+load net {video_out:rsc.z(22)} -pin  "video_out:rsc:mgc_out_stdreg" {z(22)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc.z}
+load net {video_out:rsc.z(23)} -pin  "video_out:rsc:mgc_out_stdreg" {z(23)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc.z}
+load net {video_out:rsc.z(24)} -pin  "video_out:rsc:mgc_out_stdreg" {z(24)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc.z}
+load net {video_out:rsc.z(25)} -pin  "video_out:rsc:mgc_out_stdreg" {z(25)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc.z}
+load net {video_out:rsc.z(26)} -pin  "video_out:rsc:mgc_out_stdreg" {z(26)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc.z}
+load net {video_out:rsc.z(27)} -pin  "video_out:rsc:mgc_out_stdreg" {z(27)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc.z}
+load net {video_out:rsc.z(28)} -pin  "video_out:rsc:mgc_out_stdreg" {z(28)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc.z}
+load net {video_out:rsc.z(29)} -pin  "video_out:rsc:mgc_out_stdreg" {z(29)} -attr vt d -attr @path {/static_anaglyph/video_out:rsc.z}
+### END MODULE 
+

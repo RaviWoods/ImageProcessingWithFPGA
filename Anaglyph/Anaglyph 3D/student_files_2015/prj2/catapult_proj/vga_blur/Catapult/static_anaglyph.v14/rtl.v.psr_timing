@@ -1,0 +1,24 @@
+create_clock -domain clk -name clk -period 20.0 -waveform { 0.0 10.0 } clk
+set_clock_uncertainty -design rtl 0.0 clk
+
+# Multicycle component mgc_Altera-Cyclone-III-6_beh_psr.mgc_div (div_mgc_div) [cycles: 2]
+set saved_design [current_design]
+set_attribute -name HIERARCHY -value preserve -instance div_mgc_div
+current_design [list_design div_mgc_div]
+set mc_inst_out_list {}
+foreach mc_inst_out [all_outputs] {
+   lappend mc_inst_out_list [join [concat div_mgc_div "/" $mc_inst_out] ""]
+}
+current_design $saved_design
+set_multicycle_path 2 -through $mc_inst_out_list
+
+# Multicycle component mgc_Altera-Cyclone-III-6_beh_psr.mgc_div (div_mgc_div_1) [cycles: 2]
+set saved_design [current_design]
+set_attribute -name HIERARCHY -value preserve -instance div_mgc_div_1
+current_design [list_design div_mgc_div_1]
+set mc_inst_out_list {}
+foreach mc_inst_out [all_outputs] {
+   lappend mc_inst_out_list [join [concat div_mgc_div_1 "/" $mc_inst_out] ""]
+}
+current_design $saved_design
+set_multicycle_path 2 -through $mc_inst_out_list

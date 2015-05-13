@@ -1,0 +1,13 @@
+set a(0-7) {LIBRARY mgc_ioport MODULE mgc_in_wire(2,60) AREA_SCORE 0.00 QUANTITY 1 NAME io_read(video_in:rsc.d) TYPE {I/O_READ VAR} DELAY {0.00 ns} PAR 0-6 XREFS 487 LOC {1 0.0 1 1.0 1 1.0 1 1.0 1 1.0} PREDS {} SUCCS {{259 0 0-8 {}}} CYCLES {}}
+set a(0-8) {NAME slc TYPE READSLICE PAR 0-6 XREFS 488 LOC {1 0.0 1 1.0 1 1.0 1 1.0} PREDS {{259 0 0-7 {}}} SUCCS {{259 0 0-9 {}} {258 0 0-10 {}}} CYCLES {}}
+set a(0-9) {NAME slc(io_read(video_in:rsc.d).cse.sg1) TYPE READSLICE PAR 0-6 XREFS 489 LOC {1 0.0 1 1.0 1 1.0 1 1.0} PREDS {{259 0 0-8 {}}} SUCCS {{258 0 0-11 {}}} CYCLES {}}
+set a(0-10) {NAME slc(io_read(video_in:rsc.d).cse.sg1)#1 TYPE READSLICE PAR 0-6 XREFS 490 LOC {1 0.0 1 1.0 1 1.0 1 1.0} PREDS {{258 0 0-8 {}}} SUCCS {{259 0 0-11 {}}} CYCLES {}}
+set a(0-11) {NAME conc TYPE CONCATENATE PAR 0-6 XREFS 491 LOC {1 0.0 1 1.0 1 1.0 1 1.0} PREDS {{258 0 0-9 {}} {259 0 0-10 {}}} SUCCS {{259 0 0-12 {}}} CYCLES {}}
+set a(0-12) {LIBRARY mgc_ioport MODULE mgc_out_stdreg(3,30) AREA_SCORE 0.00 QUANTITY 1 NAME io_write(video_out:rsc.d) TYPE {I/O_WRITE VAR} DELAY {0.00 ns} PAR 0-6 XREFS 492 LOC {1 1.0 1 1.0 1 1.0 2 0.0 1 0.9999} PREDS {{260 0 0-12 {}} {259 0 0-11 {}}} SUCCS {{260 0 0-12 {}}} CYCLES {}}
+set a(0-6) {CHI {0-7 0-8 0-9 0-10 0-11 0-12} ITERATIONS Infinite LATENCY 1 RESET_LATENCY 0 CSTEPS 2 UNROLL 0 PERIOD {37.04 ns} FULL_PERIOD {37.04 ns} THROUGHPUT_PERIOD 1 %_SHARING_ALLOC {20.00000007992 %} PIPELINED Yes INITIATION 1 STAGES 2.0 CYCLES_IN 1 TOTAL_CYCLES_IN 1 TOTAL_CYCLES_UNDER 0 TOTAL_CYCLES 1 NAME main TYPE LOOP DELAY {74.07 ns} PAR {} XREFS 493 LOC {0 0.0 0 0.0 0 0.0 1 0.0} PREDS {} SUCCS {} CYCLES {}}
+set a(0-6-TOTALCYCLES) {1}
+set a(0-6-QMOD) {mgc_ioport.mgc_in_wire(2,60) 0-7 mgc_ioport.mgc_out_stdreg(3,30) 0-12}
+set a(0-6-PROC_NAME) {core}
+set a(0-6-HIER_NAME) {/static_anaglyph/core}
+set a(TOP) {0-6}
+

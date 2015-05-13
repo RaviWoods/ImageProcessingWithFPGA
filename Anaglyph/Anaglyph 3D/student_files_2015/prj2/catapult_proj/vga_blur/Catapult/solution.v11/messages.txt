@@ -1,0 +1,48 @@
+
+# Messages from "go new"
+
+Creating project directory 'C:\fpga-catapult-c-spring\Anaglyph 3D\student_files_2015\prj2\catapult_proj\vga_blur\Catapult'. (PRJ-1)
+Branching solution 'solution.v2' at state 'new' (PRJ-2)
+Branching solution 'solution.v2' at state 'new' (PRJ-2)
+Branching solution 'solution.v2' at state 'new' (PRJ-2)
+Completed transformation 'compile' on solution 'static_anaglyph.v2': elapsed time 1.17 seconds, memory usage 151476kB, peak memory usage 203524kB (SOL-9)
+Branching solution 'solution.v2' at state 'new' (PRJ-2)
+Branching solution 'solution.v3' at state 'new' (PRJ-2)
+Branching solution 'solution.v4' at state 'new' (PRJ-2)
+Branching solution 'solution.v4' at state 'new' (PRJ-2)
+Branching solution 'solution.v4' at state 'new' (PRJ-2)
+Branching solution 'solution.v5' at state 'new' (PRJ-2)
+Branching solution 'solution.v5' at state 'new' (PRJ-2)
+Branching solution 'solution.v5' at state 'new' (PRJ-2)
+Branching solution 'solution.v5' at state 'new' (PRJ-2)
+Branching solution 'solution.v6' at state 'new' (PRJ-2)
+Branching solution 'solution.v6' at state 'new' (PRJ-2)
+Branching solution 'solution.v6' at state 'new' (PRJ-2)
+Branching solution 'solution.v7' at state 'new' (PRJ-2)
+Branching solution 'solution.v8' at state 'new' (PRJ-2)
+Branching solution 'solution.v8' at state 'new' (PRJ-2)
+Branching solution 'solution.v8' at state 'new' (PRJ-2)
+Branching solution 'solution.v9' at state 'new' (PRJ-2)
+Branching solution 'solution.v9' at state 'new' (PRJ-2)
+Branching solution 'solution.v9' at state 'new' (PRJ-2)
+Branching solution 'solution.v9' at state 'new' (PRJ-2)
+Branching solution 'solution.v9' at state 'new' (PRJ-2)
+Branching solution 'solution.v10' at state 'new' (PRJ-2)
+Branching solution 'solution.v10' at state 'new' (PRJ-2)
+Branching solution 'solution.v10' at state 'new' (PRJ-2)
+Branching solution 'solution.v11' at state 'new' (PRJ-2)
+
+# Messages from "go analyze"
+
+Front End called with arguments: -- {C:\fpga-catapult-c-spring\Anaglyph\Anaglyph 3D\student_files_2015\prj2\catapult_proj\vga_blur\blur.h} {C:\fpga-catapult-c-spring\Anaglyph\Anaglyph 3D\student_files_2015\prj2\catapult_proj\vga_blur\blur.c} {C:\fpga-catapult-c-spring\Anaglyph\Anaglyph 3D\student_files_2015\prj2\catapult_proj\vga_blur\shift_class.h} (CIN-69)
+Edison Design Group C++/C Front End - Version 3.10.1 (CIN-1)
+Pragma 'hls_design<top>' detected on routine 'absmax' (CIN-6)
+Source file analysis completed (CIN-68)
+Starting transformation 'analyze' on solution 'solution.v11' (SOL-8)
+Completed transformation 'analyze' on solution 'solution.v11': elapsed time 1.86 seconds, memory usage 245752kB, peak memory usage 307152kB (SOL-9)
+$PROJECT_HOME/blur.c(43): incompatible redefinition of macro "PIXEL_WL" (declared at line 38 of "C:\fpga-catapult-c-spring\Anaglyph\Anaglyph 3D\student_files_2015\prj2\catapult_proj\vga_blur\blur.h") (CRD-47)
+          detected during compilation of secondary translation unit "C:\fpga-catapult-c-spring\Anaglyph\Anaglyph 3D\student_files_2015\prj2\catapult_proj\vga_blur\blur.c"
+$PROJECT_HOME/blur.c(310): missing return statement at end of non-void function "edge_detect" (CRD-940)
+          detected during compilation of secondary translation unit "C:\fpga-catapult-c-spring\Anaglyph\Anaglyph 3D\student_files_2015\prj2\catapult_proj\vga_blur\blur.c"
+Branching solution 'solution.v11' at state 'analyze' (PRJ-2)
+Branching solution 'solution.v11' at state 'analyze' (PRJ-2)
